@@ -73,7 +73,37 @@
   transform: translateY(0);
 }
 
+/* a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s ease;
+} */
+/* Replace it with link in react dom */
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+
+ul:hover a {
+  color: #ccc;
+}
+
+ul a:hover {
+  color: #000;
+  box-shadow: 0 2px 0 0 currentcolor;
+}
+
 @layer components {
+  body {
+    @apply text-textColor font-main;
+  }
+
   p,
   a {
     @apply text-sm md:text-base;
