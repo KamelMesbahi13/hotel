@@ -8,3 +8,29 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.textCenter {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+
+.textRight {
+  text-align: right;
+  text-align: -moz-right;
+  text-align: -webkit-right;
+}
+
+.textLeft {
+  text-align: left;
+  text-align: -moz-left;
+  text-align: -webkit-left;
+}
+
+.initialDirection {
+  direction: initial;
+}
+
+.rightDirection {
+  direction: rtl;
+}
