@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --textColor: #000000;
+  --textColor: #fff;
+  --backgroundColor: #201f22;
   --main: #152248;
   --second: #f0a02c;
   --hoverColor: #7cc1da;
@@ -106,9 +107,13 @@
   transform: scaleX(1);
 }
 
+.linkColor {
+  color: #1a1a1a !important;
+}
+
 @layer components {
   body {
-    @apply text-textColor font-main;
+    @apply bg-backgroundColor font-main;
   }
 
   p,

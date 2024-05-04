@@ -3,12 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      textColor: "#252525",
+      textColor: "#eee",
       white: "#ffffff",
       grey: "#eee",
-      mainColor: "#096FAD",
-      hoverColor: "#439CDB",
-      secondColor: "#69fab4",
+      mainColor: "#152248",
+      hoverColor: "#7cc1da",
+      secondColor: "#f0a02c",
+      backgroundColor: "#201f22",
     },
     extend: {
       fontFamily: {

@@ -44,53 +44,55 @@ const Navbar = () => {
   return (
     <>
       <div id="nav">
-        <div className="container">
-          <div className="z-50 hidden w-full py-6 lg:flex">
-            <div className="flex items-center justify-between w-full">
-              <div>
-                <a href="/">
-                  <img className="w-28" src={Logo} alt="Logo" />
-                </a>
-              </div>
-              <div className="flex gap-8">
-                <Link className="link " to="/">
-                  {modifiedDataNav.map((el) => el.ItemOne)}
-                </Link>
-                <Link className="link " to="/">
-                  {modifiedDataNav.map((el) => el.ItemTwo)}
-                </Link>
-                <Link className="link " to="/">
-                  {modifiedDataNav.map((el) => el.ItemThree)}
-                </Link>
-              </div>
-              <div className="flex items-center">
-                <span className="text-2xl cursor-pointer ">
-                  <TranslateIcon />
-                </span>
+        <div className="bg-white">
+          <div className="container">
+            <div className="z-50 hidden w-full lg:flex">
+              <div className="flex items-center justify-between w-full">
                 <div>
-                  <a
-                    href="https://web.facebook.com/dzworkaway"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img className="w-6 mx-2" src={Facebook} alt="Facebook" />
+                  <a href="/">
+                    <img className="w-28" src={Logo} alt="Logo" />
                   </a>
                 </div>
-                <div>
-                  <a
-                    href="https://www.instagram.com/dzworkaway"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img className="w-6" src={Youtube} alt="Instagram" />
-                  </a>
+                <div className="flex gap-8">
+                  <Link className="link linkColor" to="/">
+                    {modifiedDataNav.map((el) => el.ItemOne)}
+                  </Link>
+                  <Link className="link linkColor" to="/">
+                    {modifiedDataNav.map((el) => el.ItemTwo)}
+                  </Link>
+                  <Link className="link linkColor" to="/">
+                    {modifiedDataNav.map((el) => el.ItemThree)}
+                  </Link>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-2xl cursor-pointer ">
+                    <TranslateIcon />
+                  </span>
+                  <div>
+                    <a
+                      href="https://web.facebook.com/dzworkaway"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img className="w-6 mx-2" src={Facebook} alt="Facebook" />
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://www.instagram.com/dzworkaway"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img className="w-6" src={Youtube} alt="Instagram" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div>
+        <div className="bg-white">
           <div className="container flex flex-row-reverse items-center justify-between lg:hidden">
             <div className={nav ? "visible lg:invisible" : "invisible"}>
               <img src={Logo} className="w-24" alt="Logo" />
