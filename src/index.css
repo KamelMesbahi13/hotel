@@ -4,7 +4,7 @@
 
 :root {
   --textColor: #fff;
-  --backgroundColor: #201f22;
+  --backgroundColor: #151719;
   --main: #152248;
   --second: #f0a02c;
   --hoverColor: #7cc1da;
@@ -113,7 +113,7 @@
 
 @layer components {
   body {
-    @apply bg-backgroundColor font-main;
+    @apply bg-backgroundColor font-main h-[1000rem];
   }
 
   p,

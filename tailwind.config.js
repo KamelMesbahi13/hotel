@@ -13,8 +13,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        main: ["Jost", "sans-serif"],
-        second: ["Lora", "serif"],
+        main: ["Lato", "sans-serif"],
+        second: ["Marcellus", "serif"],
       },
     },
   },
