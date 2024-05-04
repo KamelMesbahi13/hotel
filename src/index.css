@@ -114,7 +114,7 @@
 
 @layer components {
   body {
-    @apply bg-backgroundColor font-main h-[1000rem];
+    @apply bg-backgroundColor text-textColor font-main h-[1000rem];
   }
 
   p,
