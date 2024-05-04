@@ -77,7 +77,7 @@ const Navbar = () => {
                         offset={-70}
                         duration={500}
                       >
-                        Explore More
+                        Explorer plus{" "}
                       </Link>
                     </button>
                   </div>
