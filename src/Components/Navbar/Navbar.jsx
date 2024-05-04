@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaXmark } from "react-icons/fa6";
-import Facebook from "../../assets/Facebook.png";
-import Youtube from "../../assets/Youtube.png";
 import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
 import { useTranslation } from "react-i18next";
 
@@ -65,26 +63,11 @@ const Navbar = () => {
                   </Link>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-2xl cursor-pointer ">
+                  <span className="mr-6 text-2xl cursor-pointer">
                     <TranslateIcon />
                   </span>
                   <div>
-                    <a
-                      href="https://web.facebook.com/dzworkaway"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img className="w-6 mx-2" src={Facebook} alt="Facebook" />
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://www.instagram.com/dzworkaway"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img className="w-6" src={Youtube} alt="Instagram" />
-                    </a>
+                    <button className="button">Explore More</button>
                   </div>
                 </div>
               </div>
@@ -128,21 +111,6 @@ const Navbar = () => {
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </Link>
                 <div className="flex items-center justify-center gap-2">
-                  <a
-                    href="https://web.facebook.com/dzworkaway"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img className="w-5" src={Facebook} alt="Facebook" />
-                  </a>
-
-                  <a
-                    href="https://www.instagram.com/dzworkaway/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img className="w-5" src={Youtube} alt="Instagram" />
-                  </a>
                   <div>
                     <TranslateIcon />
                   </div>
