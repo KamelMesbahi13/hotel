@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Data from "../../Data/Data.json";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Gmail.png";
+import Logo from "../../assets/Logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaXmark } from "react-icons/fa6";
 import Facebook from "../../assets/Facebook.png";
@@ -61,9 +61,6 @@ const Navbar = () => {
                 </Link>
                 <Link className="link" to="/">
                   {modifiedDataNav.map((el) => el.ItemThree)}
-                </Link>
-                <Link className="link" to="/">
-                  {modifiedDataNav.map((el) => el.ItemFour)}
                 </Link>
               </div>
               <div className="flex items-center">
@@ -128,10 +125,6 @@ const Navbar = () => {
                 <Link onClick={navHandler} to="/">
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </Link>
-                <Link onClick={navHandler} to="/">
-                  {modifiedDataNav.map((el) => el.ItemFour)}
-                </Link>
-
                 <div className="flex items-center justify-center gap-2">
                   <a
                     href="https://web.facebook.com/dzworkaway"
