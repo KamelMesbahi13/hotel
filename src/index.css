@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --textColor: #000000;
+  --main: #152248;
+  --second: #f0a02c;
+  --hoverColor: #7cc1da;
+  --grey: #eee;
+}
+
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -73,30 +81,29 @@
   transform: translateY(0);
 }
 
-/* a {
-  color: inherit;
+.link {
+  color: var(--textColor);
+  position: relative;
   text-decoration: none;
-  transition: 0.25s ease;
-} */
-/* Replace it with link in react dom */
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
 }
 
-ul li {
-  margin-left: 0.75em;
-  margin-right: 0.75em;
+.link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--main);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
 }
 
-ul:hover a {
-  color: #ccc;
-}
-
-ul a:hover {
-  color: #000;
-  box-shadow: 0 2px 0 0 currentcolor;
+.link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 @layer components {

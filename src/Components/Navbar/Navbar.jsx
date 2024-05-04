@@ -53,13 +53,13 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="flex gap-8">
-                <Link className="link" to="/">
+                <Link className="link " to="/">
                   {modifiedDataNav.map((el) => el.ItemOne)}
                 </Link>
-                <Link className="link" to="/">
+                <Link className="link " to="/">
                   {modifiedDataNav.map((el) => el.ItemTwo)}
                 </Link>
-                <Link className="link" to="/">
+                <Link className="link " to="/">
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </Link>
               </div>
