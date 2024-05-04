@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Data from "../../Data/Data.json";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom"; // Renamed to RouterLink
 import Logo from "../../assets/Logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaXmark } from "react-icons/fa6";
 import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const { i18n } = useTranslation();
@@ -52,22 +53,33 @@ const Navbar = () => {
                   </a>
                 </div>
                 <div className="flex gap-8">
-                  <Link className="link linkColor" to="/">
+                  <RouterLink className="link linkColor" to="/">
                     {modifiedDataNav.map((el) => el.ItemOne)}
-                  </Link>
-                  <Link className="link linkColor" to="/">
+                  </RouterLink>
+                  <RouterLink className="link linkColor" to="/">
                     {modifiedDataNav.map((el) => el.ItemTwo)}
-                  </Link>
-                  <Link className="link linkColor" to="/">
+                  </RouterLink>
+                  <RouterLink className="link linkColor" to="/">
                     {modifiedDataNav.map((el) => el.ItemThree)}
-                  </Link>
+                  </RouterLink>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-6 text-2xl cursor-pointer">
                     <TranslateIcon />
                   </span>
                   <div>
-                    <button className="button">Explore More</button>
+                    <button className="button">
+                      <Link
+                        activeClass="active"
+                        to="introduction"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        Explore More
+                      </Link>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -101,15 +113,15 @@ const Navbar = () => {
               }
             >
               <div className="flex flex-col px-8 py-16 gap-y-8">
-                <Link onClick={navHandler} to="/">
+                <RouterLink onClick={navHandler} to="/">
                   {modifiedDataNav.map((el) => el.ItemOne)}
-                </Link>
-                <Link onClick={navHandler} to="/">
+                </RouterLink>
+                <RouterLink onClick={navHandler} to="/">
                   {modifiedDataNav.map((el) => el.ItemTwo)}
-                </Link>
-                <Link onClick={navHandler} to="/">
+                </RouterLink>
+                <RouterLink onClick={navHandler} to="/">
                   {modifiedDataNav.map((el) => el.ItemThree)}
-                </Link>
+                </RouterLink>
                 <div className="flex items-center justify-center gap-2">
                   <div>
                     <TranslateIcon />
