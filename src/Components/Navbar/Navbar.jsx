@@ -64,7 +64,7 @@ const Navbar = () => {
                   </RouterLink>
                 </div>
 
-                <div className="flex items-center w-1/4">
+                <div className="flex items-center justify-end w-1/4">
                   <div className="flex items-center rtl:flex-row-reverse">
                     <i className="ltr:mr-4 rtl:mr-4 text-thirdColor">
                       {<FaPhone />}

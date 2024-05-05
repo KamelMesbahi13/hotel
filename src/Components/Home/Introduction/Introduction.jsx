@@ -27,7 +27,7 @@ const Introduction = () => {
                     offset={-70}
                     duration={500}
                   >
-                    Explorer plus{" "}
+                    {t("button_one")}
                   </Link>
                 </button>
               </div>
