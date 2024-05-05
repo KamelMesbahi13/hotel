@@ -69,7 +69,9 @@ const Navbar = () => {
                     <i className="ltr:mr-4 rtl:mr-4 text-thirdColor">
                       {<FaPhone />}
                     </i>
-                    <p className="linkColor initialDirection">0555 55 55 55</p>
+                    <p className="text-xs xl:text-base linkColor initialDirection">
+                      0555 55 55 55
+                    </p>
                   </div>
                   <span className="text-2xl cursor-pointer ltr:ml-12 rtl:mr-12">
                     <TranslateIcon />

@@ -10,7 +10,7 @@ const Introduction = () => {
     <div>
       <div className="flex flex-col md:flex-row">
         <div>
-          <div className="container mt-8 md:mt-32">
+          <div className="container mt-8 md:px-20 xl:mt-32">
             <div>
               <h1>{t("introduction_header")}</h1>
               <h2 className="my-4">{t("introduction_subheader")}</h2>
