@@ -7,8 +7,8 @@ const Mission = () => {
     <>
       <div className="mt-24 textCenter">
         <div>
-          <div>
-            <h6>{t("mission_subheader")}</h6>
+          <div className="w-3/4">
+            <h2 className="mb-2">{t("mission_subheader")}</h2>
             <h1>{t("mission_header")}</h1>
           </div>
         </div>
