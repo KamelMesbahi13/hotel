@@ -33,7 +33,7 @@ const Introduction = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-3/4">
+        <div className="mt-8 md:w-3/4 md:mt-0">
           <img src={Hotel} alt="" />
         </div>
       </div>

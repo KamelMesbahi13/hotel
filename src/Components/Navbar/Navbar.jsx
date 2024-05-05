@@ -99,8 +99,8 @@ const Navbar = () => {
             <div
               className={
                 nav
-                  ? "absolute w-full rtl:left-[150%] opacity-0 ltr:left-[-150%] duration-500 z-50"
-                  : "absolute w-full left-0 bg-grey opacity-100 shadow-2xl z-50 duration-500"
+                  ? "absolute w-full rtl:left-[150%] h-[25rem] opacity-0 ltr:left-[-150%] duration-500 z-50"
+                  : "absolute w-full left-0 bg-grey h-[25rem] opacity-100 shadow-2xl z-50 duration-500"
               }
             >
               <div className="container flex flex-col py-4 gap-y-8">
