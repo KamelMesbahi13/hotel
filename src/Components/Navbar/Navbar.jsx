@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Data from "../../Data/Data.json";
-import { Link as RouterLink } from "react-router-dom"; // Renamed to RouterLink
+import { Link as RouterLink } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
-import { FaXmark } from "react-icons/fa6";
+import { FaXmark, FaPhone } from "react-icons/fa6";
 import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
 import { useTranslation } from "react-i18next";
 
@@ -44,14 +44,15 @@ const Navbar = () => {
       <div id="nav">
         <div className="w-full bg-white">
           <div className="container">
-            <div className="z-50 hidden w-full lg:flex">
-              <div className="flex items-center justify-between w-full">
+            <div className="z-50 justify-between hidden w-full lg:flex">
+              <div className="flex items-center w-full">
                 <div>
                   <a href="/">
-                    <img className="w-28" src={Logo} alt="Logo" />
+                    <img className="w-1/4" src={Logo} alt="Logo" />
                   </a>
                 </div>
-                <div className="flex gap-8">
+
+                <div className="flex w-1/2 gap-8">
                   <RouterLink className="link linkColor" to="/">
                     {modifiedDataNav.map((el) => el.ItemOne)}
                   </RouterLink>
@@ -62,13 +63,15 @@ const Navbar = () => {
                     {modifiedDataNav.map((el) => el.ItemThree)}
                   </RouterLink>
                 </div>
-                <div className="flex items-center">
-                  <span className="mr-6 text-2xl cursor-pointer">
+
+                <div className="flex items-center w-1/4">
+                  <div className="flex items-center">
+                    <i className="mr-4 text-thirdColor">{<FaPhone />}</i>
+                    <p className="linkColor">0555 55 55 55</p>
+                  </div>
+                  <span className="ml-12 text-2xl cursor-pointer">
                     <TranslateIcon />
                   </span>
-                  <div>
-                    <p>0555 55 55 55</p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -82,7 +85,7 @@ const Navbar = () => {
             </div>
             <div>
               <div className="lg:hidden">
-                <div className="cursor-pointer">
+                <div className="cursor-pointer text-mainColor">
                   {nav ? (
                     <AiOutlineMenu className="w-6 h-6" onClick={navHandler} />
                   ) : (
@@ -100,28 +103,29 @@ const Navbar = () => {
                   : "absolute w-full left-0 bg-grey opacity-100 shadow-2xl z-50 duration-500"
               }
             >
-              <div className="flex flex-col px-8 py-16 gap-y-8">
-                <RouterLink onClick={navHandler} to="/">
+              <div className="container flex flex-col py-4 gap-y-8">
+                <RouterLink onClick={navHandler} className="linkColor" to="/">
                   {modifiedDataNav.map((el) => el.ItemOne)}
                 </RouterLink>
-                <RouterLink onClick={navHandler} to="/">
+                <RouterLink onClick={navHandler} className="linkColor" to="/">
                   {modifiedDataNav.map((el) => el.ItemTwo)}
                 </RouterLink>
-                <RouterLink onClick={navHandler} to="/">
+                <RouterLink onClick={navHandler} className="linkColor" to="/">
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </RouterLink>
-                <div className="flex items-center justify-center gap-2">
-                  <div>
-                    <TranslateIcon />
-                  </div>
-                </div>
-
-                <div className="mx-auto mt-2 lg:hidden">
+              </div>
+              <div className="container flex flex-row justify-between">
+                <div className="mt-2 lg:hidden">
                   <img
                     className={nav ? "invisible w-24" : "visible w-24"}
                     src={Logo}
                     alt="Logo"
                   />
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <div>
+                    <TranslateIcon />
+                  </div>
                 </div>
               </div>
             </div>

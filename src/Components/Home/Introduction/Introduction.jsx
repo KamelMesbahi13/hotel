@@ -9,14 +9,14 @@ const Introduction = () => {
     <div>
       <div className="flex flex-col md:flex-row">
         <div>
-          <div className="container mt-32">
+          <div className="container mt-8 md:mt-32">
             <div>
               <h1>{t("introduction_header")}</h1>
               <h2 className="my-4">{t("introduction_subheader")}</h2>
               <p>{t("introduction_text")}</p>
             </div>
             <div>
-              <div>
+              <div className="mt-8">
                 <button className="button">
                   <Link
                     activeClass="active"
@@ -33,7 +33,7 @@ const Introduction = () => {
             </div>
           </div>
         </div>
-        <div className="w-3/4">
+        <div className="md:w-3/4">
           <img src={Hotel} alt="" />
         </div>
       </div>
