@@ -65,11 +65,13 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-center w-1/4">
-                  <div className="flex items-center">
-                    <i className="mr-4 text-thirdColor">{<FaPhone />}</i>
-                    <p className="linkColor">0555 55 55 55</p>
+                  <div className="flex items-center rtl:flex-row-reverse">
+                    <i className="ltr:mr-4 rtl:mr-4 text-thirdColor">
+                      {<FaPhone />}
+                    </i>
+                    <p className="linkColor initialDirection">0555 55 55 55</p>
                   </div>
-                  <span className="ml-12 text-2xl cursor-pointer">
+                  <span className="text-2xl cursor-pointer ltr:ml-12 rtl:mr-12">
                     <TranslateIcon />
                   </span>
                 </div>
@@ -114,7 +116,7 @@ const Navbar = () => {
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </RouterLink>
               </div>
-              <div className="container flex flex-row justify-between">
+              <div className="container flex flex-row justify-between rtl:flex-row-reverse">
                 <div className="mt-2 lg:hidden">
                   <img
                     className={nav ? "invisible w-24" : "visible w-24"}
