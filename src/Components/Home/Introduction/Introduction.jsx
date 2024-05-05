@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import Hotel from "../../../assets/HotelOne.jpg";
 import { useTranslation } from "react-i18next";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Introduction = () => {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ const Introduction = () => {
           </div>
         </div>
         <div className="mt-8 md:w-3/4 md:mt-0">
-          <img src={Hotel} alt="" />
+          <LazyLoadImage src={Hotel} alt="" />
         </div>
       </div>
     </div>
