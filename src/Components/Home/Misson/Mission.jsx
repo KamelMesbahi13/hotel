@@ -124,7 +124,7 @@ const Mission = () => {
     <>
       <div>
         <div>
-          <div className="mt-8 md:mt-24 md:textCenter">
+          <div className="mt-8 md:mt-64 md:textCenter">
             <div>
               <div className="md:w-3/4 md:mx-auto textCenter">
                 <h2 className="mb-2">{t("mission_subheader")}</h2>
