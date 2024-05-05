@@ -4,6 +4,8 @@ import HouseCleaning from "../../../assets/HouseCleaning.png";
 import Kitchen from "../../../assets/Kitchen.png";
 import Reception from "../../../assets/Reception.png";
 import Wifi from "../../../assets/Wifi.png";
+import Deco from "../../../assets/Deco.png";
+
 import Security from "../../../assets/SecurityCamera.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -139,7 +141,14 @@ const Mission = () => {
               </div>
             </div>
           </div>
-          <div className="mt-8 md:mt-20">
+          <div className="relative mt-8 md:mt-20">
+            <div>
+              <img
+                className="absolute top-[15rem] hidden md:block left-0 w-[40%]"
+                src={Deco}
+                alt=""
+              />
+            </div>
             <div className="flex flex-col md:flex-row">
               <div>
                 <h2>{t("what_we_offer")}</h2>
