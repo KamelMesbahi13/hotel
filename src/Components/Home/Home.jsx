@@ -1,10 +1,13 @@
 import Introduction from "./Introduction/Introduction";
+import Mission from "./Misson/Mission";
 
 const Home = () => {
   return (
     <>
-      <div className="container"></div>
       <Introduction />
+      <div className="container">
+        <Mission />
+      </div>
     </>
   );
 };
