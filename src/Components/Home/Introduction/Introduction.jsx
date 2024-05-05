@@ -1,4 +1,4 @@
-import Boumerdes from "../../../assets/BoumerdesTwo.png";
+import Hotel from "../../../assets/HotelOne.jpg";
 import { useTranslation } from "react-i18next";
 
 const Introduction = () => {
@@ -6,19 +6,16 @@ const Introduction = () => {
 
   return (
     <div>
-      <div className="relative">
+      <div className="flex">
         <div>
-          {" "}
-          <img src={Boumerdes} className="w-full" alt="" />
-        </div>
-        <div className="absolute py-12 -translate-x-1/2 -translate-y-1/2 bg-mainColor textCenter left-1/2 top-1/2">
-          <div className="w-3/4 textCenter">
+          <div className="container w-3/4">
             <h1>{t("introduction_header")}</h1>
             <h2 className="my-4">{t("introduction_subheader")}</h2>
-            <p>
-              <p>{t("introduction_text")}</p>
-            </p>
+            <p>{t("introduction_text")}</p>
           </div>
+        </div>
+        <div>
+          <img src={Hotel} alt="" />
         </div>
       </div>
     </div>
