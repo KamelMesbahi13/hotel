@@ -7,8 +7,8 @@ export default {
       white: "#ffffff",
       grey: "#eee",
       mainColor: "#152248",
-      hoverColor: "#7cc1da",
       secondColor: "#f0a02c",
+      thirdColor: "#7cc1da",
       backgroundColor: "#201f22",
     },
     extend: {

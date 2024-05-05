@@ -6,7 +6,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { FaXmark } from "react-icons/fa6";
 import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-scroll";
 
 const Navbar = () => {
   const { i18n } = useTranslation();
@@ -68,18 +67,7 @@ const Navbar = () => {
                     <TranslateIcon />
                   </span>
                   <div>
-                    <button className="button">
-                      <Link
-                        activeClass="active"
-                        to="introduction"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        Explorer plus{" "}
-                      </Link>
-                    </button>
+                    <p>0555 55 55 55</p>
                   </div>
                 </div>
               </div>

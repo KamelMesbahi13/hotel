@@ -7,7 +7,7 @@
   --backgroundColor: #151719;
   --main: #152248;
   --second: #f0a02c;
-  --hoverColor: #7cc1da;
+  --third: #7cc1da;
   --grey: #eee;
 }
 
@@ -47,8 +47,8 @@
 .button {
   appearance: none;
   background-color: transparent;
-  border: 2px solid var(--main);
-  color: var(--backgroundColor);
+  border: 2px solid var(--textColor);
+  color: var(--textColor);
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
@@ -74,7 +74,7 @@
   color: #fff;
   background-color: var(--second);
   border: 2px solid transparent;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  box-shadow: rgba(131, 128, 128, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 
