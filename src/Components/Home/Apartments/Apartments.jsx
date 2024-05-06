@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import RoomOne from "../../assets/RoomSix.jpg";
-import RoomTwo from "../../assets/RoomSeven.jpg";
-import RoomThree from "../../assets/RoomEight.jpg";
-import RoomFour from "../../assets/RoomNine.jpg";
+import RoomOne from "../../../assets/RoomSix.jpg";
+import RoomTwo from "../../../assets/RoomSeven.jpg";
+import RoomThree from "../../../assets/RoomEight.jpg";
+import RoomFour from "../../../assets/RoomNine.jpg";
 
 const Boxes = [
   {
