@@ -1,3 +1,5 @@
+import RoomOne from "../../../assets/RoomOne.jpg";
+
 const ContactUsSection = () => {
   return (
     <div>
