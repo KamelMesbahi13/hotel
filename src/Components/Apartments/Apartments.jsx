@@ -86,7 +86,7 @@ const Apartments = () => {
     <div>
       <div>
         <div>
-          <div className="mt-8 md:mt-48 md:textCenter">
+          <div className="mt-20 md:mt-48 md:textCenter">
             <div>
               <div className="md:w-3/4 md:mx-auto textCenter">
                 <h2 className="mb-2">{t("apartment_subheader")}</h2>
@@ -104,15 +104,15 @@ const Apartments = () => {
             </div>
           </div>
 
-          <div className="grid w-full grid-cols-1 mt-8 md:gap-x-8 gap-y-8 md:gap-y-16 sm:grid-cols-2 md:mt-36">
+          <div className="grid w-full grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-36">
             {modifiedData.map((item) => {
               return (
                 <div key={item.id}>
                   <div>
-                    <div>
+                    <div className="overflow-hidden">
                       <img
                         src={item.img}
-                        className="h-[25rem] w-full rounded-xl"
+                        className="h-[15rem] duration-300 hover:scale-105 sm:h-[20rem] md:h-[25rem] w-full rounded-xl"
                         alt={item.title}
                       />
                     </div>
@@ -123,7 +123,7 @@ const Apartments = () => {
                         </button>
                       </div>
                       <div>
-                        <h1 className="mb-2 text-sm italic font-bold">
+                        <h1 className="mb-2 text-sm italic font-light">
                           {item.stats}
                         </h1>
                       </div>
