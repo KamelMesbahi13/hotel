@@ -1,5 +1,5 @@
-import AboutUs from "./AboutUs/AboutUs";
 import Introduction from "./Introduction/Introduction";
+import AboutUs from "./AboutUs/AboutUs";
 import Mission from "./Misson/Mission";
 
 const Home = () => {

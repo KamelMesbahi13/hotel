@@ -5,9 +5,9 @@ import Kitchen from "../../../assets/Kitchen.png";
 import Reception from "../../../assets/Reception.png";
 import Wifi from "../../../assets/Wifi.png";
 import Deco from "../../../assets/Deco.png";
-
 import Security from "../../../assets/SecurityCamera.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 
 const Boxes = [
   {
@@ -122,7 +122,16 @@ const Mission = () => {
 
   return (
     <>
-      <div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+      >
         <div>
           <div className="mt-8 md:mt-64 md:textCenter">
             <div>
@@ -180,7 +189,7 @@ const Mission = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

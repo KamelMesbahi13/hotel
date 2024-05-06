@@ -2,12 +2,22 @@ import { Link } from "react-scroll";
 import Hotel from "../../../assets/HotelOne.jpg";
 import { useTranslation } from "react-i18next";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 
 const Introduction = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+      }}
+    >
       <div className="flex flex-col md:flex-row">
         <div>
           <div className="container mt-8 md:px-20 xl:mt-32">
@@ -38,7 +48,7 @@ const Introduction = () => {
           <LazyLoadImage src={Hotel} alt="" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
