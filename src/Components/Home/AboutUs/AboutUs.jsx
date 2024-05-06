@@ -11,9 +11,9 @@ const AboutUs = () => {
       <div className="mt-8 md:mt-36">
         <div className="flex flex-col items-center md:flex-row">
           <div className="flex flex-row gap-x-4 md:gap-x-0 md:flex-row">
-            <LazyLoadImage src={RoomOne} className="w-full" alt="Chambre 1" />
+            <LazyLoadImage src={RoomOne} className="w-1/2" alt="Chambre 1" />
             <LazyLoadImage
-              className="relative w-full -z-10 md:right-20 md:top-40"
+              className="relative w-1/2 -z-10 md:right-20 md:top-40"
               src={RoomTwo}
               alt="Chambre 2"
             />
