@@ -39,14 +39,25 @@ const AboutUs = () => {
             </motion.div>
           </div>
           <div className="md:w-[60%] mt-8 md:mt-0">
-            <div>
-              <h1>{t("about_us_home_header")}</h1>
-              <h2 className="my-4">{t("about_us_home_subheader")}</h2>
-              <p>{t("about_us_home_paragraph")}</p>
-            </div>
-            <div className="mt-8">
-              <button className="button">{t("button_two")}</button>
-            </div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.9 }}
+              variants={{
+                hidden: { opacity: 0, y: 200 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              <div>
+                <h1>{t("about_us_home_header")}</h1>
+                <h2 className="my-4">{t("about_us_home_subheader")}</h2>
+                <p>{t("about_us_home_paragraph")}</p>
+              </div>
+              <div className="mt-8">
+                <button className="button">{t("button_two")}</button>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
