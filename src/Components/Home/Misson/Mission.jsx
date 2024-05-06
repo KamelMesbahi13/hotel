@@ -150,11 +150,11 @@ const Mission = () => {
               />
             </div>
             <div className="flex flex-col md:flex-row">
-              <div>
+              <div className="mb-8 md:mb-0">
                 <h2>{t("what_we_offer")}</h2>
                 <h1>{t("what_we_offer_header")}</h1>
               </div>
-              <div className="grid w-full grid-cols-1 mt-8 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 md:mt-36">
+              <div className="grid w-full grid-cols-1 mt-8 md:gap-x-8 gap-y-8 md:gap-y-16 sm:grid-cols-2 lg:grid-cols-3 md:mt-36">
                 {modifiedData.map((item) => {
                   return (
                     <div key={item.id}>
