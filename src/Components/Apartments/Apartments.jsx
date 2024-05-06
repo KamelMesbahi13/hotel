@@ -14,8 +14,8 @@ const Boxes = [
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
     title: "F3: Haut standing: Maisons de luxe extraordinaires.",
-    title_en: "F3 High Standing: Extraordinary Luxury Homes.",
-    title_ar: "F3 شقق راقية: منازل فاخرة غير عادية.",
+    title_en: "F3: High Standing: Extraordinary Luxury Homes.",
+    title_ar: "F3 شقق راقية : منازل فاخرة غير عادية.",
   },
 
   {
@@ -25,9 +25,9 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "F3 Modern Luxury Apartments.",
-    title_en: "F3 Modern Luxury Apartments.",
-    title_ar: "شقق F3 الحديثة الفاخرة",
+    title: "F3: Appartements de luxe modernes.",
+    title_en: "F3: Modern Luxury Apartments.",
+    title_ar: "شقق F3 :  الحديثة الفاخرة. ",
   },
 
   {
@@ -37,8 +37,8 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "F2: Modern Comfort Apartments.",
-    title_en: "F2: Appartements de confort moderne.",
+    title: "F2: Appartements de confort moderne.",
+    title_en: "F2: Modern Comfort Apartments",
     title_ar: "F2: شقق عصرية مريحة.",
   },
 
