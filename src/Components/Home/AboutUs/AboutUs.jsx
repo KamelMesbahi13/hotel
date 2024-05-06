@@ -25,7 +25,7 @@ const AboutUs = () => {
               <img src={RoomOne} alt="Chambre 1" />
             </motion.div>
             <motion.div
-              className="relative w-1/2 -z-10 md:right-20 md:top-40"
+              className="relative w-1/2 -z-10 md:rtl:left-20 md:ltr:right-20 md:top-40"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
