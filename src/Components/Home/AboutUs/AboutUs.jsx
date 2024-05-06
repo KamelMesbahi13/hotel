@@ -10,7 +10,7 @@ const AboutUs = () => {
     <div>
       <div className="mt-8 md:mt-36">
         <div className="flex flex-col items-center md:flex-row">
-          <div className="flex flex-row gap-x-4 md:gap-x-0 md:flex-row">
+          <div className="flex flex-row gap-x-4 place-content-center md:gap-x-0 md:flex-row">
             <LazyLoadImage src={RoomOne} className="w-1/2" alt="Chambre 1" />
             <LazyLoadImage
               className="relative w-1/2 -z-10 md:right-20 md:top-40"
