@@ -12,5 +12,9 @@
   "what_we_offer": "Ce que nous offrons",
   "what_we_offer_header": "Découvrez le confort de nos appartements:",
   "apartment_header": "Découvrez le confort et la commodité de nos appartements hôteliers",
-  "apartment_subheader": "Vivre dans le luxe"
+  "apartment_subheader": "Vivre dans le luxe",
+  "required": "Ce champ est obligatoire.",
+  "maxLengthOne": "Longueur maximale : 30 caractères.",
+  "minLengthOne": "Le nom doit comporter plus de 3 caractères.",
+  "email": "Adresse e-mail invalide."
 }

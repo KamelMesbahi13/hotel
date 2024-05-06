@@ -12,8 +12,8 @@ const Home = () => {
         <AboutUs />
         <Mission />
         <Apartments />
-        <ContactUsSection />
       </div>
+      <ContactUsSection />
     </>
   );
 };

@@ -12,5 +12,9 @@
   "what_we_offer": "What we offer",
   "what_we_offer_header": "Explore Our Hotel Apartments' Comfort:",
   "apartment_header": "Discover the Comfort and Convenience of Our Hotel Apartments",
-  "apartment_subheader": "Luxury Living"
+  "apartment_subheader": "Luxury Living",
+  "required": "This field is require.",
+  "maxLengthOne": "Max Length is 30 character.",
+  "minLengthOne": "Name should be more than 3 characters.",
+  "email": "Invalid Email Address."
 }
