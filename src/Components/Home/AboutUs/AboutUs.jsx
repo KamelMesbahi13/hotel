@@ -22,7 +22,11 @@ const AboutUs = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <img src={RoomOne} alt="Chambre 1" />
+              <img
+                className=" h-[15rem] md:h-auto"
+                src={RoomOne}
+                alt="Chambre 1"
+              />
             </motion.div>
             <motion.div
               className="relative w-1/2 -z-10 md:rtl:left-20 md:ltr:right-20 md:top-40"
@@ -35,7 +39,11 @@ const AboutUs = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <img src={RoomTwo} alt="Chambre 2" />
+              <img
+                className=" h-[15rem] md:h-auto"
+                src={RoomTwo}
+                alt="Chambre 2"
+              />
             </motion.div>
           </div>
           <div className="md:w-[60%] mt-8 md:mt-0">
