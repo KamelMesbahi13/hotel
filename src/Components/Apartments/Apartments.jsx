@@ -13,9 +13,9 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "F3 haut standing",
-    title_en: "F3 high standing",
-    title_ar: "مكانة عالية F3",
+    title: "F3 : Haut standing : Maisons de luxe extraordinaires.",
+    title_en: "F3 High Standing: Extraordinary Luxury Homes.",
+    title_ar: "F3 شقق راقية: منازل فاخرة غير عادية.",
   },
 
   {
@@ -25,9 +25,9 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "F3",
-    title_en: "F3",
-    title_ar: "F3",
+    title: "F3 Modern Luxury Apartments",
+    title_en: "F3 Modern Luxury Apartments",
+    title_ar: "شقق F3 الحديثة الفاخرة",
   },
 
   {
@@ -37,9 +37,9 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "F2",
-    title_en: "F2",
-    title_ar: "F2",
+    title: "Modern Comfort Apartments.",
+    title_en: "Appartements de confort moderne.",
+    title_ar: "F2: شقق عصرية مريحة.",
   },
 
   {
@@ -49,9 +49,9 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "Studio",
-    title_en: "Studio",
-    title_ar: "استوديو",
+    title: "Studios : Chambres douillettes et pratiques.",
+    title_en: "Studios: Cozy & Convenient Rooms.",
+    title_ar: "استوديوهات: غرف مريحة وملائمة.",
   },
 ];
 
@@ -109,16 +109,18 @@ const Apartments = () => {
               return (
                 <div key={item.id}>
                   <div>
-                    <div className="w-full">
+                    <div>
                       <img
                         src={item.img}
-                        className="h-[25rem] rounded-xl"
+                        className="h-[25rem] w-full rounded-xl"
                         alt={item.title}
                       />
                     </div>
                     <div>
-                      <div>
-                        <button>{item.button}</button>
+                      <div className="textRight">
+                        <button className="relative px-4 py-2 font-bold duration-300 hover:bg-secondColor hover:-translate-y-2 hover:text-white bg-white border-[10px] rounded-[3rem] bottom-4 border-backgroundColor text-mainColor">
+                          {item.button}
+                        </button>
                       </div>
                       <div>
                         <h6>{item.stats}</h6>
