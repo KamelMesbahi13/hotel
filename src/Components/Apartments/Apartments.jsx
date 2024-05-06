@@ -13,7 +13,7 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "F3 : Haut standing : Maisons de luxe extraordinaires.",
+    title: "F3: Haut standing: Maisons de luxe extraordinaires.",
     title_en: "F3 High Standing: Extraordinary Luxury Homes.",
     title_ar: "F3 شقق راقية: منازل فاخرة غير عادية.",
   },
@@ -25,8 +25,8 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "F3 Modern Luxury Apartments",
-    title_en: "F3 Modern Luxury Apartments",
+    title: "F3 Modern Luxury Apartments.",
+    title_en: "F3 Modern Luxury Apartments.",
     title_ar: "شقق F3 الحديثة الفاخرة",
   },
 
@@ -37,8 +37,8 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "Modern Comfort Apartments.",
-    title_en: "Appartements de confort moderne.",
+    title: "F2: Modern Comfort Apartments.",
+    title_en: "F2: Appartements de confort moderne.",
     title_ar: "F2: شقق عصرية مريحة.",
   },
 
@@ -49,7 +49,7 @@ const Boxes = [
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
-    title: "Studios : Chambres douillettes et pratiques.",
+    title: "Studios: Chambres douillettes et pratiques.",
     title_en: "Studios: Cozy & Convenient Rooms.",
     title_ar: "استوديوهات: غرف مريحة وملائمة.",
   },
@@ -75,8 +75,8 @@ const Apartments = () => {
         id: data.id,
         img: data.img,
         stats: data.stats,
-        button: data.button_fr,
-        title: data.title_fr,
+        button: data.button_en,
+        title: data.title_en,
       };
     }
     return data;
@@ -118,15 +118,17 @@ const Apartments = () => {
                     </div>
                     <div>
                       <div className="textRight">
-                        <button className="relative px-4 py-2 font-bold duration-300 hover:bg-secondColor hover:-translate-y-2 hover:text-white bg-white border-[10px] rounded-[3rem] bottom-4 border-backgroundColor text-mainColor">
+                        <button className="relative cursor-pointer px-4 py-2 font-bold duration-300 hover:bg-secondColor hover:-translate-y-2 hover:text-white bg-white border-[10px] rounded-[3rem] bottom-4 border-backgroundColor text-mainColor">
                           {item.button}
                         </button>
                       </div>
                       <div>
-                        <h6>{item.stats}</h6>
+                        <h1 className="mb-2 text-sm italic font-bold">
+                          {item.stats}
+                        </h1>
                       </div>
                       <div>
-                        <h2>{item.title}</h2>
+                        <h6>{item.title}</h6>
                       </div>
                     </div>
                   </div>
