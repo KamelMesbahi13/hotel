@@ -14,8 +14,8 @@ const Introduction = () => {
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.5 }}
       variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
+        hidden: { opacity: 0, y: -200 },
+        visible: { opacity: 1, y: 0 },
       }}
     >
       <div className="flex flex-col md:flex-row">
