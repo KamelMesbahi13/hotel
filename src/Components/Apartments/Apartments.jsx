@@ -103,15 +103,20 @@ const Apartments = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div className="grid grid-cols-2">
-              {modifiedData.map((item) => {
-                return (
-                  <div key={item.id}>
+
+          <div className="grid w-full grid-cols-1 mt-8 md:gap-x-8 gap-y-8 md:gap-y-16 sm:grid-cols-2 md:mt-36">
+            {modifiedData.map((item) => {
+              return (
+                <div key={item.id}>
+                  <div>
+                    <div className="w-full">
+                      <img
+                        src={item.img}
+                        className="h-[25rem] rounded-xl"
+                        alt={item.title}
+                      />
+                    </div>
                     <div>
-                      <div>
-                        <img src={item.img} alt={item.title} />
-                      </div>
                       <div>
                         <button>{item.button}</button>
                       </div>
@@ -123,9 +128,9 @@ const Apartments = () => {
                       </div>
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
