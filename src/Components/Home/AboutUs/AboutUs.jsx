@@ -5,19 +5,19 @@ import RoomTwo from "../../../assets/RoomTwo.jpg";
 const AboutUs = () => {
   return (
     <div>
-      <div className="mt-36">
+      <div className="mt-8 md:mt-36">
         <div className="flex flex-col items-center md:flex-row">
-          <div className="flex">
-            <LazyLoadImage src={RoomOne} className="w-full" alt="" />
+          <div className="flex flex-row gap-x-4 md:gap-x-0 md:flex-row">
+            <LazyLoadImage src={RoomOne} className="w-full" alt="Chambre 1" />
             <LazyLoadImage
-              className="relative w-full -z-10 right-20 top-40"
+              className="relative w-full -z-10 md:right-20 md:top-40"
               src={RoomTwo}
-              alt=""
+              alt="Chambre 2"
             />
           </div>
-          <div className="w-3/4">
+          <div className="md:w-[60%] mt-8 md:mt-0">
             <h1>Fancy Hotel Rooms</h1>
-            <h2>Comfort and Easy Living</h2>
+            <h2 className="my-4">Comfort and Easy Living</h2>
             <p>
               {" "}
               Our fancy hotel rooms give you the best comfort and easy living.
