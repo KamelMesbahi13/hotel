@@ -19,9 +19,14 @@ const AboutUs = () => {
             />
           </div>
           <div className="md:w-[60%] mt-8 md:mt-0">
-            <h1>{t("about_us_home_header")}</h1>
-            <h2 className="my-4">{t("about_us_home_subheader")}</h2>
-            <p>{t("about_us_home_paragraph")}</p>
+            <div>
+              <h1>{t("about_us_home_header")}</h1>
+              <h2 className="my-4">{t("about_us_home_subheader")}</h2>
+              <p>{t("about_us_home_paragraph")}</p>
+            </div>
+            <div className="mt-8">
+              <button className="button">{t("button_two")}</button>
+            </div>
           </div>
         </div>
       </div>
