@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import RoomOne from "../../assets/RoomSix.jpg";
 import RoomTwo from "../../assets/RoomSeven.jpg";
 import RoomThree from "../../assets/RoomEight.jpg";
@@ -87,7 +87,16 @@ const Apartments = () => {
       <div>
         <div>
           <div className="mt-20 md:mt-36 md:textCenter">
-            <div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 1 },
+              }}
+            >
               <div className="md:w-3/4 md:mx-auto textCenter">
                 <h2 className="mb-2">{t("apartment_subheader")}</h2>
                 <h1 className="mb-4">{t("apartment_header")}</h1>
@@ -101,10 +110,20 @@ const Apartments = () => {
                   <div className="w-8 h-1 md:w-12 bg-secondColor"></div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="grid w-full grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-24">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.9 }}
+            variants={{
+              hidden: { opacity: 0, y: -200 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            className="grid w-full grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-24"
+          >
             {modifiedData.map((item) => {
               return (
                 <div key={item.id}>
@@ -135,7 +154,7 @@ const Apartments = () => {
                 </div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
