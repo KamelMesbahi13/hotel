@@ -1,8 +1,11 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import RoomOne from "../../../assets/RoomOne.jpg";
 import RoomTwo from "../../../assets/RoomTwo.jpg";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="mt-8 md:mt-36">
@@ -16,15 +19,9 @@ const AboutUs = () => {
             />
           </div>
           <div className="md:w-[60%] mt-8 md:mt-0">
-            <h1>Fancy Hotel Rooms</h1>
-            <h2 className="my-4">Comfort and Easy Living</h2>
-            <p>
-              {" "}
-              Our fancy hotel rooms give you the best comfort and easy living.
-              With nice interiors and personal help, everything is made to make
-              your stay great. Enjoy a nice place where we care about your
-              comfort.
-            </p>
+            <h1>{t("about_us_home_header")}</h1>
+            <h2 className="my-4">{t("about_us_home_subheader")}</h2>
+            <p>{t("about_us_home_paragraph")}</p>
           </div>
         </div>
       </div>
