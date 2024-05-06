@@ -20,14 +20,14 @@ const ContactUsSection = () => {
   const inputStyles = `w-full mt-5 rounded-md focus:outline-none bg-grey px-5 py-3`;
 
   return (
-    <div className="mt-36 contactUsBack">
+    <div className="mt-16 md:mt-36 contactUsBack">
       <div>
         <div>
           <div className="container">
-            <div className="relative w-1/2 p-4 bg-white top-36 text-backgroundColor">
+            <div className="relative px-8 pt-8 pb-4 bg-white md:py-12 md:w-1/2 md:top-36 top-24 text-backgroundColor">
               <div>
                 <div>
-                  <h1>Connect with Us</h1>
+                  <h1 className="mb-4">Connect with Us</h1>
                   <p>
                     Got a question, comment, or just want to say hello? Drop us
                     a line! We re here to assist you with anything you need,
@@ -93,8 +93,10 @@ const ContactUsSection = () => {
                       {errors.message.type === "required" && `${t("required")}`}
                     </p>
                   )}
-                  <button className="buttonContactUs">Submit</button>
-                </form>{" "}
+                  <div className="mt-8">
+                    <button className="buttonContactUs">Submit</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
