@@ -155,7 +155,7 @@ const Mission = () => {
               <img
                 className="absolute top-[15rem] hidden md:block left-0 w-[40%]"
                 src={Deco}
-                alt=""
+                alt="Decoration"
               />
             </div>
             <div className="flex flex-col md:flex-row">
