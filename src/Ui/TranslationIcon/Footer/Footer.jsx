@@ -1,10 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { Link as RouterLink } from "react-router-dom";
 import Data from "../../../Data/Data.json";
-import Deco from "../../../assets/DecoFour.png";
 import Logo from "../../../assets/Logo.png";
-
-import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaInstagram, FaTiktok, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   const { i18n } = useTranslation();
@@ -42,8 +41,18 @@ const Footer = () => {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
                 corporis eligendi delectus.
               </p>
-              <p className="my-4 italic font-bold">+213 55 55 55 55</p>
-              <p>Gmail: admin@gmail.com</p>
+              <div className="flex items-center my-4">
+                <i className="mr-3 text-xl text-mainColor">
+                  <FaPhoneAlt />
+                </i>
+                <p className="italic font-bold">+213 55 55 55 55</p>
+              </div>
+              <div className="flex items-center">
+                <i className="mr-3 text-2xl text-mainColor">
+                  <BiLogoGmail />
+                </i>{" "}
+                <p className="italic font-bold">admin@gmail.com</p>
+              </div>
             </div>
             <div className="md:w-1/2 textCenter">
               <h1 className="mb-8">Links</h1>
@@ -60,7 +69,11 @@ const Footer = () => {
               </div>
             </div>
             <div className="md:w-1/4">
-              <h1 className="mb-8">Follow Us</h1>
+              <h1>Follow Us</h1>
+              <p className="my-8">
+                Connect with us on social media for the latest updates, news,
+                and exclusive offers!
+              </p>
               <div className="flex justify-between w-1/2 text-2xl">
                 <i>
                   <FaInstagram />
