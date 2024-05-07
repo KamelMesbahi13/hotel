@@ -17,6 +17,9 @@
   "maxLengthOne": "Longueur maximale : 30 caractères.",
   "minLengthOne": "Le nom doit comporter plus de 3 caractères.",
   "email": "Adresse e-mail invalide.",
-  "Content_Copyright": "Droit D'auteur ",
-  "Content": "Tous les droits sont réservés à"
+  "content_Copyright": "Droit D'auteur ",
+  "content": "Tous les droits sont réservés à",
+  "footer_social_media_header": "Suivez-nous",
+  "footer_social_media_paragraph": "Connectez-vous avec nous sur les médias sociaux pour obtenir les dernières mises à jour, des informations et des offres exclusives !",
+  "footer_links": "Liens"
 }

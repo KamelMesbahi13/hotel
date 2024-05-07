@@ -17,6 +17,9 @@
   "maxLengthOne": "Max Length is 30 character.",
   "minLengthOne": "Name should be more than 3 characters.",
   "email": "Invalid Email Address.",
-  "Content_Copyright": "Copyright",
-  "Content": "All Rights Reserved To"
+  "content_Copyright": "Copyright",
+  "content": "All Rights Reserved To",
+  "footer_social_media_header": "Follow Us",
+  "footer_social_media_paragraph": "Connect with us on social media for the latest updates, news, and exclusive offers!",
+  "footer_links": "Links"
 }

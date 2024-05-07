@@ -71,10 +71,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="pb-8 mt-8 border-b-4 border-secondColor md:w-1/4 md:mt-0 md:pb-0 md:border-b-0">
-              <h1>Follow Us</h1>
+              <h1>{t("footer_social_media_header")}</h1>
               <p className="my-4 md:my-8">
-                Connect with us on social media for the latest updates, news,
-                and exclusive offers!
+                {t("footer_social_media_paragraph")}
               </p>
               <div className="flex justify-between w-1/2 text-2xl">
                 <i className="text-mainColor">
