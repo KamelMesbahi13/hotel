@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Home/Home";
-import Footer from "./Ui/TranslationIcon/Footer/Footer";
+import { lazy, Suspense } from "react";
+const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
+const Home = lazy(() => import("./Components/Home/Home"));
+
+import Footer from "./Ui/Footer/Footer";
 
 const App = () => {
   return (

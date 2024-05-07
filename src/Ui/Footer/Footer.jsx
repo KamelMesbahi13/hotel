@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link as RouterLink } from "react-router-dom";
-import Data from "../../../Data/Data.json";
-import Logo from "../../../assets/Logo.png";
+import Data from "../../Data/Data.json";
+import Logo from "../../assets/Logo.png";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaInstagram, FaTiktok, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 
