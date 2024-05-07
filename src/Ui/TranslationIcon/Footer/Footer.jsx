@@ -32,11 +32,11 @@ const Footer = () => {
   });
   return (
     <div>
-      <div className="bg-white text-backgroundColor w-full h-[40rem]">
-        <div className="container pb-8 border-b-4 border-mainColor">
-          <div className="flex flex-col pt-28 md:flex-row">
-            <div className="md:w-1/4">
-              <h1 className="mb-8">Contact</h1>
+      <div className="w-full bg-white text-backgroundColor">
+        <div className="container pb-4 md:border-b-4 md:pb-8 md:border-mainColor">
+          <div className="flex flex-col pt-12 md:pt-28 md:flex-row">
+            <div className="pb-8 border-b-4 border-secondColor md:pb-0 md:border-b-0 md:w-1/4">
+              <h1 className="mb-4 md:mb-8">Contact</h1>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
                 corporis eligendi delectus.
@@ -54,9 +54,9 @@ const Footer = () => {
                 <p className="italic font-bold">admin@gmail.com</p>
               </div>
             </div>
-            <div className="md:w-1/2 textCenter">
-              <h1 className="mb-8">Links</h1>
-              <div className="flex flex-col gap-8">
+            <div className="pb-8 border-b-4 border-secondColor md:w-1/2 md:text-center md:pb-0 md:border-b-0">
+              <h1 className="mt-8 mb-4 md:mb-8 md:mt-0">Links</h1>
+              <div className="flex flex-row gap-8 md:flex-col">
                 <RouterLink to="/">
                   {modifiedDataNav.map((el) => el.ItemOne)}
                 </RouterLink>
@@ -68,26 +68,26 @@ const Footer = () => {
                 </RouterLink>
               </div>
             </div>
-            <div className="md:w-1/4">
+            <div className="pb-8 mt-8 border-b-4 border-secondColor md:w-1/4 md:mt-0 md:pb-0 md:border-b-0">
               <h1>Follow Us</h1>
-              <p className="my-8">
+              <p className="my-4 md:my-8">
                 Connect with us on social media for the latest updates, news,
                 and exclusive offers!
               </p>
               <div className="flex justify-between w-1/2 text-2xl">
-                <i>
+                <i className="text-mainColor">
                   <FaInstagram />
                 </i>
-                <i>
+                <i className="text-mainColor">
                   <FaFacebook />
                 </i>
-                <i>
+                <i className="text-mainColor">
                   <FaTiktok />
                 </i>
               </div>
             </div>
           </div>
-          <div className="mt-24 textCenter">
+          <div className="md:mt-24 mt-14 textCenter">
             <img className="w-40" src={Logo} alt="" />
           </div>
         </div>
