@@ -8,6 +8,7 @@ import { FaInstagram, FaTiktok, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 const Footer = () => {
   const { i18n } = useTranslation();
   const year = new Date().getFullYear();
+  const { t } = useTranslation();
 
   const modifiedDataNav = Data.navbarItems.map((data) => {
     if (i18n.language === "ar") {
@@ -94,8 +95,10 @@ const Footer = () => {
           <div>
             <div className="w-full h-2 mt-8 bg-mainColor"></div>
           </div>
-          <div>
-            <span>&#169; {year} All reserved to Hotel Zidane</span>
+          <div className="textRight">
+            <p className="mt-4 italic font-bold">
+              {t("Content_Copyright")} &#169; {year} {t("Content")} Hotel Zidane
+            </p>
           </div>
         </div>
       </div>
