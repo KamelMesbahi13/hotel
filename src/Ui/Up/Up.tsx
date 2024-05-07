@@ -30,7 +30,7 @@ const Up = () => {
       }
     >
       <div className="container">
-        <div className="relative float-right w-12 h-12 duration-500 ease-in rounded-full shadow-xl cursor-pointer hover:bg-hoverColor bg-mainColor">
+        <div className="relative float-right w-12 h-12 duration-500 ease-in rounded-full shadow-xl cursor-pointer hover:bg-thirdColor bg-mainColor">
           <Link smooth={true} offset={0} duration={900} to="nav">
             <AiFillCaretUp className="absolute text-4xl text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
           </Link>
