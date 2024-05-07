@@ -159,6 +159,14 @@
   height: 50rem;
 }
 
+.aboutUsBack {
+  background-image: url(../src/assets/AboutUsBack.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40rem;
+}
+
 @layer components {
   body {
     @apply bg-backgroundColor text-textColor font-main h-[1000rem];
