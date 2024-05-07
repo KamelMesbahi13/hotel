@@ -5,7 +5,7 @@ const BestApartments = () => {
     <div>
       <div className="mt-12 md:mt-36">
         <div className="flex flex-col justify-between md:flex-row">
-          <div className="md:mt-24 md:mt-0 md:w-1/2">
+          <div className="mt-0 md:mt-24 md:w-1/2">
             <h2>Luxury property</h2>
             <h1 className="my-4">
               We offer the best hotel apartments in the city.
