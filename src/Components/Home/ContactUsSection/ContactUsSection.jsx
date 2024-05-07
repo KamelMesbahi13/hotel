@@ -27,13 +27,8 @@ const ContactUsSection = () => {
             <div className="relative px-8 pt-8 pb-4 bg-white md:py-12 md:w-1/2 md:top-36 top-24 text-backgroundColor">
               <div>
                 <div>
-                  <h1 className="mb-4">Connect with Us</h1>
-                  <p>
-                    Got a question, comment, or just want to say hello? Drop us
-                    a line! We re here to assist you with anything you need,
-                    from booking inquiries to special requests. Your
-                    satisfaction is our priority.
-                  </p>
+                  <h1 className="mb-4">{t("contact_us_section_header")}</h1>
+                  <p>{t("contact_us_section_paragraph")}</p>
                 </div>
                 <form
                   target="_blank"

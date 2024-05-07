@@ -17,6 +17,8 @@
   "maxLengthOne": "Longueur maximale : 30 caractères.",
   "minLengthOne": "Le nom doit comporter plus de 3 caractères.",
   "email": "Adresse e-mail invalide.",
+  "contact_us_section_header": "Connectez-vous avec nous",
+  "contact_us_section_paragraph": "Vous avez une question, un commentaire ou vous voulez simplement dire bonjour ? N'hésitez pas à nous contacter ! Nous sommes là pour vous aider, qu'il s'agisse de réservations ou de demandes spéciales. Votre satisfaction est notre priorité.",
   "content_Copyright": "Droit D'auteur ",
   "content": "Tous les droits sont réservés à",
   "footer_social_media_header": "Suivez-nous",

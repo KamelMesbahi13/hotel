@@ -38,18 +38,15 @@ const Footer = () => {
         <div className="container pb-4 md:pb-8 ">
           <div className="flex flex-col pt-12 md:pt-28 md:flex-row">
             <div className="pb-8 border-b-4 border-secondColor md:pb-0 md:border-b-0 md:w-1/4">
-              <h1 className="mb-4 md:mb-8"> {t("footer_contact_us_header")}</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-                corporis eligendi delectus.
-              </p>
-              <div className="flex items-center my-4">
+              <h1 className="mb-4 md:mb-8">{t("footer_contact_us_header")}</h1>
+              <p>{t("footer_contact_us_paragraph")}</p>
+              <div className="flex items-center my-4 initialDirection">
                 <i className="mr-3 text-xl text-mainColor">
                   <FaPhoneAlt />
                 </i>
                 <p className="italic font-bold">+213 55 55 55 55</p>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center initialDirection">
                 <i className="mr-3 text-2xl text-mainColor">
                   <BiLogoGmail />
                 </i>{" "}
@@ -99,7 +96,7 @@ const Footer = () => {
           </div>
           <div className="textRight">
             <p className="mt-4 italic font-bold">
-              {t("Content_Copyright")} &#169; {year} {t("Content")} Hotel Zidane
+              {t("content_Copyright")} &#169; {year} {t("content")} Hotel Zidane
             </p>
           </div>
         </div>
