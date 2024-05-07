@@ -16,5 +16,7 @@
   "required": "Ce champ est obligatoire.",
   "maxLengthOne": "Longueur maximale : 30 caractères.",
   "minLengthOne": "Le nom doit comporter plus de 3 caractères.",
-  "email": "Adresse e-mail invalide."
+  "email": "Adresse e-mail invalide.",
+  "Content_Copyright_fr": "Droit D'auteur ",
+  "Content_fr": "Tous les droits sont réservés à"
 }

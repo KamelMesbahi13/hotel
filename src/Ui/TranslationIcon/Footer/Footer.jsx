@@ -7,6 +7,7 @@ import { FaInstagram, FaTiktok, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   const { i18n } = useTranslation();
+  const year = new Date().getFullYear();
 
   const modifiedDataNav = Data.navbarItems.map((data) => {
     if (i18n.language === "ar") {
@@ -33,7 +34,7 @@ const Footer = () => {
   return (
     <div>
       <div className="w-full bg-white text-backgroundColor">
-        <div className="container pb-4 md:border-b-4 md:pb-8 md:border-mainColor">
+        <div className="container pb-4 md:pb-8 ">
           <div className="flex flex-col pt-12 md:pt-28 md:flex-row">
             <div className="pb-8 border-b-4 border-secondColor md:pb-0 md:border-b-0 md:w-1/4">
               <h1 className="mb-4 md:mb-8">Contact</h1>
@@ -89,6 +90,12 @@ const Footer = () => {
           </div>
           <div className="md:mt-24 mt-14 textCenter">
             <img className="w-40" src={Logo} alt="" />
+          </div>
+          <div>
+            <div className="w-full h-2 mt-8 bg-mainColor"></div>
+          </div>
+          <div>
+            <span>&#169; {year} All reserved to Hotel Zidane</span>
           </div>
         </div>
       </div>

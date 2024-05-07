@@ -16,5 +16,7 @@
   "required": "This field is require.",
   "maxLengthOne": "Max Length is 30 character.",
   "minLengthOne": "Name should be more than 3 characters.",
-  "email": "Invalid Email Address."
+  "email": "Invalid Email Address.",
+  "Content_Copyright": "Copyright",
+  "Content": "All Rights Reserved To"
 }
