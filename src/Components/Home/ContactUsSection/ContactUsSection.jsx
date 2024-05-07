@@ -89,7 +89,9 @@ const ContactUsSection = () => {
                     </p>
                   )}
                   <div className="mt-8">
-                    <button className="buttonContactUs">Submit</button>
+                    <button className="buttonContactUs">
+                      {t("button_three")}
+                    </button>
                   </div>
                 </form>
               </div>
