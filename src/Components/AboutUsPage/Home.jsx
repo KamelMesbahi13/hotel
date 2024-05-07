@@ -1,3 +1,4 @@
+import BestApartments from "./BestApartments/BestApartments";
 import Header from "./Header/Header";
 
 const Home = () => {
@@ -6,6 +7,9 @@ const Home = () => {
       <div>
         <div>
           <Header />
+        </div>
+        <div className="container">
+          <BestApartments />
         </div>
       </div>
     </div>
