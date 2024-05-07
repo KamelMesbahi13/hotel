@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const ContactUsSection = () => {
   const { t } = useTranslation();
@@ -24,7 +25,17 @@ const ContactUsSection = () => {
       <div>
         <div>
           <div className="container">
-            <div className="relative px-8 pt-8 pb-4 bg-white md:py-12 md:w-1/2 md:top-36 top-24 text-backgroundColor">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.9 }}
+              variants={{
+                hidden: { opacity: 0, y: -200 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className="relative px-8 pt-8 pb-4 bg-white md:py-12 md:w-1/2 md:top-36 top-24 text-backgroundColor"
+            >
               <div>
                 <div>
                   <h1 className="mb-4">{t("contact_us_section_header")}</h1>
@@ -95,7 +106,7 @@ const ContactUsSection = () => {
                   </div>
                 </form>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
