@@ -32,10 +32,10 @@ const Footer = () => {
   return (
     <div>
       <div className="bg-white text-backgroundColor w-full h-[30rem]">
-        <div className="container border-b">
-          <div className="flex flex-col md:flex-row">
+        <div className="container pb-8 border-b">
+          <div className="flex flex-col pt-8 md:flex-row">
             <div className="md:w-1/4">
-              <h1>Contact</h1>
+              <h1 className="mb-4">Contact</h1>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
                 corporis eligendi delectus.
@@ -44,22 +44,22 @@ const Footer = () => {
               <p>Gmail: admin@gmail.com</p>
             </div>
             <div className="md:w-1/2 textCenter">
-              <h1>Links</h1>
+              <h1 className="mb-4">Links</h1>
               <div className="flex flex-col gap-8">
-                <RouterLink className="link linkColor" to="/">
+                <RouterLink to="/">
                   {modifiedDataNav.map((el) => el.ItemOne)}
                 </RouterLink>
-                <RouterLink className="link linkColor" to="/">
+                <RouterLink to="/">
                   {modifiedDataNav.map((el) => el.ItemTwo)}
                 </RouterLink>
-                <RouterLink className="link linkColor" to="/">
+                <RouterLink to="/">
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </RouterLink>
               </div>
             </div>
             <div className="md:w-1/4">
-              <h1>Follow Us</h1>
-              <div className="flex">
+              <h1 className="mb-4">Follow Us</h1>
+              <div className="flex justify-between w-1/4">
                 <i>
                   <FaInstagram />
                 </i>
