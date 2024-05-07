@@ -39,7 +39,7 @@ const ContactUsSection = () => {
                 >
                   <input
                     type="text"
-                    placeholder="Name"
+                    placeholder={t("form_name")}
                     className={inputStyles}
                     {...register("name", {
                       required: true,
@@ -59,7 +59,7 @@ const ContactUsSection = () => {
                   )}
                   <input
                     type="text"
-                    placeholder="Email"
+                    placeholder={t("form_email")}
                     className={inputStyles}
                     {...register("email", {
                       required: true,
@@ -73,7 +73,7 @@ const ContactUsSection = () => {
                     </p>
                   )}
                   <textarea
-                    placeholder="Message"
+                    placeholder={t("form_message")}
                     className={inputStyles}
                     rows={4}
                     cols={50}

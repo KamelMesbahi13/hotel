@@ -25,5 +25,8 @@
   "footer_social_media_paragraph": "تواصل معنا على وسائل التواصل الاجتماعي للحصول على آخر التحديثات والأخبار والعروض الحصرية!",
   "footer_links": "الروابط",
   "footer_contact_us_header": "اتصل بنا",
-  "footer_contact_us_paragraph": "لا تتردد في التواصل معنا لأي استفسارات أو أسئلة. نحن هنا لمساعدتك!"
+  "footer_contact_us_paragraph": "لا تتردد في التواصل معنا لأي استفسارات أو أسئلة. نحن هنا لمساعدتك!",
+  "form_name": "الاسم",
+  "form_email": "البريد الإلكتروني",
+  "form_message": "الرسالة"
 }
