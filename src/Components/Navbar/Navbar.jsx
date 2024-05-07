@@ -56,7 +56,7 @@ const Navbar = () => {
                   <RouterLink className="link linkColor" to="/">
                     {modifiedDataNav.map((el) => el.ItemOne)}
                   </RouterLink>
-                  <RouterLink className="link linkColor" to="/">
+                  <RouterLink className="link linkColor" to="/about-us">
                     {modifiedDataNav.map((el) => el.ItemTwo)}
                   </RouterLink>
                   <RouterLink className="link linkColor" to="/">

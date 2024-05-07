@@ -5,6 +5,7 @@ const Home = lazy(() => import("./Components/Home/Home"));
 const Footer = lazy(() => import("./Ui/Footer/Footer"));
 import Loader from "./Ui/Loader/Loader";
 import Up from "./Ui/Up/Up";
+import AboutUsPage from "./Components/AboutUsPage/Home";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUsPage />} />
           </Routes>
           <Up />
           <Footer />
