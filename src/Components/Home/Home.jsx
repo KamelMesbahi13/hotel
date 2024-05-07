@@ -1,9 +1,12 @@
-import Introduction from "./Introduction/Introduction";
-import AboutUs from "./AboutUs/AboutUs";
-import Mission from "./Misson/Mission";
-import Apartments from "./Apartments/Apartments";
-import ContactUsSection from "./ContactUsSection/ContactUsSection";
-import FindUs from "./FindUs/FindUs";
+import { lazy } from "react";
+const Introduction = lazy(() => import("./Introduction/Introduction"));
+const AboutUs = lazy(() => import("./AboutUs/AboutUs"));
+const Mission = lazy(() => import("./Misson/Mission"));
+const Apartments = lazy(() => import("./Apartments/Apartments"));
+const ContactUsSection = lazy(() =>
+  import("./ContactUsSection/ContactUsSection")
+);
+const FindUs = lazy(() => import("./FindUs/FindUs"));
 
 const Home = () => {
   return (
