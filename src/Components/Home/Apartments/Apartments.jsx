@@ -4,6 +4,7 @@ import RoomOne from "../../../assets/RoomSix.webp";
 import RoomTwo from "../../../assets/RoomSeven.webp";
 import RoomThree from "../../../assets/RoomEight.webp";
 import RoomFour from "../../../assets/RoomNine.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Boxes = [
   {
@@ -129,7 +130,7 @@ const Apartments = () => {
                 <div key={item.id}>
                   <div>
                     <div className="overflow-hidden">
-                      <img
+                      <LazyLoadImage
                         src={item.img}
                         className="h-[15rem] duration-500 hover:scale-105 sm:h-[20rem] md:h-[25rem] w-full rounded-xl"
                         alt={item.title}

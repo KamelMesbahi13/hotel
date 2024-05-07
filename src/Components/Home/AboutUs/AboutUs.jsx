@@ -2,6 +2,7 @@ import RoomOne from "../../../assets/RoomFive.webp";
 import RoomTwo from "../../../assets/RoomFour.webp";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -22,7 +23,7 @@ const AboutUs = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <img
+              <LazyLoadImage
                 className=" h-[15rem] md:h-auto"
                 src={RoomOne}
                 alt="Chambre 1"
@@ -39,7 +40,7 @@ const AboutUs = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <img
+              <LazyLoadImage
                 className=" h-[15rem] md:h-auto"
                 src={RoomTwo}
                 alt="Chambre 2"
