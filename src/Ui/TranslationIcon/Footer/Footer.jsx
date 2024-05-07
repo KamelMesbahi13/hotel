@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="container pb-4 md:pb-8 ">
           <div className="flex flex-col pt-12 md:pt-28 md:flex-row">
             <div className="pb-8 border-b-4 border-secondColor md:pb-0 md:border-b-0 md:w-1/4">
-              <h1 className="mb-4 md:mb-8">Contact</h1>
+              <h1 className="mb-4 md:mb-8"> {t("footer_contact_us_header")}</h1>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
                 corporis eligendi delectus.
@@ -57,7 +57,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="pb-8 border-b-4 border-secondColor md:w-1/2 md:text-center md:pb-0 md:border-b-0">
-              <h1 className="mt-8 mb-4 md:mb-8 md:mt-0">Links</h1>
+              <h1 className="mt-8 mb-4 md:mb-8 md:mt-0">
+                {" "}
+                {t("footer_links")}
+              </h1>
               <div className="flex flex-row gap-8 md:flex-col">
                 <RouterLink to="/">
                   {modifiedDataNav.map((el) => el.ItemOne)}
