@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import Hotel from "../../../assets/HotelOne.jpg";
+import Hotel from "../../../assets/HotelOne.webp";
 import { useTranslation } from "react-i18next";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";

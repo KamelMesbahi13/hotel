@@ -1,5 +1,5 @@
-import RoomOne from "../../../assets/RoomFive.jpg";
-import RoomTwo from "../../../assets/RoomFour.jpg";
+import RoomOne from "../../../assets/RoomFive.webp";
+import RoomTwo from "../../../assets/RoomFour.webp";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
