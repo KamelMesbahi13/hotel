@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link as RouterLink } from "react-router-dom";
 import Data from "../../../Data/Data.json";
 import Deco from "../../../assets/DecoFour.png";
+import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   const { i18n } = useTranslation();
@@ -30,10 +31,10 @@ const Footer = () => {
   });
   return (
     <div>
-      <div className="bg-white w-full h-[30rem]">
-        <div>
-          <div className="flex">
-            <div>
+      <div className="bg-white text-backgroundColor w-full h-[30rem]">
+        <div className="container border-b">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-1/4">
               <h1>Contact</h1>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
@@ -42,7 +43,7 @@ const Footer = () => {
               <p>+213 55 55 55 55</p>
               <p>Gmail: admin@gmail.com</p>
             </div>
-            <div>
+            <div className="md:w-1/2 textCenter">
               <h1>Links</h1>
               <div className="flex flex-col gap-8">
                 <RouterLink className="link linkColor" to="/">
@@ -54,6 +55,20 @@ const Footer = () => {
                 <RouterLink className="link linkColor" to="/">
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </RouterLink>
+              </div>
+            </div>
+            <div className="md:w-1/4">
+              <h1>Follow Us</h1>
+              <div className="flex">
+                <i>
+                  <FaInstagram />
+                </i>
+                <i>
+                  <FaFacebook />
+                </i>
+                <i>
+                  <FaTiktok />
+                </i>
               </div>
             </div>
           </div>

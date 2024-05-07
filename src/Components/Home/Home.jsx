@@ -3,7 +3,6 @@ import AboutUs from "./AboutUs/AboutUs";
 import Mission from "./Misson/Mission";
 import Apartments from "./Apartments/Apartments";
 import ContactUsSection from "./ContactUsSection/ContactUsSection";
-import Footer from "../../Ui/TranslationIcon/Footer/Footer";
 
 const Home = () => {
   return (
@@ -15,7 +14,6 @@ const Home = () => {
         <Apartments />
       </div>
       <ContactUsSection />
-      <Footer />
     </>
   );
 };
