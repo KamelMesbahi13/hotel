@@ -9,14 +9,9 @@ const FindUs = () => {
         <div className="md:mt-36">
           <div className="flex flex-col md:justify-between md:flex-row">
             <div className="w-full md:w-[40%] mb-8 md:mb-0 mt-20">
-              <h1 className="mb-8">How To Find Us</h1>
-              <p>
-                Embark on a journey to Boumerdès and discover Hotel Zidane, your
-                home away from home. Nestled in this beautiful state, our hotel
-                apartment awaits to provide you with a memorable stay. Let us
-                guide you with directions and ensure your visit to Hotel Zidane
-                in Boumerdès is a delightful experience.
-              </p>
+              <h2 className="mb-2">{t("find_us_subheader")}</h2>
+              <h1 className="mb-8">{t("find_us_header")}</h1>
+              <p>{t("find_us_paragraph")}</p>
             </div>
             <div className="textCenter md:initialDirection">
               <iframe
