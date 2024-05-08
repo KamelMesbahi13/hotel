@@ -17,7 +17,7 @@ const Faq = () => {
   const AccordionItem = ({ id, title, isOpen, onClick, children }) => {
     return (
       <div>
-        <h2 id={id}>
+        <h6 id={id}>
           <button
             type="button"
             className="flex justify-between gap-3 py-5"
@@ -37,7 +37,7 @@ const Faq = () => {
               </i>
             )}
           </button>
-        </h2>
+        </h6>
         <div id={`${id}-body`} className={`${isOpen ? "" : "hidden"} py-5`}>
           {children}
         </div>
