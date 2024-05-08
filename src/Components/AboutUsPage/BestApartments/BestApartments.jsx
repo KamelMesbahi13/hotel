@@ -5,7 +5,7 @@ const BestApartments = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="bestApartmentsBack">
       <div className="mt-12 lg:mt-36">
         <div className="flex flex-col justify-between lg:flex-row">
           <div className="mt-0 lg:mt-24 lg:w-1/2 lg:ltr:mr-8">
