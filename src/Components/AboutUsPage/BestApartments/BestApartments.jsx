@@ -8,7 +8,7 @@ const BestApartments = () => {
     <div>
       <div className="mt-12 md:mt-36">
         <div className="flex flex-col justify-between md:flex-row">
-          <div className="mt-0 md:mt-24 md:w-1/2">
+          <div className="mt-0 md:mt-24 md:w-1/2 md:ltr:mr-8">
             <h2>{t("best_apartments_subheader")}</h2>
             <h1 className="my-4">{t("best_apartments_header")} </h1>
             <p>{t("best_apartments_paragraph")}</p>
