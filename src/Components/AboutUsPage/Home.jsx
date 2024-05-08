@@ -1,4 +1,5 @@
 import BestApartments from "./BestApartments/BestApartments";
+import Faq from "./Faq/Faq";
 import Header from "./Header/Header";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         </div>
         <div className="container">
           <BestApartments />
+          <Faq />
         </div>
       </div>
     </div>
