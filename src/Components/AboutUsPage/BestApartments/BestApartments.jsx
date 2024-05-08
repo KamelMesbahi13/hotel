@@ -19,7 +19,7 @@ const BestApartments = () => {
                 <img src={Deco} alt="Deco" />
               </div>
               <div className="hidden lg:block">
-                <div className="-z-10 bg-secondColor relative bottom-[29rem] h-[27rem] w-[30rem]"></div>
+                <div className="-z-10 bg-secondColor relative bottom-[29rem] h-[27rem] w-[27rem]"></div>
               </div>
             </div>
           </div>
