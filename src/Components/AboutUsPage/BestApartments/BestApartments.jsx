@@ -11,9 +11,10 @@ const BestApartments = () => {
               We offer the best hotel apartments in the city.
             </h1>
             <p>
-              Check out our fancy hotel apartments for a comfy and luxurious
-              stay, whether you re here for work or play. Get ready for some
-              top-notch hospitality!
+              Discover our fancy hotel apartments for a cozy and luxurious stay,
+              whether you re here for work or fun. Our rooms are comfy, our
+              amenities are modern, and our vibe is friendly. Get ready for
+              awesome hospitality and make great memories with us!
             </p>
           </div>
           <div className="mt-8 md:mt-0">
