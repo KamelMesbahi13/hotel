@@ -4,7 +4,7 @@ const Header = () => {
       <div>
         <div className="relative aboutUsBack">
           <div className="absolute -translate-y-1/2 top-1/2">
-            <div className="w-3/4 px-16">
+            <div className="px-16 md:w-3/4">
               <h1>Get to Know Us: Your Hotel Apartment Destination</h1>
             </div>
           </div>
