@@ -1,10 +1,8 @@
 import Data from "../../../Data/Data.json";
 import { useState } from "react";
-import Down from "../../../assets/DownArrow.png";
-import Up from "../../../assets/UpArrow.png";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useTranslation } from "react-i18next";
 
 const Faq = () => {
@@ -22,7 +20,7 @@ const Faq = () => {
         <h2 id={id}>
           <button
             type="button"
-            className="flex items-center justify-between gap-3 py-5"
+            className="flex justify-between gap-3 py-5"
             aria-expanded={isOpen ? "true" : "false"}
             aria-controls={id}
             onClick={onClick}
@@ -30,17 +28,17 @@ const Faq = () => {
             <p className="text-xl text-start">{title}</p>
 
             {isOpen ? (
-              <LazyLoadImage
-                className="w-10 h-10"
-                src={Down}
-                alt="Down Arrow"
-              />
+              <i className="text-4xl text-thirdColor">
+                <IoIosArrowDown />
+              </i>
             ) : (
-              <LazyLoadImage className="w-10 h-10" src={Up} alt="Up Arrow" />
+              <i className="text-4xl text-thirdColor">
+                <IoIosArrowUp />
+              </i>
             )}
           </button>
         </h2>
-        <div id={`${id}-body`} className={`${isOpen ? "" : "hidden"} p-5`}>
+        <div id={`${id}-body`} className={`${isOpen ? "" : "hidden"} py-5`}>
           {children}
         </div>
       </div>
