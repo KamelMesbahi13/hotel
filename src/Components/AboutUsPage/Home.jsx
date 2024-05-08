@@ -1,7 +1,8 @@
-import Stats from "../Home/AboutUs/Stats/Stats";
+// import Stats from "../Home/AboutUs/Stats/Stats";
 import BestApartments from "./BestApartments/BestApartments";
-import Faq from "./Faq/Faq";
+// import Faq from "./Faq/Faq";
 import Header from "./Header/Header";
+import WhatWeOffer from "./WhatWeOffer/WhatWeOffer";
 
 const Home = () => {
   return (
@@ -12,9 +13,10 @@ const Home = () => {
         </div>
         <div className="container">
           <BestApartments />
-          <Faq />
+          <WhatWeOffer />
+          {/* <Faq /> */}
         </div>
-        <Stats />
+        {/* <Stats /> */}
       </div>
     </div>
   );
