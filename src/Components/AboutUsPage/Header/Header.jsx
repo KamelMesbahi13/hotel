@@ -1,11 +1,15 @@
+import { useTranslation } from "react-i18next";
+
 const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div>
         <div className="relative aboutUsBack">
           <div className="absolute -translate-y-1/2 top-1/2">
             <div className="px-16 md:w-3/4">
-              <h1>Get to Know Us: Your Hotel Apartment Destination</h1>
+              <h1>{t("about_us_page_header_header")}</h1>
             </div>
           </div>
         </div>
