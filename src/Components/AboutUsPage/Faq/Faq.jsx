@@ -90,6 +90,7 @@ const Faq = () => {
       </div>
     );
   });
+  const { t } = useTranslation();
 
   return (
     <motion.div
@@ -107,15 +108,9 @@ const Faq = () => {
       <div className="flex flex-col mt-28 md:flex-row">
         <div>
           <div className="md:ltr:mr-12 md:rtl:ml-12">
-            <h2>Frequently Asked Questions</h2>
-            <h1 className="my-4">
-              Explore answers to common queries about our hotel apartments.
-            </h1>
-            <p>
-              Welcome to our FAQ section, where we address some of the most
-              commonly asked questions about our hotel apartments. If you have
-              any other queries, feel free to reach out to us directly.
-            </p>
+            <h2>{t("best_apartments_paragraph")}</h2>
+            <h1 className="my-4">{t("best_apartments_paragraph")}</h1>
+            <p>{t("faq_paragraph")}</p>
           </div>
         </div>
         <div className="w-full">
