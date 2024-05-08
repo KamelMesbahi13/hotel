@@ -103,13 +103,13 @@ const Faq = () => {
         visible: { opacity: 1 },
       }}
       id="accordion-collapse"
-      className="py-8 mb-20 text-white divide-y"
+      className="mt-48 divide-y"
     >
       <div className="flex flex-col mt-28 md:flex-row">
         <div>
-          <div className="md:ltr:mr-12 md:rtl:ml-12">
-            <h2>{t("best_apartments_paragraph")}</h2>
-            <h1 className="my-4">{t("best_apartments_paragraph")}</h1>
+          <div className="md:ltr:mr-12 md:rtl:ml-48">
+            <h2>{t("faq_subheader")}</h2>
+            <h1 className="my-4">{t("faq_header")}</h1>
             <p>{t("faq_paragraph")}</p>
           </div>
         </div>
