@@ -1,3 +1,4 @@
+import Stats from "../Home/AboutUs/Stats/Stats";
 import BestApartments from "./BestApartments/BestApartments";
 import Faq from "./Faq/Faq";
 import Header from "./Header/Header";
@@ -13,6 +14,7 @@ const Home = () => {
           <BestApartments />
           <Faq />
         </div>
+        <Stats />
       </div>
     </div>
   );

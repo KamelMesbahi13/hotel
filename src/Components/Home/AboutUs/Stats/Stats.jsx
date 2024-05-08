@@ -19,74 +19,57 @@ const Stats = () => {
   return (
     <>
       <ScrollTrigger onEnter={setCounterOnEnter} onExit={setCounterOnExit}>
-        <div className="bg-gray-color">
+        <div className="bg-grey text-backgroundColor">
           <div className="container">
             <div className="flex flex-wrap justify-between gap-12 py-16 mt-12 text-center lg:gap-x-32 place-items-center">
               <div>
                 <h6>
-                  {t("students")} <br />
+                  {t("f3_apartments_high_standing")} <br />
                 </h6>
                 <div className="flex items-center justify-center">
-                  <span className="font-bold text-second-color">+</span>
+                  <span className="text-2xl font-bold text-secondColor">+</span>
                   <h1>
                     {counterOn && (
-                      <CountUp start={0} end={349} duration={3} delay={0} />
+                      <CountUp start={0} end={10} duration={3} delay={0} />
                     )}
                   </h1>
                 </div>
               </div>
-
               <div>
                 <h6>
-                  {t("courses")} <br />
+                  {t("f3_apartments")} <br />
                 </h6>
                 <div className="flex items-center justify-center">
-                  <span className="font-bold text-second-color">+</span>
+                  <span className="text-2xl font-bold text-secondColor">+</span>
                   <h1>
                     {counterOn && (
-                      <CountUp start={0} end={253} duration={3} delay={0} />
+                      <CountUp start={0} end={19} duration={3} delay={0} />
                     )}
                   </h1>
                 </div>
               </div>
-
               <div>
                 <h6>
-                  {t("teachers")} <br />
+                  {t("f2_apartments")} <br />
                 </h6>
                 <div className="flex items-center justify-center">
-                  <span className="font-bold text-second-color">+</span>
+                  <span className="text-2xl font-bold text-secondColor">+</span>
                   <h1>
                     {counterOn && (
-                      <CountUp start={0} end={27} duration={3} delay={0} />
+                      <CountUp start={0} end={8} duration={3} delay={0} />
                     )}
                   </h1>
                 </div>
               </div>
-
               <div>
                 <h6>
-                  {t("videos")} <br />
+                  {t("studios")} <br />
                 </h6>
                 <div className="flex items-center justify-center">
-                  <span className="font-bold text-second-color">+</span>
+                  <span className="text-2xl font-bold text-secondColor">+</span>
                   <h1>
                     {counterOn && (
-                      <CountUp start={0} end={239} duration={3} delay={0} />
-                    )}
-                  </h1>
-                </div>
-              </div>
-
-              <div>
-                <h6>
-                  {t("corrected")} <br />
-                </h6>
-                <div className="flex items-center justify-center">
-                  <span className="font-bold text-second-color">+</span>
-                  <h1>
-                    {counterOn && (
-                      <CountUp start={0} end={105} duration={3} delay={0} />
+                      <CountUp start={0} end={9} duration={3} delay={0} />
                     )}
                   </h1>
                 </div>
