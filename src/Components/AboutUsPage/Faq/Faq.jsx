@@ -103,7 +103,7 @@ const Faq = () => {
         visible: { opacity: 1 },
       }}
       id="accordion-collapse"
-      className="mt-24 divide-y"
+      className="mt-24 divide-y faqBack"
     >
       <div className="flex flex-col mt-28 md:flex-row">
         <div>
