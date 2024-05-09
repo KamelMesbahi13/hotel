@@ -54,7 +54,7 @@ export default function App() {
           slidesPerView={slidesPerView}
           grabCursor={true}
           spaceBetween={30}
-          className="mySwiper"
+          className="mySwiper initialDirection"
         >
           {Imgs.map((item) => {
             return (

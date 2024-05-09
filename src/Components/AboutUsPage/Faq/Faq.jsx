@@ -105,7 +105,7 @@ const Faq = () => {
       id="accordion-collapse"
       className="mt-24 divide-y faqBack"
     >
-      <div className="flex flex-col mt-28 md:flex-row">
+      <div className="container flex flex-col mt-28 md:flex-row">
         <div>
           <div className="md:ltr:mr-12 md:rtl:ml-48">
             <h2>{t("faq_subheader")}</h2>
