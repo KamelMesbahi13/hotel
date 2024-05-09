@@ -33,12 +33,12 @@ const Imgs = [
 
 export default function App() {
   const [slidesPerView, setSlidesPerView] = useState(
-    window.innerWidth < 768 ? 1 : 3
+    window.innerWidth < 768 ? 1 : 2.5
   );
 
   useEffect(() => {
     const handleResize = () => {
-      setSlidesPerView(window.innerWidth < 768 ? 1 : 3);
+      setSlidesPerView(window.innerWidth < 768 ? 1 : 2.5);
     };
 
     window.addEventListener("resize", handleResize);
