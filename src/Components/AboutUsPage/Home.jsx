@@ -1,8 +1,8 @@
-import Stats from "../Home/AboutUs/Stats/Stats";
 import BestApartments from "./BestApartments/BestApartments";
 import Faq from "./Faq/Faq";
 import Header from "./Header/Header";
 import WhatWeOffer from "./WhatWeOffer/WhatWeOffer";
+import Stats from "./Stats/Stats";
 
 const Home = () => {
   return (
