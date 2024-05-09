@@ -34,10 +34,15 @@ export default function App() {
   return (
     <>
       <div className="mt-12">
-        <Swiper slidesPerView={3} spaceBetween={30} className="mySwiper">
+        <Swiper
+          grabCursor={true}
+          slidesPerView={3}
+          spaceBetween={30}
+          className="mySwiper"
+        >
           {Imgs.map((item) => {
             return (
-              <SwiperSlide className="cursor-grab" key={item.id}>
+              <SwiperSlide key={item.id}>
                 <img src={item.Img} alt="" />
               </SwiperSlide>
             );
