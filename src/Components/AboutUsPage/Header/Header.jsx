@@ -5,25 +5,36 @@ const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 0.7 }}
-      variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-      }}
-    >
+    <div>
       <div>
-        <div className="relative aboutUsBack">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.7 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+          className="relative aboutUsBack"
+        >
           <div className="absolute -translate-y-1/2 top-1/2">
             <div className="px-16 md:w-3/4">
               <h1>{t("about_us_page_header")}</h1>
             </div>
           </div>
-        </div>
-        <div className="container mt-8">
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.7 }}
+          variants={{
+            hidden: { opacity: 0, y: 25 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="container mt-8"
+        >
           <div className="flex flex-col lg:flex-row">
             <div className="lg:ltr:mr-8 lg:rtl:ml-8">
               <p className="tracking-wider">
@@ -36,9 +47,9 @@ const Header = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
