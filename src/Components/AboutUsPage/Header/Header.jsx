@@ -1,10 +1,20 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.7 }}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+      }}
+    >
       <div>
         <div className="relative aboutUsBack">
           <div className="absolute -translate-y-1/2 top-1/2">
@@ -28,7 +38,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
