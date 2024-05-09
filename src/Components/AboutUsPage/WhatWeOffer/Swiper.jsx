@@ -6,6 +6,7 @@ import ImgTwo from "../../../assets/RoomGalleryTwo.jpg";
 import ImgThree from "../../../assets/RoomGalleryThree.jpg";
 import ImgFour from "../../../assets/RoomGalleryFour.jpg";
 import ImgFive from "../../../assets/RoomGalleryFive.jpg";
+import { useEffect, useState } from "react";
 
 const Imgs = [
   {
@@ -31,12 +32,27 @@ const Imgs = [
 ];
 
 export default function App() {
+  const [slidesPerView, setSlidesPerView] = useState(
+    window.innerWidth < 768 ? 1 : 3
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSlidesPerView(window.innerWidth < 768 ? 1 : 3);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <div className="mt-12">
         <Swiper
+          slidesPerView={slidesPerView}
           grabCursor={true}
-          slidesPerView={3}
           spaceBetween={30}
           className="mySwiper"
         >

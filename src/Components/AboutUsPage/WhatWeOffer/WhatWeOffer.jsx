@@ -2,7 +2,7 @@ import Swiper from "./Swiper";
 
 const WhatWeOffer = () => {
   return (
-    <div className="mt-16">
+    <div className="md:mt-16 mt-72">
       <div>
         <div className="flex flex-col justify-between md:flex-row">
           <div>
