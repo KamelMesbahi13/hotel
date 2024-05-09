@@ -93,31 +93,31 @@ const Faq = () => {
   const { t } = useTranslation();
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 0.5 }}
-      variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-      }}
-      id="accordion-collapse"
-      className="mt-24 divide-y faqBack"
-    >
-      <div className="container flex flex-col mt-28 md:flex-row">
-        <div>
-          <div className="md:ltr:mr-12 md:rtl:ml-48">
-            <h2>{t("faq_subheader")}</h2>
-            <h1 className="my-4">{t("faq_header")}</h1>
-            <p>{t("faq_paragraph")}</p>
+    <div id="accordion-collapse" className="mt-24 divide-y faqBack">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 25 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
+        <div className="container flex flex-col mt-28 md:flex-row">
+          <div>
+            <div className="md:ltr:mr-12 md:rtl:ml-48">
+              <h2>{t("faq_subheader")}</h2>
+              <h1 className="my-4">{t("faq_header")}</h1>
+              <p>{t("faq_paragraph")}</p>
+            </div>
+          </div>
+          <div className="w-full">
+            <div>{Questions}</div>
           </div>
         </div>
-        <div className="w-full">
-          <div>{Questions}</div>
-        </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
