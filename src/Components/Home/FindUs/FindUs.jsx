@@ -17,9 +17,9 @@ const FindUs = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div className="mb-8 md:mt-36">
+        <div className="py-16 mb-8 md:py-36">
           <div className="flex flex-col md:justify-between md:flex-row">
-            <div className="w-full md:w-[40%] mb-8 md:mb-0 mt-20">
+            <div className="w-full md:w-[40%] mb-8 md:mb-0 md:mt-20">
               <h2 className="mb-2">{t("find_us_subheader")}</h2>
               <h1 className="mb-8">{t("find_us_header")}</h1>
               <p>{t("find_us_paragraph")}</p>
