@@ -18,7 +18,6 @@ const Home = () => {
         <Apartments />
       </div>
       <ContactUsSection />
-      <div className="container"></div>
       <FindUs />
     </>
   );

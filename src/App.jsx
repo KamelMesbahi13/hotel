@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
 const Home = lazy(() => import("./Components/Home/Home"));
-// const Footer = lazy(() => import("./Ui/Footer/Footer"));
+const Footer = lazy(() => import("./Ui/Footer/Footer"));
 import Loader from "./Ui/Loader/Loader";
 import Up from "./Ui/Up/Up";
 import AboutUsPage from "./Components/AboutUsPage/Home";
@@ -26,7 +26,7 @@ const App = () => {
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
           <Up />
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </Suspense>
     </>
