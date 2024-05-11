@@ -2,11 +2,11 @@ import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
 const Home = lazy(() => import("./Components/Home/Home"));
+const AboutUsPage = lazy(() => import("./Components/AboutUsPage/Home"));
+const ContactUs = lazy(() => import("./Components/ContactUs/Home"));
 const Footer = lazy(() => import("./Ui/Footer/Footer"));
 import Loader from "./Ui/Loader/Loader";
 import Up from "./Ui/Up/Up";
-import AboutUsPage from "./Components/AboutUsPage/Home";
-import ContactUs from "./Components/ContactUs/Home";
 
 const App = () => {
   return (

@@ -1,8 +1,9 @@
-import BestApartments from "./BestApartments/BestApartments";
-import Faq from "./Faq/Faq";
-import Header from "./Header/Header";
-import WhatWeOffer from "./WhatWeOffer/WhatWeOffer";
-import Stats from "./Stats/Stats";
+import { lazy } from "react";
+const Header = lazy(() => import("./Header/Header"));
+const BestApartments = lazy(() => import("./BestApartments/BestApartments"));
+const WhatWeOffer = lazy(() => import("./WhatWeOffer/WhatWeOffer"));
+const Stats = lazy(() => import("./Stats/Stats"));
+const Faq = lazy(() => import(".Faq/Faq/"));
 
 const Home = () => {
   return (

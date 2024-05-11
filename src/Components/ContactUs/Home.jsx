@@ -1,6 +1,7 @@
-import GetInTouch from "./GetInTouch/GetInTouch";
-import Header from "./Header/Header";
-import Reservation from "./Reservation/Reservation";
+import { lazy } from "react";
+const Header = lazy(() => import("./Header/Header"));
+const GetInTouch = lazy(() => import("./GetInTouch/GetInTouch"));
+const Reservation = lazy(() => import("./Reservation/Reservation"));
 
 const Home = () => {
   return (
