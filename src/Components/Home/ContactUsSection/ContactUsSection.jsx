@@ -31,7 +31,7 @@ const ContactUsSection = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.9 }}
               variants={{
-                hidden: { opacity: 0, y: -200 },
+                hidden: { opacity: 0, y: 25 },
                 visible: { opacity: 1, y: 0 },
               }}
               className="relative px-8 pt-8 pb-4 bg-white md:py-12 md:w-1/2 md:top-36 top-24 text-backgroundColor"

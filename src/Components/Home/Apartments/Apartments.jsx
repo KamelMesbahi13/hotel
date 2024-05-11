@@ -120,7 +120,7 @@ const Apartments = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.9 }}
             variants={{
-              hidden: { opacity: 0, y: -200 },
+              hidden: { opacity: 0, y: 25 },
               visible: { opacity: 1, y: 0 },
             }}
             className="grid w-full grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-24"

@@ -19,7 +19,7 @@ const AboutUs = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7 }}
               variants={{
-                hidden: { opacity: 0, y: 200 },
+                hidden: { opacity: 0, y: 25 },
                 visible: { opacity: 1, y: 0 },
               }}
             >
@@ -36,7 +36,7 @@ const AboutUs = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.9 }}
               variants={{
-                hidden: { opacity: 0, y: 200 },
+                hidden: { opacity: 0, y: 75 },
                 visible: { opacity: 1, y: 0 },
               }}
             >
