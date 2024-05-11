@@ -56,10 +56,10 @@ const Navbar = () => {
                   <RouterLink className="link linkColor" to="/">
                     {modifiedDataNav.map((el) => el.ItemOne)}
                   </RouterLink>
-                  <RouterLink className="link linkColor" to="/about-us">
+                  <RouterLink className="link linkColor" to="/À-Propos-de-Nous">
                     {modifiedDataNav.map((el) => el.ItemTwo)}
                   </RouterLink>
-                  <RouterLink className="link linkColor" to="/contact-us">
+                  <RouterLink className="link linkColor" to="/Contactez-Nous">
                     {modifiedDataNav.map((el) => el.ItemThree)}
                   </RouterLink>
                 </div>
@@ -111,10 +111,18 @@ const Navbar = () => {
                 <RouterLink onClick={navHandler} className="linkColor" to="/">
                   {modifiedDataNav.map((el) => el.ItemOne)}
                 </RouterLink>
-                <RouterLink onClick={navHandler} className="linkColor" to="/">
+                <RouterLink
+                  onClick={navHandler}
+                  className="linkColor"
+                  to="/À-Propos-de-Nous"
+                >
                   {modifiedDataNav.map((el) => el.ItemTwo)}
                 </RouterLink>
-                <RouterLink onClick={navHandler} className="linkColor" to="/">
+                <RouterLink
+                  onClick={navHandler}
+                  className="linkColor"
+                  to="/Contactez-Nous"
+                >
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </RouterLink>
               </div>
