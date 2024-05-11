@@ -1,4 +1,4 @@
-import Deco from "../../../assets/AboutUsImgOne.jpg";
+import Deco from "../../../assets/AboutUsImgOne.webp";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
