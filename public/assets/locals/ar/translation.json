@@ -52,5 +52,12 @@
   "what_we_offer_paragraph_one_about_us": "استرخِ واستمتع بالرفاهية معنا. لدينا غرف مريحة، وإطلالات رائعة، وأجواء هادئة من أجلك فقط. راحتك هي الأهم!",
   "what_we_offer_paragraph_two_about_us": "نقدم لك في شققنا الفندقية غرفاً مريحة مع مطابخ وأسرّة مريحة ووسائل راحة مثل الواي فاي ومواقف السيارات والأمن. اختر من بين خياراتنا F3 وF2 والاستوديو. رؤيتنا هي أن نجعلك سعيداً وتشعر وكأنك في منزلك أثناء استكشاف مدينتنا.",
   "contact_us_page_header": "تواصل معنا",
-  "contact_us_page_subheader": "تواصل معنا: مصدر معلوماتك للشقق الفندقية"
+  "contact_us_page_subheader": "تواصل معنا: مصدر معلوماتك للشقق الفندقية",
+  "reservation_first_subheader": "",
+  "reservation_first_header": "",
+  "reservation_email": "",
+  "reservation_call": "",
+  "reservation_second_subheader": "",
+  "reservation_second_header": "",
+  "reservation_location": ""
 }
