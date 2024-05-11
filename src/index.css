@@ -175,6 +175,13 @@
   height: 34rem;
 }
 
+.getInTouchBack {
+  background-image: url(../src/assets/DecoSix.webp);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .faqBack {
   background-image: url(../src/assets/FaqBackground.webp);
   background-position: center center;

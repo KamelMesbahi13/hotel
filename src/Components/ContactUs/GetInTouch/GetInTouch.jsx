@@ -21,7 +21,7 @@ const GetInTouch = () => {
   const inputStyles = `w-full mt-5 rounded-md text-backgroundColor focus:outline-none bg-grey px-5 py-3`;
   return (
     <div>
-      <div>
+      <div className="getInTouchBack">
         <div>
           <div className="w-full py-20">
             <div className="container">
