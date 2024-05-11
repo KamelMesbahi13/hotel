@@ -31,7 +31,7 @@ const WhatWeOffer = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="mt-12 md:mt-0">
               <img src={Deco} alt="Deco" />
             </div>
           </div>
