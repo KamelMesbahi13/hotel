@@ -1,12 +1,14 @@
 import Header from "./Header/Header";
+import Reservation from "./Reservation/Reservation";
 
 const Home = () => {
   return (
     <div>
       <div>
-        <div>
-          <Header />
-        </div>
+        <Header />
+      </div>
+      <div className="container">
+        <Reservation />
       </div>
     </div>
   );
