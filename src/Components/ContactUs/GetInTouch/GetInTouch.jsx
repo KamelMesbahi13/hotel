@@ -22,19 +22,19 @@ const GetInTouch = () => {
     <div>
       <div>
         <div>
-          <div className="w-full bg-white text-backgroundColor h-[120rem]">
+          <div className="w-full py-20 bg-white text-backgroundColor">
             <div className="container">
-              <div className="pt-20">
+              <div>
                 <div>
                   <div>
                     <h2>Do you have any question?</h2>
-                    <h1>Get in touch</h1>
+                    <h1 className="my-2">Get in touch</h1>
                     <p>
                       Need help or have a question? Send us a message! We re
                       here to assist you.
                     </p>
                   </div>
-                  <div>
+                  <div className="md:mt-8 textRight">
                     <div className="md:w-1/2">
                       <form
                         target="_blank"
@@ -83,7 +83,7 @@ const GetInTouch = () => {
                         <textarea
                           placeholder={t("form_message")}
                           className={inputStyles}
-                          rows={4}
+                          rows={10}
                           cols={50}
                           {...register("message", {
                             required: true,
