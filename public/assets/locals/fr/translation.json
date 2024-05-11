@@ -53,11 +53,11 @@
   "what_we_offer_paragraph_two_about_us": "Dans notre hôtel-appartement, nous proposons des chambres douillettes avec cuisine, des lits confortables et des services tels que le WiFi, le parking et la sécurité. Choisissez parmi nos F3, F2 et studios. Notre objectif est de vous rendre heureux et de faire en sorte que vous vous sentiez comme chez vous pendant que vous explorez notre ville.",
   "contact_us_page_header": "Contactez-nous",
   "contact_us_page_subheader": "Prenez contact : Votre source d'information sur les hôtels et les appartements",
-  "reservation_first_subheader": "",
-  "reservation_first_header": "",
-  "reservation_email": "",
-  "reservation_call": "",
-  "reservation_second_subheader": "",
-  "reservation_second_header": "",
-  "reservation_location": ""
+  "reservation_first_subheader": "Réservation",
+  "reservation_first_header": "Réservation directe",
+  "reservation_email": "Email",
+  "reservation_call": "appeler",
+  "reservation_second_subheader": "Adresse de l'hôtel",
+  "reservation_second_header": "Hôtel Appartement Zidane",
+  "reservation_location": "Boumerdes, 35000 Boumerdes"
 }

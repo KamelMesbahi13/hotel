@@ -53,11 +53,11 @@
   "what_we_offer_paragraph_two_about_us": "نقدم لك في شققنا الفندقية غرفاً مريحة مع مطابخ وأسرّة مريحة ووسائل راحة مثل الواي فاي ومواقف السيارات والأمن. اختر من بين خياراتنا F3 وF2 والاستوديو. رؤيتنا هي أن نجعلك سعيداً وتشعر وكأنك في منزلك أثناء استكشاف مدينتنا.",
   "contact_us_page_header": "تواصل معنا",
   "contact_us_page_subheader": "تواصل معنا: مصدر معلوماتك للشقق الفندقية",
-  "reservation_first_subheader": "",
-  "reservation_first_header": "",
-  "reservation_email": "",
-  "reservation_call": "",
-  "reservation_second_subheader": "",
-  "reservation_second_header": "",
-  "reservation_location": ""
+  "reservation_first_subheader": "الحجز",
+  "reservation_first_header": "الحجز المباشر",
+  "reservation_email": "البريد الإلكتروني",
+  "reservation_call": "اتصل بنا",
+  "reservation_second_subheader": "عنوان الفندق",
+  "reservation_second_header": "شقق زيدان الفندقية",
+  "reservation_location": "بومرداس، 35000 بومرداس"
 }
