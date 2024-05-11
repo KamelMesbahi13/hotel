@@ -18,7 +18,7 @@ const ContactUsSection = () => {
     }
   };
 
-  const inputStyles = `w-full mt-5 rounded-md focus:outline-none bg-grey px-5 py-3`;
+  const inputStyles = `w-full mt-5 rounded-md text-backgroundColor focus:outline-none bg-grey px-5 py-3`;
 
   return (
     <div className="mt-16 md:mt-36 contactUsBack">
