@@ -104,7 +104,7 @@ const Faq = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div className="container flex flex-col pt-16 md:flex-row">
+        <div className="container flex flex-col md:pt-16 md:flex-row">
           <div>
             <div className="md:ltr:mr-12 md:rtl:ml-48">
               <h2>{t("faq_subheader")}</h2>
