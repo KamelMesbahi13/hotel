@@ -1,5 +1,4 @@
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const Reservation = () => {
@@ -25,26 +24,29 @@ const Reservation = () => {
             <div className="mb-8 md:mb-16">
               <div className="mb-4">
                 <h2 className="text-xs md:text-sm text-secondColor">
-                  {t("content_Copyright")}
+                  {t("reservation_first_subheader")}
                 </h2>
-                <h2>{t("content_Copyright")}</h2>
+                <h2>{t("reservation_first_header")}</h2>
               </div>
               <div>
                 <p className="mb-2">
-                  {t("content_Copyright")}: hotel@gmail.com
+                  {t("reservation_email")}: hotel@gmail.com
                 </p>
-                <p>{t("content_Copyright")}: 0555 55 55 55</p>
+                <p className="">
+                  {t("reservation_call")} :
+                  <p className="initialDirection">0555 55 55 55</p>
+                </p>
               </div>
             </div>
             <div>
               <div className="mb-4">
                 <h2 className="text-xs md:text-sm text-secondColor">
-                  {t("content_Copyright")}
+                  {t("reservation_second_subheader")}
                 </h2>
-                <h2>{t("content_Copyright")}</h2>
+                <h2>{t("reservation_second_header")}</h2>
               </div>
               <div>
-                <p>{t("content_Copyright")}</p>
+                <p>{t("reservation_location")}</p>
               </div>
               <div>
                 <div className="flex justify-center w-1/2 mt-4">
