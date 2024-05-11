@@ -183,6 +183,14 @@
   height: 32rem;
 }
 
+.contactUsPageBack {
+  background-image: url(../src/assets/ContactUsBackground.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 32rem;
+}
+
 @layer components {
   body {
     @apply bg-backgroundColor text-textColor font-main h-[1000rem];

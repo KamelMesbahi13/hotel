@@ -19,8 +19,9 @@ const Header = () => {
           className="relative aboutUsBack"
         >
           <div className="absolute -translate-y-1/2 top-1/2">
-            <div className="px-16 md:w-3/4">
-              <h1>{t("about_us_page_header")}</h1>
+            <div className="px-16 md:w-4/4">
+              <h1>About us</h1>
+              <h2>{t("about_us_page_header")}</h2>
             </div>
           </div>
         </motion.div>
