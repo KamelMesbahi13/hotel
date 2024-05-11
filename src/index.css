@@ -191,6 +191,13 @@
   height: 32rem;
 }
 
+.reservationBack {
+  background-image: url(../src/assets/DecoSeven.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 @layer components {
   body {
     @apply bg-backgroundColor text-textColor font-main h-[1000rem];
