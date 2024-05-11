@@ -93,7 +93,7 @@ const Faq = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="accordion-collapse" className="mt-24 divide-y faqBack">
+    <div id="accordion-collapse" className="mt-12 divide-y md:mt-24 faqBack">
       <motion.div
         initial="hidden"
         whileInView="visible"

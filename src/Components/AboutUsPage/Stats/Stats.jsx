@@ -37,7 +37,7 @@ const Stats = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <div className="flex flex-wrap justify-between gap-12 py-16 mt-12 text-center lg:gap-x-32 place-items-center">
+              <div className="grid justify-between grid-cols-2 gap-12 py-12 mt-12 text-center md:grid-cols-4 md:py-16 md:mt-12 lg:gap-x-32 place-items-center">
                 <div>
                   <h6>
                     {t("f3_apartments_high_standing")} <br />
