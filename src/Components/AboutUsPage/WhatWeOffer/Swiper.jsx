@@ -1,4 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import ImgOne from "../../../assets/RoomGalleryOne.jpg";
@@ -49,7 +51,17 @@ export default function App() {
   }, []);
   return (
     <>
-      <div className="mt-12">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.9 }}
+        variants={{
+          hidden: { opacity: 0, y: 25 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="mt-12"
+      >
         <Swiper
           slidesPerView={slidesPerView}
           grabCursor={true}
@@ -64,7 +76,7 @@ export default function App() {
             );
           })}
         </Swiper>
-      </div>
+      </motion.div>
     </>
   );
 }

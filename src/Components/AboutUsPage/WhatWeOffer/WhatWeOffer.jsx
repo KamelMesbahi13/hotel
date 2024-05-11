@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 const WhatWeOffer = () => {
   const { t } = useTranslation();
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 0.9 }}
-      variants={{
-        hidden: { opacity: 0, y: 25 },
-        visible: { opacity: 1, y: 0 },
-      }}
-    >
+    <div>
       <div className="md:mt-16 mt-72">
-        <div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.9 }}
+          variants={{
+            hidden: { opacity: 0, y: 25 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
           <div className="flex flex-col justify-between md:flex-row">
             <div>
               <h2>{t("what_we_offer_subheader_about_us")}</h2>
@@ -29,12 +29,12 @@ const WhatWeOffer = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div>
           <Swiper />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
