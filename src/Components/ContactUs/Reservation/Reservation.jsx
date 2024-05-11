@@ -4,7 +4,7 @@ const Reservation = () => {
   return (
     <div className="mt-20">
       <div>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col justify-evenly md:flex-row">
           <div>
             <div className="textCenter md:initialDirection">
               <iframe
@@ -17,10 +17,12 @@ const Reservation = () => {
               ></iframe>
             </div>
           </div>
-          <div className="px-8 py-16 border textCenter md:ltr:ml-40 md:rtl:mr-40">
-            <div className="mb-16">
+          <div className="px-4 py-8 mt-8 border md:mt-0 md:px-8 md:py-16 textCenter">
+            <div className="mb-8 md:mb-16">
               <div className="mb-4">
-                <h2 className="text-sm text-secondColor">Reservation</h2>
+                <h2 className="text-xs md:text-sm text-secondColor">
+                  Reservation
+                </h2>
                 <h2>Direct reservation</h2>
               </div>
               <div>
@@ -30,7 +32,9 @@ const Reservation = () => {
             </div>
             <div>
               <div className="mb-4">
-                <h2 className="text-sm text-secondColor">Hotel Address</h2>
+                <h2 className="text-xs md:text-sm text-secondColor">
+                  Hotel Address
+                </h2>
                 <h2>Hotel Apartment Zidane</h2>
               </div>
               <div>
