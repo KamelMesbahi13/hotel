@@ -160,7 +160,7 @@
 }
 
 .aboutUsBack {
-  background-image: url(../src/assets/AboutUsBack.jpg);
+  background-image: url(../src/assets/AboutUsBack.webp);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -187,11 +187,10 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  /* height: 34rem; */
 }
 
 .contactUsPageBack {
-  background-image: url(../src/assets/ContactUsBackground.jpg);
+  background-image: url(../src/assets/ContactUsBackground.webp);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -199,7 +198,7 @@
 }
 
 .reservationBack {
-  background-image: url(../src/assets/DecoSeven.png);
+  background-image: url(../src/assets/DecoSeven.webp);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;

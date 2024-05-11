@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
-import ImgOne from "../../../assets/RoomGalleryOne.jpg";
-import ImgTwo from "../../../assets/RoomGalleryTwo.jpg";
-import ImgThree from "../../../assets/RoomGalleryThree.jpg";
-import ImgFour from "../../../assets/RoomGalleryFour.jpg";
-import ImgFive from "../../../assets/RoomGalleryFive.jpg";
+import ImgOne from "../../../assets/RoomGalleryOne.webp";
+import ImgTwo from "../../../assets/RoomGalleryTwo.webp";
+import ImgThree from "../../../assets/RoomGalleryThree.webp";
+import ImgFour from "../../../assets/RoomGalleryFour.webp";
+import ImgFive from "../../../assets/RoomGalleryFive.webp";
 import { useEffect, useState } from "react";
 
 const Imgs = [

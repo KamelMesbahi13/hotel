@@ -4,7 +4,7 @@ import HouseCleaning from "../../../assets/HouseCleaning.png";
 import Kitchen from "../../../assets/Kitchen.png";
 import Reception from "../../../assets/Reception.png";
 import Wifi from "../../../assets/Wifi.png";
-import Deco from "../../../assets/Deco.png";
+import Deco from "../../../assets/Deco.webp";
 import Security from "../../../assets/SecurityCamera.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
