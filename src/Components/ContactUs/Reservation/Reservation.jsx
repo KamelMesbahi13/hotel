@@ -6,11 +6,11 @@ const Reservation = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="pt-20">
+    <div>
       <div className="reservationBack">
         <div className="container">
           <div>
-            <div className="flex flex-col py-40 justify-evenly md:flex-row">
+            <div className="flex flex-col py-8 md:py-40 justify-evenly md:flex-row">
               <div>
                 <motion.div
                   initial="hidden"
