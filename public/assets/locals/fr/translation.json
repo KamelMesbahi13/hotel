@@ -59,5 +59,8 @@
   "reservation_call": "appeler",
   "reservation_second_subheader": "Adresse de l'hôtel",
   "reservation_second_header": "Hôtel Appartement Zidane",
-  "reservation_location": "Boumerdes, 35000 Boumerdes"
+  "reservation_location": "Boumerdes, 35000 Boumerdes",
+  "get_in_touch_subheader": "",
+  "get_in_touch_header": "",
+  "get_in_touch_paragraph": ""
 }
