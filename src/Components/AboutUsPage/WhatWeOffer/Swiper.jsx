@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import ImgOne from "../../../assets/RoomGalleryOne.jpg";

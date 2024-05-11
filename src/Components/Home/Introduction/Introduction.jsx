@@ -1,7 +1,6 @@
 import { Link } from "react-scroll";
 import Hotel from "../../../assets/HotelOne.webp";
 import { useTranslation } from "react-i18next";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 
 const Introduction = () => {
@@ -45,7 +44,7 @@ const Introduction = () => {
           </div>
         </div>
         <div className="mt-8 md:w-3/4 md:mt-0">
-          <LazyLoadImage src={Hotel} alt="" />
+          <img src={Hotel} alt="" />
         </div>
       </div>
     </motion.div>
