@@ -1,3 +1,4 @@
+import GetInTouch from "./GetInTouch/GetInTouch";
 import Header from "./Header/Header";
 import Reservation from "./Reservation/Reservation";
 
@@ -8,6 +9,7 @@ const Home = () => {
         <Header />
       </div>
       <Reservation />
+      <GetInTouch />
     </div>
   );
 };

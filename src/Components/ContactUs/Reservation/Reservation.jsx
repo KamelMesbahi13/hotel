@@ -6,7 +6,7 @@ const Reservation = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-20">
+    <div className="pt-20">
       <div className="reservationBack">
         <div className="container">
           <div>
