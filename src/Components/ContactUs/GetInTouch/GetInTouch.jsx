@@ -27,12 +27,9 @@ const GetInTouch = () => {
               <div>
                 <div>
                   <div>
-                    <h2>Do you have any question?</h2>
-                    <h1 className="my-2">Get in touch</h1>
-                    <p>
-                      Need help or have a question? Send us a message! We re
-                      here to assist you.
-                    </p>
+                    <h2>{t("get_in_touch_subheader")}</h2>
+                    <h1 className="my-2">{t("get_in_touch_header")}</h1>
+                    <p>{t("get_in_touch_paragraph")} </p>
                   </div>
                   <div className="md:mt-8 textRight">
                     <div className="md:w-1/2">
