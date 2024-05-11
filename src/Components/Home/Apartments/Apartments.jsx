@@ -86,16 +86,16 @@ const Apartments = () => {
   return (
     <div>
       <div>
-        <div>
-          <div className="mt-20 md:mt-36 md:textCenter">
+        <div className="mt-20 md:mt-36 md:textCenter">
+          <div>
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.9 }}
               variants={{
-                hidden: { opacity: 0 },
-                visible: { opacity: 1 },
+                hidden: { opacity: 0, y: 25 },
+                visible: { opacity: 1, y: 0 },
               }}
             >
               <div className="md:w-3/4 md:mx-auto textCenter">
@@ -114,21 +114,20 @@ const Apartments = () => {
             </motion.div>
           </div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.9 }}
-            variants={{
-              hidden: { opacity: 0, y: 25 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            className="grid w-full grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-24"
-          >
+          <div className="grid w-full grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-24">
             {modifiedData.map((item) => {
               return (
                 <div key={item.id}>
-                  <div>
+                  <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.9 }}
+                    variants={{
+                      hidden: { opacity: 0, y: 25 },
+                      visible: { opacity: 1, y: 0 },
+                    }}
+                  >
                     <div className="overflow-hidden">
                       <LazyLoadImage
                         src={item.img}
@@ -151,11 +150,11 @@ const Apartments = () => {
                         <h6>{item.title}</h6>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               );
             })}
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
