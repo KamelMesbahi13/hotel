@@ -107,7 +107,7 @@ const Navbar = () => {
                   : "absolute w-full left-0 bg-grey h-[25rem] opacity-100 shadow-2xl z-50 duration-500"
               }
             >
-              <div className="container flex flex-col py-4 gap-y-8">
+              <div className="container flex flex-col py-12 gap-y-8">
                 <RouterLink onClick={navHandler} className="linkColor" to="/">
                   {modifiedDataNav.map((el) => el.ItemOne)}
                 </RouterLink>
@@ -118,6 +118,7 @@ const Navbar = () => {
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </RouterLink>
               </div>
+
               <div className="container flex flex-row justify-between rtl:flex-row-reverse">
                 <div className="mt-2 lg:hidden">
                   <img
@@ -129,6 +130,21 @@ const Navbar = () => {
                 <div className="flex items-center justify-center gap-2">
                   <div>
                     <TranslateIcon />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <div className="container">
+                  <div className="flex items-center">
+                    <div className="flex items-center rtl:flex-row-reverse">
+                      <i className="ltr:mr-4 rtl:mr-4 text-thirdColor">
+                        {<FaPhone />}
+                      </i>
+                      <p className="text-xs xl:text-base linkColor initialDirection">
+                        0555 55 55 55
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
