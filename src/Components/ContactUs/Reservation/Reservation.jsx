@@ -17,8 +17,8 @@ const Reservation = () => {
               ></iframe>
             </div>
           </div>
-          <div className="textCenter md:ltr:ml-48 md:rtl:mr-48">
-            <div className="mb-12">
+          <div className="px-8 py-16 border textCenter md:ltr:ml-40 md:rtl:mr-40">
+            <div className="mb-16">
               <div className="mb-4">
                 <h2 className="text-sm text-secondColor">Reservation</h2>
                 <h2>Direct reservation</h2>
@@ -37,14 +37,14 @@ const Reservation = () => {
                 <p>Boumerdes, 35000 Boumerdes</p>
               </div>
               <div>
-                <div className="flex w-1/2 mt-4">
-                  <i className="text-thirdColor">
+                <div className="flex justify-center w-1/2 mt-4">
+                  <i>
                     <FaInstagram />
                   </i>
-                  <i className="text-thirdColor">
+                  <i className="mx-4">
                     <FaFacebook />
                   </i>
-                  <i className="text-thirdColor">
+                  <i>
                     <FaTiktok />
                   </i>
                 </div>
