@@ -15,11 +15,12 @@ const Header = () => {
           hidden: { opacity: 0 },
           visible: { opacity: 1 },
         }}
-        className="relative contactUsPageBack"
+        className="contactUsPageBack"
       >
-        <div className="absolute -translate-y-1/2 top-1/2">
-          <div className="px-16 md:w-3/4">
-            <h1>{t("about_us_page_header")}</h1>
+        <div className="textCenter pt-[12rem]">
+          <div>
+            <h1>{t("contact_us_page_header")}</h1>
+            <h6>{t("contact_us_page_subheader")}</h6>
           </div>
         </div>
       </motion.div>

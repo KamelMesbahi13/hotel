@@ -21,7 +21,7 @@ const Header = () => {
           <div className="pt-[12rem] textCenter">
             <div>
               <h1>{t("about_us_page_header")}</h1>
-              <h2>{t("about_us_page_subheader")}</h2>
+              <h6>{t("about_us_page_subheader")}</h6>
             </div>
           </div>
         </motion.div>
