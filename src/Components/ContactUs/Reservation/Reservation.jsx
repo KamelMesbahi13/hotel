@@ -32,10 +32,10 @@ const Reservation = () => {
                 <p className="mb-2">
                   {t("reservation_email")}: hotel@gmail.com
                 </p>
-                <p className="">
-                  {t("reservation_call")} :
-                  <p className="initialDirection">0555 55 55 55</p>
-                </p>
+                <div className="flex justify-center">
+                  <p>{t("reservation_call")} :</p>
+                  <p className="ml-1 initialDirection">0555 55 55 55</p>
+                </div>
               </div>
             </div>
             <div>
