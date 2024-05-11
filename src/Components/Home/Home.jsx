@@ -18,9 +18,8 @@ const Home = () => {
         <Apartments />
       </div>
       <ContactUsSection />
-      <div className="container">
-        <FindUs />
-      </div>
+      <div className="container"></div>
+      <FindUs />
     </>
   );
 };

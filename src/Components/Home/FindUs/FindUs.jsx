@@ -5,8 +5,9 @@ const FindUs = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="faqBack">
       <motion.div
+        className="container"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
