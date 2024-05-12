@@ -4,12 +4,14 @@ import RoomOne from "../../../assets/RoomSix.webp";
 import RoomTwo from "../../../assets/RoomSeven.webp";
 import RoomThree from "../../../assets/RoomEight.webp";
 import RoomFour from "../../../assets/RoomNine.webp";
+import { Link, useNavigate } from "react-router-dom";
 
 const Boxes = [
   {
     id: 1,
     img: RoomOne,
     stats: "5000da / 100m²",
+    link: "fTroisAppartements",
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
@@ -56,6 +58,13 @@ const Boxes = [
 ];
 
 const Apartments = () => {
+  const navigate = useNavigate();
+
+  const handleLinkClick = (route) => {
+    navigate(route);
+    window.scrollTo(0, 0);
+  };
+
   const { i18n } = useTranslation();
   const { t } = useTranslation();
 
@@ -136,9 +145,11 @@ const Apartments = () => {
                     </div>
                     <div>
                       <div className="textRight">
-                        <button className="relative cursor-pointer px-4 py-2 font-bold duration-300 hover:bg-secondColor hover:-translate-y-2 hover:text-white bg-white border-[10px] rounded-[3rem] bottom-4 border-backgroundColor text-mainColor">
-                          {item.button}
-                        </button>
+                        <Link to={item.link} onClick={handleLinkClick}>
+                          <button className="relative cursor-pointer px-4 py-2 font-bold duration-300 hover:bg-secondColor hover:-translate-y-2 hover:text-white bg-white border-[10px] rounded-[3rem] bottom-4 border-backgroundColor text-mainColor">
+                            {item.button}
+                          </button>
+                        </Link>
                       </div>
                       <div>
                         <h1 className="mb-2 text-sm italic font-light">
