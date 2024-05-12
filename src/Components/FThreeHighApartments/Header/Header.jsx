@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="mx-auto mt-48 md:w-3/4 textCenter">
+      <div className="mx-auto mt-24 md:mt-48 md:w-3/4 textCenter">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -20,7 +20,7 @@ const Header = () => {
           <h1 className="tracking-widest ">{t("f3_high_standing_header")}</h1>
         </motion.div>
       </div>
-      <div className="py-32 mt-44 fThreeHighBack">
+      <div className="py-16 mt-20 md:py-32 md:mt-44 fThreeHighBack">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -31,11 +31,11 @@ const Header = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="flex items-center justify-between">
-            <div className="w-1/4">
+          <div className="flex flex-col items-center justify-between md:flex-row">
+            <div className="md:w-1/4">
               <h2>{t("f3_high_standing_header_two")}</h2>
             </div>
-            <div className="justify-between textCenter">
+            <div className="justify-between mt-12 md:mt-0 textCenter">
               <div className="flex">
                 <div>
                   <h6>{t("f3_high_standing_price")}</h6>
