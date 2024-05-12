@@ -4,11 +4,13 @@ import Data from "../../Data/Data.json";
 import Logo from "../../assets/Logo.png";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaInstagram, FaTiktok, FaFacebook, FaPhoneAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const { i18n } = useTranslation();
   const year = new Date().getFullYear();
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const modifiedDataNav = Data.navbarItems.map((data) => {
     if (i18n.language === "ar") {
@@ -32,6 +34,12 @@ const Footer = () => {
     }
     return data;
   });
+
+  const handleLinkClick = (route) => {
+    navigate(route);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div>
       <div className="w-full bg-white text-backgroundColor">
@@ -59,13 +67,13 @@ const Footer = () => {
                 {t("footer_links")}
               </h1>
               <div className="flex flex-row gap-8 md:flex-col">
-                <RouterLink to="/">
+                <RouterLink to="/" onClick={handleLinkClick}>
                   {modifiedDataNav.map((el) => el.ItemOne)}
                 </RouterLink>
-                <RouterLink to="/">
+                <RouterLink to="/À-Propos-de-Nous" onClick={handleLinkClick}>
                   {modifiedDataNav.map((el) => el.ItemTwo)}
                 </RouterLink>
-                <RouterLink to="/">
+                <RouterLink to="/Contactez-Nous" onClick={handleLinkClick}>
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </RouterLink>
               </div>
