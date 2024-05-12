@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import Deco from "../../../assets/DecoNine.webp";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -21,13 +20,10 @@ const Header = () => {
           <h1 className="tracking-widest ">{t("f3_high_standing_header")}</h1>
         </motion.div>
       </div>
-      <div className="mt-80">
+      <div className="py-32 mt-64 fThreeHighBack">
         <div className="flex items-center justify-between">
           <div className="w-1/4">
             <h2>HELPING YOU FIND THE PROPERTY OF YOUR DREAMS</h2>
-          </div>
-          <div>
-            <img className="w-1/4" src={Deco} alt="Deco" />
           </div>
           <div className="justify-between textCenter">
             <div className="flex">
@@ -35,7 +31,7 @@ const Header = () => {
                 <h6>200</h6>
                 <h1 className="text-2xl">Mètre carré</h1>
               </div>
-              <div className="md:ltr:ml-24 md:ltr:pl-24 md:ltr:border-l-secondColor md:ltr:border-l-2">
+              <div className="md:ltr:ml-24 md:ltr:pl-24 md:ltr:border-l-secondColor md:ltr:border-l-2 md:rtl:mr-24 md:rtl:pr-24 md:rtl:border-r-secondColor md:rtl:border-r-2 ">
                 <h6>5000da</h6>
                 <h1 className="text-2xl">Pour une journée</h1>
               </div>

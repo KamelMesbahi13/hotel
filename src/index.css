@@ -175,6 +175,14 @@
   height: 34rem;
 }
 
+.fThreeHighBack {
+  background-image: url(../src/assets/DecoSix.webp);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 15rem;
+}
+
 .getInTouchBack {
   background-image: url(../src/assets/DecoSix.webp);
   background-position: center center;
