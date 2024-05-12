@@ -63,5 +63,10 @@
   "get_in_touch_subheader": "هل لديك سؤال؟",
   "get_in_touch_header": "تواصل معنا",
   "get_in_touch_paragraph": "هل تحتاج إلى مساعدة أو لديك سؤال؟ أرسل لنا رسالة! نحن هنا لمساعدتك.",
-  "f3_high_standing_header": "مرحباً بك في شقق F3 الراقية"
+  "f3_high_standing_header": "مرحباً بك في شقق F3 الراقية",
+  "f3_high_standing_header_two": "نساعدك في العثور على الشقة التي تحلم بها",
+  "f3_high_standing_price_header": "متر مربع",
+  "f3_high_standing_price": "150",
+  "f3_high_standing_space_header": "ليوم واحد فقط",
+  "f3_high_standing_space": "5000 دج"
 }
