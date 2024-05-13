@@ -5,8 +5,8 @@ const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
-      <div className="mx-auto mt-24 md:mt-48 md:w-3/4 textCenter">
+    <div className="w-full f3HighStandingBack">
+      <div className=" textCenter">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -16,6 +16,7 @@ const Header = () => {
             hidden: { opacity: 0, y: -25 },
             visible: { opacity: 1, y: 0 },
           }}
+          className="pt-24 mx-auto md:pt-48 md:w-3/4"
         >
           <h1 className="ltr:tracking-widest ">
             {t("f3_high_standing_header")}

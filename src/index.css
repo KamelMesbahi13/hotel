@@ -209,6 +209,14 @@ body.arabic {
   height: 34rem;
 }
 
+.f3HighStandingBack {
+  background-image: url(../src/assets/FThreeHighStandingBack.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 34rem;
+}
+
 .reservationBack {
   background-image: url(../src/assets/DecoSeven.webp);
   background-position: center center;

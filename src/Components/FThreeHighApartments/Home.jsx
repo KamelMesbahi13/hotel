@@ -4,8 +4,8 @@ import OurRooms from "./OurRooms/OurRooms";
 const FThreeHighApartments = () => {
   return (
     <div>
+      <Header />
       <div className="container">
-        <Header />
         <OurRooms />
       </div>
     </div>
