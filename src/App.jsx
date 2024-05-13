@@ -8,6 +8,7 @@ const ContactUs = lazy(() => import("./Components/ContactUs/Home"));
 import Loader from "./Ui/Loader/Loader";
 import Up from "./Ui/Up/Up";
 import FThreeHighApartments from "./Components/AllApartments/FThreeHighApartments/Home";
+import FThreeApartments from "./Components/AllApartments/FThreeApartments/Home";
 
 const App = () => {
   return (
@@ -27,6 +28,8 @@ const App = () => {
               path="/FTroisHighStandingAppartements"
               element={<FThreeHighApartments />}
             />
+
+            <Route path="/FTroisAppartements" element={<FThreeApartments />} />
 
             <Route path="/À-Propos-de-Nous" element={<AboutUsPage />} />
             <Route path="/Contactez-Nous" element={<ContactUs />} />
