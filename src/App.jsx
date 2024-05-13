@@ -7,7 +7,7 @@ const ContactUs = lazy(() => import("./Components/ContactUs/Home"));
 // const Footer = lazy(() => import("./Ui/Footer/Footer"));
 import Loader from "./Ui/Loader/Loader";
 import Up from "./Ui/Up/Up";
-import FThreeHighApartments from "./Components/FThreeHighApartments/Home";
+import FThreeHighApartments from "./Components/AllApartments/FThreeHighApartments/Home";
 
 const App = () => {
   return (
