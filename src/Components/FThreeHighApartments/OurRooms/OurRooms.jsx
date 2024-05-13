@@ -18,10 +18,13 @@ const OurRooms = () => {
       new: "Nouveau",
       new_en: "New",
       new_ar: "جديد",
-
-      title: "F3: Haut standing: Maisons de luxe extraordinaires.",
-      title_en: "F3: High Standing: Extraordinary Luxury Homes.",
-      title_ar: "F3 شقق راقية : منازل فاخرة غير عادية.",
+      price: "5000da",
+      day: "Jour",
+      da_en: "Day",
+      day_ar: "يوم",
+      title: "Maisons de luxe extraordinaires.",
+      title_en: "Extraordinary Luxury Homes.",
+      title_ar: " شقق راقية.",
     },
 
     {
@@ -34,9 +37,13 @@ const OurRooms = () => {
       new: "Nouveau",
       new_en: "New",
       new_ar: "جديد",
-      title: "F3: Appartements de luxe modernes.",
-      title_en: "F3: Modern Luxury Apartments.",
-      title_ar: "شقق F3 :  الحديثة الفاخرة. ",
+      price: "5000da",
+      day: "Jour",
+      da_en: "Day",
+      day_ar: "يوم",
+      title: "Maisons de luxe extraordinaires.",
+      title_en: "Extraordinary Luxury Homes.",
+      title_ar: " شقق راقية.",
     },
 
     {
@@ -49,9 +56,13 @@ const OurRooms = () => {
       new: "Nouveau",
       new_en: "New",
       new_ar: "جديد",
-      title: "F2: Appartements de confort moderne.",
-      title_en: "F2: Modern Comfort Apartments",
-      title_ar: "F2: شقق عصرية مريحة.",
+      price: "5000da",
+      day: "Jour",
+      da_en: "Day",
+      day_ar: "يوم",
+      title: "Maisons de luxe extraordinaires.",
+      title_en: "Extraordinary Luxury Homes.",
+      title_ar: " شقق راقية.",
     },
 
     {
@@ -64,9 +75,13 @@ const OurRooms = () => {
       new: "Nouveau",
       new_en: "New",
       new_ar: "جديد",
-      title: "Studios: Chambres douillettes et pratiques.",
-      title_en: "Studios: Cozy & Convenient Rooms.",
-      title_ar: "استوديوهات: غرف مريحة وملائمة.",
+      price: "5000da",
+      day: "Jour",
+      da_en: "Day",
+      day_ar: "يوم",
+      title: "Maisons de luxe extraordinaires.",
+      title_en: "Extraordinary Luxury Homes.",
+      title_ar: " شقق راقية.",
     },
 
     {
@@ -80,9 +95,13 @@ const OurRooms = () => {
       new: "Nouveau",
       new_en: "New",
       new_ar: "جديد",
-      title: "F3: Haut standing: Maisons de luxe extraordinaires.",
-      title_en: "F3: High Standing: Extraordinary Luxury Homes.",
-      title_ar: "F3 شقق راقية : منازل فاخرة غير عادية.",
+      price: "5000da",
+      day: "Jour",
+      da_en: "Day",
+      day_ar: "يوم",
+      title: "Maisons de luxe extraordinaires.",
+      title_en: "Extraordinary Luxury Homes.",
+      title_ar: " شقق راقية.",
     },
 
     {
@@ -96,9 +115,13 @@ const OurRooms = () => {
       new: "Nouveau",
       new_en: "New",
       new_ar: "جديد",
-      title: "F3: Haut standing: Maisons de luxe extraordinaires.",
-      title_en: "F3: High Standing: Extraordinary Luxury Homes.",
-      title_ar: "F3 شقق راقية : منازل فاخرة غير عادية.",
+      price: "5000da",
+      day: "Jour",
+      da_en: "Day",
+      day_ar: "يوم",
+      title: "Maisons de luxe extraordinaires.",
+      title_en: "Extraordinary Luxury Homes.",
+      title_ar: " شقق راقية.",
     },
   ];
 
@@ -134,12 +157,12 @@ const OurRooms = () => {
           </div>
         </div>
         <div>
-          <div className="grid grid-cols-3 gap-8 mt-20">
+          <div className="grid grid-cols-3 mt-20">
             {Boxes.map((item) => {
               return (
                 <div key={item.id}>
                   <div>
-                    <div className="p-8 ">
+                    <div className="p-8">
                       <div className="overflow-hidden bg-white rounded-lg shadow-2xl">
                         <img
                           className="object-cover object-end"
@@ -149,18 +172,20 @@ const OurRooms = () => {
                         <div className="p-6 text-backgroundColor">
                           <div className="flex items-baseline">
                             <span className="py-1 text-xs font-semibold tracking-wide text-teal-800 uppercase bg-teal-200 rounded-full">
-                              New
+                              {item.new}
                             </span>
                             <div className="ml-2 text-xs font-semibold tracking-wide uppercase">
                               3 beds &bull; 2 baths
                             </div>
                           </div>
                           <h4 className="mt-2 text-lg font-semibold leading-tight truncate">
-                            Beautiful Home in the Countryside
+                            {item.title}
                           </h4>
                           <div className="mt-1">
-                            <span>$1,900.00</span>
-                            <span className="text-sm text-gray-600">/ wk</span>
+                            <span>{item.price}</span>
+                            <span className="text-sm text-gray-600">
+                              / {item.day}
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -170,35 +195,6 @@ const OurRooms = () => {
               );
             })}
           </div>
-
-          {/* <div>
-            <div className="flex items-center justify-center min-h-screen p-8 bg-gray-200">
-              <div className="overflow-hidden bg-white rounded-lg shadow-2xl xl:w-1/5 lg:w-1/4 md:w-1/3 sm:w-1/2">
-                <img
-                  className="object-cover w-full h-48 object-end"
-                  src="https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80"
-                  alt="Home in Countryside"
-                />
-                <div className="p-6 text-backgroundColor">
-                  <div className="flex items-baseline">
-                    <span className="inline-block px-4 py-1 text-xs font-semibold tracking-wide text-teal-800 uppercase bg-teal-200 rounded-full">
-                      New
-                    </span>
-                    <div className="ml-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
-                      3 beds &bull; 2 baths
-                    </div>
-                  </div>
-                  <h4 className="mt-2 text-lg font-semibold leading-tight truncate">
-                    Beautiful Home in the Countryside
-                  </h4>
-                  <div className="mt-1">
-                    <span>$1,900.00</span>
-                    <span className="text-sm text-gray-600">/ wk</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
