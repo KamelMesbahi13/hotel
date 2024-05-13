@@ -11,7 +11,7 @@ const Boxes = [
     id: 1,
     img: RoomOne,
     stats: "5000da / 100m²",
-    link: "fTroisAppartements",
+    link: "FTroisHighStandingAppartements",
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
