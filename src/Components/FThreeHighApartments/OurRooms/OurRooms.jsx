@@ -12,10 +12,13 @@ const OurRooms = () => {
       id: 1,
       img: RoomOne,
       stats: "5000da / 100m²",
-      link: "fTroisAppartements",
       button: "Plus de détails",
       button_en: "More details",
       button_ar: "المزيد من التفاصيل",
+      new: "Nouveau",
+      new_en: "New",
+      new_ar: "جديد",
+
       title: "F3: Haut standing: Maisons de luxe extraordinaires.",
       title_en: "F3: High Standing: Extraordinary Luxury Homes.",
       title_ar: "F3 شقق راقية : منازل فاخرة غير عادية.",
@@ -28,6 +31,9 @@ const OurRooms = () => {
       button: "Plus de détails",
       button_en: "More details",
       button_ar: "المزيد من التفاصيل",
+      new: "Nouveau",
+      new_en: "New",
+      new_ar: "جديد",
       title: "F3: Appartements de luxe modernes.",
       title_en: "F3: Modern Luxury Apartments.",
       title_ar: "شقق F3 :  الحديثة الفاخرة. ",
@@ -40,6 +46,9 @@ const OurRooms = () => {
       button: "Plus de détails",
       button_en: "More details",
       button_ar: "المزيد من التفاصيل",
+      new: "Nouveau",
+      new_en: "New",
+      new_ar: "جديد",
       title: "F2: Appartements de confort moderne.",
       title_en: "F2: Modern Comfort Apartments",
       title_ar: "F2: شقق عصرية مريحة.",
@@ -52,6 +61,9 @@ const OurRooms = () => {
       button: "Plus de détails",
       button_en: "More details",
       button_ar: "المزيد من التفاصيل",
+      new: "Nouveau",
+      new_en: "New",
+      new_ar: "جديد",
       title: "Studios: Chambres douillettes et pratiques.",
       title_en: "Studios: Cozy & Convenient Rooms.",
       title_ar: "استوديوهات: غرف مريحة وملائمة.",
@@ -65,6 +77,9 @@ const OurRooms = () => {
       button: "Plus de détails",
       button_en: "More details",
       button_ar: "المزيد من التفاصيل",
+      new: "Nouveau",
+      new_en: "New",
+      new_ar: "جديد",
       title: "F3: Haut standing: Maisons de luxe extraordinaires.",
       title_en: "F3: High Standing: Extraordinary Luxury Homes.",
       title_ar: "F3 شقق راقية : منازل فاخرة غير عادية.",
@@ -78,6 +93,9 @@ const OurRooms = () => {
       button: "Plus de détails",
       button_en: "More details",
       button_ar: "المزيد من التفاصيل",
+      new: "Nouveau",
+      new_en: "New",
+      new_ar: "جديد",
       title: "F3: Haut standing: Maisons de luxe extraordinaires.",
       title_en: "F3: High Standing: Extraordinary Luxury Homes.",
       title_ar: "F3 شقق راقية : منازل فاخرة غير عادية.",
@@ -130,7 +148,7 @@ const OurRooms = () => {
                         />
                         <div className="p-6 text-backgroundColor">
                           <div className="flex items-baseline">
-                            <span className="inline-block px-4 py-1 text-xs font-semibold tracking-wide text-teal-800 uppercase bg-teal-200 rounded-full">
+                            <span className="py-1 text-xs font-semibold tracking-wide text-teal-800 uppercase bg-teal-200 rounded-full">
                               New
                             </span>
                             <div className="ml-2 text-xs font-semibold tracking-wide uppercase">
