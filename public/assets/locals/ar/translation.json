@@ -71,7 +71,6 @@
   "f3_high_standing_space": "5000 دج",
   "f3_high_standing_space_our_rooms_subheader": "شققنا الفندقية F3 الراقية",
   "f3_high_standing_space_our_rooms_header": "استكشف شققنا الفندقية",
-
   "f3_header": "مرحباً بك في شقق F3 ",
   "f3_header_two": "نساعدك في العثور على الشقة التي تحلم بها",
   "f3_price_header": "متر مربع",
@@ -79,5 +78,7 @@
   "f3_space_header": "ليوم واحد فقط",
   "f3_space": "5000 دج",
   "f3_space_our_rooms_subheader": "شققنا الفندقية F3",
-  "f3_space_our_rooms_header": "استكشف شققنا الفندقية"
+  "f3_space_our_rooms_header": "استكشف شققنا الفندقية",
+  "f3_our_rooms_subheader": "شققنا الفندقية F3",
+  "f3_our_rooms_header": "استكشف شققنا الفندقية"
 }

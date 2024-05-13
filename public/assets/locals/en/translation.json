@@ -32,7 +32,7 @@
   "form_message": "Message",
   "find_us_header": "How to find us",
   "find_us_subheader": "Locate us",
-  "find_us_paragraph_one": "Embark on a journey to Boumerdès and discover Hotel Zidane, your home away from home. Nestled in this beautiful state, our hotel apartment awaits to provide you with a memorable stay. Let us guide you with directions and ensure your visit to Hotel Zidane in Boumerdès is a delightful experience.",
+  "find_us_paragraph": "Embark on a journey to Boumerdès and discover Hotel Zidane, your home away from home. Nestled in this beautiful state, our hotel apartment awaits to provide you with a memorable stay. Let us guide you with directions and ensure your visit to Hotel Zidane in Boumerdès is a delightful experience.",
   "about_us_page_header": "About us",
   "about_us_page_subheader": "Get to Know Us: Your Hotel Apartment Destination",
   "about_us_page_header_paragraph_one": "Welcome to our hotel apartments, set to open its doors in the summer of 2024! Our apartments are designed to be your home away from home, offering a cozy and welcoming environment for tourists looking for a comfortable place to stay. Located in a prime location, our apartments provide easy access to the city s attractions, making it convenient for guests to explore and experience everything the area has to offer. We take pride in offering a range of accommodation options to suit different needs and preferences. Our high-standing F3 apartments feature luxurious amenities and spacious layouts, perfect for guests seeking a premium experience. Additionally, we offer normal F3 apartments, F2 units, and studios, providing a variety of choices to accommodate solo travelers, couples, families, and groups. At our hotel apartments, we prioritize your comfort and satisfaction.",
@@ -72,7 +72,6 @@
   "f3_high_standing_space": "5000da",
   "f3_high_standing_space_our_rooms_subheader": "Our F3 High Standing Apartments",
   "f3_high_standing_space_our_rooms_header": "Explore Our Hotel Apartments",
-
   "f3_header": "WELCOME TO OUR F3 APARTMENTS.",
   "f3__header_two": "We help you to find the apartment of your dream",
   "f3_price_header": "Square meters",
@@ -80,5 +79,7 @@
   "f3_space_header": "For one day",
   "f3_space": "5000da",
   "f3__space_our_rooms_subheader": "Our F3 High Standing Apartments",
-  "f3_space_our_rooms_header": "Explore Our Hotel Apartments"
+  "f3_space_our_rooms_header": "Explore Our Hotel Apartments",
+  "f3_our_rooms_subheader": "Our F3 Apartments",
+  "f3_our_rooms_header": "Explore Our Hotel Apartments"
 }
