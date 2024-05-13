@@ -15,6 +15,7 @@ export default {
       fontFamily: {
         main: ["Lato", "sans-serif"],
         second: ["Marcellus", "serif"],
+        arabic: ["Noto Naskh Arabic", "serif"],
       },
     },
   },

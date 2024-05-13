@@ -5,6 +5,7 @@ import RoomThree from "../../../assets/fThreeHighStandingThree.jpg";
 import RoomFour from "../../../assets/fThreeHighStandingFour.jpg";
 import RoomFive from "../../../assets/fThreeHighStandingFive.jpg";
 import RoomSix from "../../../assets/fThreeHighStandingSix.jpg";
+import { Link } from "react-router-dom";
 
 const OurRooms = () => {
   const Boxes = [
@@ -20,8 +21,14 @@ const OurRooms = () => {
       new_ar: "جديد",
       price: "5000da",
       day: "Jour",
-      da_en: "Day",
+      day_en: "Day",
       day_ar: "يوم",
+      room: "3 chambres",
+      room_en: "3 rooms",
+      room_ar: "3 غرف",
+      bath: "1 salle de bain",
+      bath_en: "1 bethroom",
+      bath_ar: "1 حمام",
       title: "Maisons de luxe extraordinaires.",
       title_en: "Extraordinary Luxury Homes.",
       title_ar: " شقق راقية.",
@@ -39,8 +46,14 @@ const OurRooms = () => {
       new_ar: "جديد",
       price: "5000da",
       day: "Jour",
-      da_en: "Day",
+      day_en: "Day",
       day_ar: "يوم",
+      room: "3 chambres",
+      room_en: "3 rooms",
+      room_ar: "3 غرف",
+      bath: "1 salle de bain",
+      bath_en: "1 bethroom",
+      bath_ar: "1 حمام",
       title: "Maisons de luxe extraordinaires.",
       title_en: "Extraordinary Luxury Homes.",
       title_ar: " شقق راقية.",
@@ -58,8 +71,14 @@ const OurRooms = () => {
       new_ar: "جديد",
       price: "5000da",
       day: "Jour",
-      da_en: "Day",
+      day_en: "Day",
       day_ar: "يوم",
+      room: "3 chambres",
+      room_en: "3 rooms",
+      room_ar: "3 غرف",
+      bath: "1 salle de bain",
+      bath_en: "1 bethroom",
+      bath_ar: "1 حمام",
       title: "Maisons de luxe extraordinaires.",
       title_en: "Extraordinary Luxury Homes.",
       title_ar: " شقق راقية.",
@@ -77,8 +96,14 @@ const OurRooms = () => {
       new_ar: "جديد",
       price: "5000da",
       day: "Jour",
-      da_en: "Day",
+      day_en: "Day",
       day_ar: "يوم",
+      room: "3 chambres",
+      room_en: "3 rooms",
+      room_ar: "3 غرف",
+      bath: "1 salle de bain",
+      bath_en: "1 bethroom",
+      bath_ar: "1 حمام",
       title: "Maisons de luxe extraordinaires.",
       title_en: "Extraordinary Luxury Homes.",
       title_ar: " شقق راقية.",
@@ -97,8 +122,14 @@ const OurRooms = () => {
       new_ar: "جديد",
       price: "5000da",
       day: "Jour",
-      da_en: "Day",
+      day_en: "Day",
       day_ar: "يوم",
+      room: "3 chambres",
+      room_en: "3 rooms",
+      room_ar: "3 غرف",
+      bath: "1 salle de bain",
+      bath_en: "1 bethroom",
+      bath_ar: "1 حمام",
       title: "Maisons de luxe extraordinaires.",
       title_en: "Extraordinary Luxury Homes.",
       title_ar: " شقق راقية.",
@@ -117,13 +148,52 @@ const OurRooms = () => {
       new_ar: "جديد",
       price: "5000da",
       day: "Jour",
-      da_en: "Day",
+      day_en: "Day",
       day_ar: "يوم",
+      room: "3 chambres",
+      room_en: "3 rooms",
+      room_ar: "3 غرف",
+      bath: "1 salle de bain",
+      bath_en: "1 bethroom",
+      bath_ar: "1 حمام",
       title: "Maisons de luxe extraordinaires.",
       title_en: "Extraordinary Luxury Homes.",
       title_ar: " شقق راقية.",
     },
   ];
+
+  const { i18n } = useTranslation();
+
+  const modifiedData = Boxes.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        img: data.img,
+        new: data.new_ar,
+        room: data.room_ar,
+        bath: data.bath_ar,
+        button: data.button_ar,
+        title: data.title_ar,
+        price: data.price,
+        day: data.day_ar,
+      };
+    }
+
+    if (i18n.language === "en") {
+      return {
+        id: data.id,
+        img: data.img,
+        button: data.button_en,
+        new: data.new_en,
+        room: data.room_en,
+        bath: data.bath_en,
+        title: data.title_en,
+        price: data.price,
+        day: data.day_en,
+      };
+    }
+    return data;
+  });
 
   const { t } = useTranslation();
 
@@ -158,24 +228,24 @@ const OurRooms = () => {
         </div>
         <div>
           <div className="grid grid-cols-3 mt-20">
-            {Boxes.map((item) => {
+            {modifiedData.map((item) => {
               return (
                 <div key={item.id}>
                   <div>
                     <div className="p-8">
-                      <div className="overflow-hidden bg-white rounded-lg shadow-2xl">
+                      <div className="overflow-hidden bg-white rounded-lg">
                         <img
                           className="object-cover object-end"
                           src={item.img}
                           alt="Home in Countryside"
                         />
-                        <div className="p-6 text-backgroundColor">
+                        <div className="p-6 text-mainColor">
                           <div className="flex items-baseline">
-                            <span className="py-1 text-xs font-semibold tracking-wide text-teal-800 uppercase bg-teal-200 rounded-full">
+                            <span className="py-1 text-xs font-extrabold tracking-wide uppercase text-secondColor">
                               {item.new}
                             </span>
-                            <div className="ml-2 text-xs font-semibold tracking-wide uppercase">
-                              3 beds &bull; 2 baths
+                            <div className="text-xs font-semibold tracking-wide uppercase ltr:ml-2 rtl:mr-2">
+                              {item.room} &bull; {item.bath}
                             </div>
                           </div>
                           <h4 className="mt-2 text-lg font-semibold leading-tight truncate">
@@ -183,9 +253,14 @@ const OurRooms = () => {
                           </h4>
                           <div className="mt-1">
                             <span>{item.price}</span>
-                            <span className="text-sm text-gray-600">
-                              / {item.day}
-                            </span>
+                            <span className="text-sm"> / {item.day}</span>
+                          </div>
+                          <div className="mt-4">
+                            <Link to="">
+                              <button className="buttonContactUs">
+                                {item.button}
+                              </button>
+                            </Link>
                           </div>
                         </div>
                       </div>

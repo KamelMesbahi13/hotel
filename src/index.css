@@ -18,6 +18,10 @@
   margin-right: auto;
 }
 
+body.arabic {
+  font-family: "Noto Naskh Arabic", serif;
+}
+
 .textCenter {
   text-align: center;
   text-align: -moz-center;

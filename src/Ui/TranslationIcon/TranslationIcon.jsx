@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 import PropTypes from "prop-types";
+import "../../index.css";
 
 const languages = [
   {
@@ -42,6 +43,7 @@ function TranslateIcon() {
   useEffect(() => {
     i18n.changeLanguage(currentLanguageCode);
     document.body.dir = currentLanguage.dir || "ltr";
+    document.body.className = currentLanguageCode === "ar" ? "arabic" : "";
   }, [currentLanguage, currentLanguageCode, i18n]);
 
   const changeLanguage = (code) => {
