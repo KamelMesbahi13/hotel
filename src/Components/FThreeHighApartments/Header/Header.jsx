@@ -17,7 +17,9 @@ const Header = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <h1 className="tracking-widest ">{t("f3_high_standing_header")}</h1>
+          <h1 className="ltr:tracking-widest ">
+            {t("f3_high_standing_header")}
+          </h1>
         </motion.div>
       </div>
       <div className="py-16 mt-20 md:py-32 md:mt-44 fThreeHighBack">
