@@ -1,3 +1,4 @@
+import FindUs from "../../Home/FindUs/FindUs";
 import Header from "./Header/Header";
 import OurRooms from "./OurRooms/OurRooms";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <div className="container">
         <OurRooms />
       </div>
+      <FindUs />
     </div>
   );
 };

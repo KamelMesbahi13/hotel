@@ -9,6 +9,7 @@ import Loader from "./Ui/Loader/Loader";
 import Up from "./Ui/Up/Up";
 import FThreeHighApartments from "./Components/AllApartments/FThreeHighApartments/Home";
 import FThreeApartments from "./Components/AllApartments/FThreeApartments/Home";
+import FTwoApartments from "./Components/AllApartments/FTwoApartments/Home";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
             />
 
             <Route path="/FTroisAppartements" element={<FThreeApartments />} />
+            <Route path="/FTwoAppartements" element={<FTwoApartments />} />
 
             <Route path="/À-Propos-de-Nous" element={<AboutUsPage />} />
             <Route path="/Contactez-Nous" element={<ContactUs />} />
