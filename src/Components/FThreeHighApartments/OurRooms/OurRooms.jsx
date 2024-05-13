@@ -203,7 +203,7 @@ const OurRooms = () => {
         <div>
           <div>
             {" "}
-            <div className="mt-8 md:mt-20 md:textCenter">
+            <div className="mt-8 md:mt-12 md:textCenter">
               <div>
                 <div className="md:w-3/4 md:mx-auto textCenter">
                   <h2 className="mb-2">
