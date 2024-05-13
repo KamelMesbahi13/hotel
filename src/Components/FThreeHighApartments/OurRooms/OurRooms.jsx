@@ -199,7 +199,7 @@ const OurRooms = () => {
 
   return (
     <div>
-      <div className="md:mt-56">
+      <div className="md:mt-56 mt-28">
         <div>
           <div>
             {" "}
@@ -227,7 +227,7 @@ const OurRooms = () => {
           </div>
         </div>
         <div>
-          <div className="grid grid-cols-3 mt-20">
+          <div className="grid grid-cols-1 mt-8 md:grid-cols-3 md:mt-20">
             {modifiedData.map((item) => {
               return (
                 <div key={item.id}>
