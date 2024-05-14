@@ -1,11 +1,12 @@
 import FThreeHighApartmentsDetailsHeader from "../FThreeHighApartmentsDetailsHeader/FThreeHighApartmentsDetailsHeader";
 import FThreeHighApartmentDetailsSwiper from "./FThreeHighApartmentDetailsSwiper";
-
+import Video from "../../../../assets/FThreeHighStandingVideo.mp4";
+import ThumbNail from "../../../../assets/FThreeHighStandingVideoThumbNail.jpg";
 import { useTranslation } from "react-i18next";
-
 import Boxes from "../Data";
 import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import VideoPlayer from "./FThreeHighApartmentsDetailsVideo";
 
 const FThreeHighApartmentsDetails = () => {
   const {
@@ -53,6 +54,9 @@ const FThreeHighApartmentsDetails = () => {
   const Data = modifiedData.find((item) => item.id == FTroisHighStandingId);
 
   const { t } = useTranslation();
+
+  const videoUrl = Video;
+  const thumbnailUrl = ThumbNail;
 
   return (
     <div>
@@ -166,6 +170,7 @@ const FThreeHighApartmentsDetails = () => {
             </div>
           </div>
         </div>
+        <VideoPlayer videoUrl={videoUrl} />
       </div>
     </div>
   );
