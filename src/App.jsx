@@ -10,6 +10,7 @@ import Up from "./Ui/Up/Up";
 import FThreeHighApartments from "./Components/AllApartments/FThreeHighApartments/Home";
 import FThreeApartments from "./Components/AllApartments/FThreeApartments/Home";
 import FTwoApartments from "./Components/AllApartments/FTwoApartments/Home";
+import StudiosApartments from "./Components/AllApartments/StudioApartments/Home";
 
 const App = () => {
   return (
@@ -32,6 +33,10 @@ const App = () => {
 
             <Route path="/FTroisAppartements" element={<FThreeApartments />} />
             <Route path="/FDeuxAppartements" element={<FTwoApartments />} />
+            <Route
+              path="/StudiosAppartements"
+              element={<StudiosApartments />}
+            />
 
             <Route path="/À-Propos-de-Nous" element={<AboutUsPage />} />
             <Route path="/Contactez-Nous" element={<ContactUs />} />
