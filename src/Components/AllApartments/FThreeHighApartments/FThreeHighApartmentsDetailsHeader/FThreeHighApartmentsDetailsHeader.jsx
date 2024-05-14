@@ -1,12 +1,37 @@
+import { useTranslation } from "react-i18next";
+import Boxes from "../Data";
+import { useParams } from "react-router-dom";
+
 const FThreeHighApartmentsDetailsHeader = () => {
+  const { i18n } = useTranslation();
+  const modifiedData = Boxes.map((item) => {
+    if (i18n.language == "ar") {
+      return {
+        id: item.id,
+      };
+    }
+
+    if (i18n.language == "fr") {
+      return {
+        id: item.id,
+      };
+    }
+
+    return item;
+  });
+
+  const { FTroisHighStandingId } = useParams();
+
+  const Data = modifiedData.find((item) => item.id == FTroisHighStandingId);
+
   return (
     <div>
       <div className="w-full bg-white text-backgroundColor">
         <div className="container">
           <div className="py-20">
             <div className="flex justify-between">
-              <h1>The Name Of The Apartment</h1>
-              <h6>5000 da</h6>
+              <h1>{Data.title}</h1>
+              <h6>{Data.price}</h6>
             </div>
           </div>
         </div>
