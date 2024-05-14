@@ -91,8 +91,15 @@
   "f2_price": "100",
   "f2_space_header": "For one day",
   "f2_space": "5000da",
-  "f2__space_our_rooms_subheader": "Our f2 High Standing Apartments",
-  "f2_space_our_rooms_header": "Explore Our Hotel Apartments",
   "f2_our_rooms_subheader": "Our f2 Apartments",
-  "f2_our_rooms_header": "Explore Our Hotel Apartments"
+  "f2_our_rooms_header": "Explore Our Hotel Apartments",
+
+  "studios_header": "WELCOME TO OUR STUDIOS APARTMENTS.",
+  "studios_header_two": "We help you to find the apartment of your dream",
+  "studios_price_header": "Square meters",
+  "studios_price": "80",
+  "studios_space_header": "For one day",
+  "studios_space": "5000da",
+  "studios_our_rooms_subheader": "Our studios Apartments",
+  "studios_our_rooms_header": "Explore Our Hotel Apartments"
 }
