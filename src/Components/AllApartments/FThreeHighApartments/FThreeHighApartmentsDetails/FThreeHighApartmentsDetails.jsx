@@ -8,8 +8,6 @@ import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 const FThreeHighApartmentsDetails = () => {
-  const { t } = useTranslation();
-
   const {
     register,
     trigger,
@@ -23,7 +21,7 @@ const FThreeHighApartmentsDetails = () => {
     }
   };
 
-  const inputStyles = `mt-5 rounded-md text-backgroundColor focus:outline-none bg-grey px-5 py-3`;
+  const inputStyles = `w-full mt-5 rounded-md text-backgroundColor focus:outline-none bg-grey px-5 py-3`;
   const { i18n } = useTranslation();
 
   const modifiedData = Boxes.map((item) => {
@@ -50,6 +48,8 @@ const FThreeHighApartmentsDetails = () => {
 
   const Data = modifiedData.find((item) => item.id == FTroisHighStandingId);
 
+  const { t } = useTranslation();
+
   return (
     <div>
       <div>
@@ -63,16 +63,22 @@ const FThreeHighApartmentsDetails = () => {
             </div>
             <div>
               <div>
-                <div className="xl:w-[60%] hidden lg:block p-8 md:ltr:ml-20 xl:ltr:ml-48 bg-white text-backgroundColor">
+                <div className="xl:w-[60%] hidden lg:block p-8 md:ltr:ml-20 xl:ltr:ml-48 bg-white text-mainColor">
                   <div>
                     <div>
-                      <h6 className="text-xl">Reserve now</h6>
-                      <h1 className="text-2xl">Send us message</h1>
+                      <h6 className="text-xl">
+                        {" "}
+                        {t("contact_form_apartment_details_header")}
+                      </h6>
+                      <h1 className="text-2xl">
+                        {" "}
+                        {t("contact_form_apartment_details_subheader")}
+                      </h1>
                     </div>
                     <div>
                       <form
                         target="_blank"
-                        className="mb-8 text-center md:mb-0"
+                        className="mb-8 md:mb-0"
                         onSubmit={onSubmit}
                         action="#"
                         method="POST"
@@ -132,7 +138,7 @@ const FThreeHighApartmentsDetails = () => {
                           </p>
                         )}
                         <div className="mt-8">
-                          <button className="buttonContactUs">
+                          <button className="w-full buttonContactUs">
                             {t("button_three")}
                           </button>
                         </div>

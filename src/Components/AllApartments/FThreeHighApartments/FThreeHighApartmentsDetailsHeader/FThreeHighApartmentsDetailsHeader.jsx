@@ -9,6 +9,7 @@ const FThreeHighApartmentsDetailsHeader = () => {
       return {
         id: item.id,
         title: item.title_en,
+        day: item.day_en,
         price: item.price,
       };
     }
@@ -17,6 +18,7 @@ const FThreeHighApartmentsDetailsHeader = () => {
       return {
         id: item.id,
         title: item.title_ar,
+        day: item.day_ar,
         price: item.price,
       };
     }
@@ -35,7 +37,9 @@ const FThreeHighApartmentsDetailsHeader = () => {
           <div className="py-20">
             <div className="flex justify-between">
               <h1>{Data.title}</h1>
-              <h6>{Data.price}</h6>
+              <h6>
+                {Data.price} / {Data.day}
+              </h6>
             </div>
           </div>
         </div>
