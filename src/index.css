@@ -217,6 +217,14 @@ body.arabic {
   height: 34rem;
 }
 
+.DetailsBackground {
+  background-image: url(../src/assets/DetailsBackground.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 34rem;
+}
+
 .reservationBack {
   background-image: url(../src/assets/DecoSeven.webp);
   background-position: center center;
