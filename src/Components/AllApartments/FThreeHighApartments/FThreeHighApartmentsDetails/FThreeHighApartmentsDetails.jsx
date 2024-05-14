@@ -58,8 +58,16 @@ const FThreeHighApartmentsDetails = () => {
       <div className="container">
         <div className="mt-20">
           <div className="flex flex-col md:flex-row">
-            <div>
-              <FThreeHighApartmentDetailsSwiper />
+            <div className="w-full">
+              <div>
+                <FThreeHighApartmentDetailsSwiper />
+              </div>
+              <div className="w-2/2">
+                <div className="mt-8">
+                  <h1>{Data.descriptionHeader}</h1>
+                  <p>{Data.description}</p>
+                </div>
+              </div>
             </div>
             <div>
               <div>
