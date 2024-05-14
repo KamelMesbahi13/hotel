@@ -63,11 +63,11 @@ const FThreeHighApartmentsDetails = () => {
             </div>
             <div>
               <div>
-                <div className="w-1/2 p-8 bg-white text-backgroundColor">
+                <div className="xl:w-[60%] hidden lg:block p-8 md:ltr:ml-20 xl:ltr:ml-48 bg-white text-backgroundColor">
                   <div>
                     <div>
-                      <h6>Reserve now</h6>
-                      <h1>Send us message</h1>
+                      <h6 className="text-xl">Reserve now</h6>
+                      <h1 className="text-2xl">Send us message</h1>
                     </div>
                     <div>
                       <form
