@@ -50,6 +50,7 @@ const Boxes = [
     id: 4,
     img: RoomFour,
     stats: "5000da / 100m²",
+    link: "StudiosAppartements",
     button: "Plus de détails",
     button_en: "More details",
     button_ar: "المزيد من التفاصيل",
@@ -78,6 +79,7 @@ const Apartments = () => {
         stats: data.stats,
         button: data.button_ar,
         title: data.title_ar,
+        link: data.link,
       };
     }
 
@@ -88,6 +90,7 @@ const Apartments = () => {
         stats: data.stats,
         button: data.button_en,
         title: data.title_en,
+        link: data.link,
       };
     }
     return data;
