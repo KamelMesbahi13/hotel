@@ -1,7 +1,6 @@
 import FThreeHighApartmentsDetailsHeader from "../FThreeHighApartmentsDetailsHeader/FThreeHighApartmentsDetailsHeader";
 import FThreeHighApartmentDetailsSwiper from "./FThreeHighApartmentDetailsSwiper";
 import Video from "../../../../assets/FThreeHighStandingVideo.mp4";
-import ThumbNail from "../../../../assets/FThreeHighStandingVideoThumbNail.jpg";
 import { useTranslation } from "react-i18next";
 import Boxes from "../Data";
 import { useParams } from "react-router-dom";
@@ -56,7 +55,6 @@ const FThreeHighApartmentsDetails = () => {
   const { t } = useTranslation();
 
   const videoUrl = Video;
-  const thumbnailUrl = ThumbNail;
 
   return (
     <div>
