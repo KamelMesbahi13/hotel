@@ -48,10 +48,10 @@ const OurRooms = () => {
               <div>
                 <div className="md:w-3/4 md:mx-auto textCenter">
                   <h2 className="mb-2">
-                    {t("f3_high_standing_space_our_rooms_subheader")}
+                    {t("f3_high_standing_our_rooms_subheader")}
                   </h2>
                   <h1 className="mb-4">
-                    {t("f3_high_standing_space_our_rooms_header")}
+                    {t("f3_high_standing_our_rooms_header")}
                   </h1>
                   <div className="flex justify-center md:mt-2">
                     <div className="w-8 h-1 md:w-12 bg-secondColor"></div>
