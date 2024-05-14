@@ -29,6 +29,14 @@ const Data = [
     title: "Maisons de luxe extraordinaires.",
     title_en: "Extraordinary Luxury Homes.",
     title_ar: " شقق راقية.",
+    descriptionHeader: "Description",
+    descriptionHeader_en: "Description",
+    descriptionHeader_ar: "الوصف",
+    descriptionParagraph:
+      "Découvrez nos appartements de luxe de l'hôtel F3 avec un style moderne et trois espaces spacieux : une salle de séjour confortable et deux chambres confortables. L'expression (haut standing) signifie que nous utilisons des matériaux de première qualité et que nous proposons des équipements de luxe, pour vous offrir un lieu de séjour luxueux et apaisant. Profitez de l'expérience de luxe ultime dans nos appartements de l'hôtel F3, où nous nous concentrons sur chaque détail pour dépasser vos attentes.",
+    descriptionParagraph_en:
+      "Explore our deluxe F3 hotel apartments with a modern style and three roomy spaces: a cozy living area and two comfy bedrooms. The phrase (high standing) means we use top-notch materials and offer fancy amenities, giving you a luxurious and calming place to stay. Enjoy the ultimate luxury experience at our F3 hotel apartments, where we focus on every detail to surpass your expectations.",
+    descriptionParagraph_ar: "استكشف شققنا الفندقية الفاخرة من طراز",
   },
 
   {
@@ -54,6 +62,14 @@ const Data = [
     title: "Maisons de luxe extraordinaires.",
     title_en: "Extraordinary Luxury Homes.",
     title_ar: " شقق راقية.",
+    descriptionHeader: "Description",
+    descriptionHeader_en: "Description",
+    descriptionHeader_ar: "الوصف",
+    descriptionParagraph:
+      "Découvrez nos appartements de luxe de l'hôtel F3 avec un style moderne et trois espaces spacieux : une salle de séjour confortable et deux chambres confortables. L'expression (haut standing) signifie que nous utilisons des matériaux de première qualité et que nous proposons des équipements de luxe, pour vous offrir un lieu de séjour luxueux et apaisant. Profitez de l'expérience de luxe ultime dans nos appartements de l'hôtel F3, où nous nous concentrons sur chaque détail pour dépasser vos attentes.",
+    descriptionParagraph_en:
+      "Explore our deluxe F3 hotel apartments with a modern style and three roomy spaces: a cozy living area and two comfy bedrooms. The phrase (high standing) means we use top-notch materials and offer fancy amenities, giving you a luxurious and calming place to stay. Enjoy the ultimate luxury experience at our F3 hotel apartments, where we focus on every detail to surpass your expectations.",
+    descriptionParagraph_ar: "استكشف شققنا الفندقية الفاخرة من طراز",
   },
 
   {
@@ -79,6 +95,14 @@ const Data = [
     title: "Maisons de luxe extraordinaires.",
     title_en: "Extraordinary Luxury Homes.",
     title_ar: " شقق راقية.",
+    descriptionHeader: "Description",
+    descriptionHeader_en: "Description",
+    descriptionHeader_ar: "الوصف",
+    descriptionParagraph:
+      "Découvrez nos appartements de luxe de l'hôtel F3 avec un style moderne et trois espaces spacieux : une salle de séjour confortable et deux chambres confortables. L'expression (haut standing) signifie que nous utilisons des matériaux de première qualité et que nous proposons des équipements de luxe, pour vous offrir un lieu de séjour luxueux et apaisant. Profitez de l'expérience de luxe ultime dans nos appartements de l'hôtel F3, où nous nous concentrons sur chaque détail pour dépasser vos attentes.",
+    descriptionParagraph_en:
+      "Explore our deluxe F3 hotel apartments with a modern style and three roomy spaces: a cozy living area and two comfy bedrooms. The phrase (high standing) means we use top-notch materials and offer fancy amenities, giving you a luxurious and calming place to stay. Enjoy the ultimate luxury experience at our F3 hotel apartments, where we focus on every detail to surpass your expectations.",
+    descriptionParagraph_ar: "استكشف شققنا الفندقية الفاخرة من طراز",
   },
 
   {
@@ -104,6 +128,14 @@ const Data = [
     title: "Maisons de luxe extraordinaires.",
     title_en: "Extraordinary Luxury Homes.",
     title_ar: " شقق راقية.",
+    descriptionHeader: "Description",
+    descriptionHeader_en: "Description",
+    descriptionHeader_ar: "الوصف",
+    descriptionParagraph:
+      "Découvrez nos appartements de luxe de l'hôtel F3 avec un style moderne et trois espaces spacieux : une salle de séjour confortable et deux chambres confortables. L'expression (haut standing) signifie que nous utilisons des matériaux de première qualité et que nous proposons des équipements de luxe, pour vous offrir un lieu de séjour luxueux et apaisant. Profitez de l'expérience de luxe ultime dans nos appartements de l'hôtel F3, où nous nous concentrons sur chaque détail pour dépasser vos attentes.",
+    descriptionParagraph_en:
+      "Explore our deluxe F3 hotel apartments with a modern style and three roomy spaces: a cozy living area and two comfy bedrooms. The phrase (high standing) means we use top-notch materials and offer fancy amenities, giving you a luxurious and calming place to stay. Enjoy the ultimate luxury experience at our F3 hotel apartments, where we focus on every detail to surpass your expectations.",
+    descriptionParagraph_ar: "استكشف شققنا الفندقية الفاخرة من طراز",
   },
 
   {
@@ -130,6 +162,14 @@ const Data = [
     title: "Maisons de luxe extraordinaires.",
     title_en: "Extraordinary Luxury Homes.",
     title_ar: " شقق راقية.",
+    descriptionHeader: "Description",
+    descriptionHeader_en: "Description",
+    descriptionHeader_ar: "الوصف",
+    descriptionParagraph:
+      "Découvrez nos appartements de luxe de l'hôtel F3 avec un style moderne et trois espaces spacieux : une salle de séjour confortable et deux chambres confortables. L'expression (haut standing) signifie que nous utilisons des matériaux de première qualité et que nous proposons des équipements de luxe, pour vous offrir un lieu de séjour luxueux et apaisant. Profitez de l'expérience de luxe ultime dans nos appartements de l'hôtel F3, où nous nous concentrons sur chaque détail pour dépasser vos attentes.",
+    descriptionParagraph_en:
+      "Explore our deluxe F3 hotel apartments with a modern style and three roomy spaces: a cozy living area and two comfy bedrooms. The phrase (high standing) means we use top-notch materials and offer fancy amenities, giving you a luxurious and calming place to stay. Enjoy the ultimate luxury experience at our F3 hotel apartments, where we focus on every detail to surpass your expectations.",
+    descriptionParagraph_ar: "استكشف شققنا الفندقية الفاخرة من طراز",
   },
 
   {
@@ -156,6 +196,14 @@ const Data = [
     title: "Maisons de luxe extraordinaires.",
     title_en: "Extraordinary Luxury Homes.",
     title_ar: " شقق راقية.",
+    descriptionHeader: "Description",
+    descriptionHeader_en: "Description",
+    descriptionHeader_ar: "الوصف",
+    descriptionParagraph:
+      "Découvrez nos appartements de luxe de l'hôtel F3 avec un style moderne et trois espaces spacieux : une salle de séjour confortable et deux chambres confortables. L'expression (haut standing) signifie que nous utilisons des matériaux de première qualité et que nous proposons des équipements de luxe, pour vous offrir un lieu de séjour luxueux et apaisant. Profitez de l'expérience de luxe ultime dans nos appartements de l'hôtel F3, où nous nous concentrons sur chaque détail pour dépasser vos attentes.",
+    descriptionParagraph_en:
+      "Explore our deluxe F3 hotel apartments with a modern style and three roomy spaces: a cozy living area and two comfy bedrooms. The phrase (high standing) means we use top-notch materials and offer fancy amenities, giving you a luxurious and calming place to stay. Enjoy the ultimate luxury experience at our F3 hotel apartments, where we focus on every detail to surpass your expectations.",
+    descriptionParagraph_ar: "استكشف شققنا الفندقية الفاخرة من طراز",
   },
 ];
 

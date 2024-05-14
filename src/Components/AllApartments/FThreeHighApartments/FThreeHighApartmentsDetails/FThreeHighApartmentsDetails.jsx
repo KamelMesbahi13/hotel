@@ -30,6 +30,8 @@ const FThreeHighApartmentsDetails = () => {
         id: item.id,
         title: item.title_en,
         price: item.price,
+        descriptionHeader: item.descriptionHeader_en,
+        descriptionParagraph: item.descriptionParagraph_en,
       };
     }
 
@@ -38,6 +40,8 @@ const FThreeHighApartmentsDetails = () => {
         id: item.id,
         title: item.title_ar,
         price: item.price,
+        descriptionHeader: item.descriptionHeader_ar,
+        descriptionParagraph: item.descriptionParagraph_ar,
       };
     }
 
@@ -64,8 +68,12 @@ const FThreeHighApartmentsDetails = () => {
               </div>
               <div className="w-2/2">
                 <div className="mt-8">
-                  <h1>{Data.descriptionHeader}</h1>
-                  <p>{Data.description}</p>
+                  <div className="mb-4">
+                    <h1>{Data.descriptionHeader}</h1>
+                  </div>
+                  <div>
+                    <p>{Data.descriptionParagraph}</p>
+                  </div>
                 </div>
               </div>
             </div>
