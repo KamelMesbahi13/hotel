@@ -232,6 +232,10 @@ body.arabic {
   background-attachment: fixed;
 }
 
+.rounded-images img {
+  border-radius: 2px;
+}
+
 @layer components {
   body {
     @apply bg-backgroundColor text-textColor font-main h-[1000rem];
