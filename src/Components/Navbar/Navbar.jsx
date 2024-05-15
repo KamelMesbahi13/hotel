@@ -66,12 +66,15 @@ const Navbar = () => {
 
                 <div className="flex items-center justify-end w-1/4">
                   <div className="flex items-center rtl:flex-row-reverse">
-                    <i className="ltr:mr-4 rtl:mr-4 text-thirdColor">
-                      {<FaPhone />}
-                    </i>
-                    <p className="text-xs xl:text-base linkColor initialDirection">
-                      0555 55 55 55
-                    </p>
+                    <a
+                      href="tel:+21355555555"
+                      className="flex items-center text-xs cursor-pointer xl:text-base linkColor initialDirection"
+                    >
+                      <i className="ltr:mr-4 rtl:mr-4 text-thirdColor">
+                        {<FaPhone />}
+                      </i>
+                      <p>0555 55 55 55</p>
+                    </a>
                   </div>
                   <span className="text-2xl cursor-pointer ltr:ml-12 rtl:mr-12">
                     <TranslateIcon />

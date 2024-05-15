@@ -70,7 +70,7 @@ function TranslateIcon() {
               <GlobeIcon />
             </button>
             {isOpen && (
-              <ul className="absolute z-10 px-8 mt-2 mr-12 bg-white border-2 rounded-md shadow-2xl md:mr-0 -right-12 border-grey">
+              <ul className="absolute z-10 px-8 mt-2 mr-12 rtl:md:right-[-7rem] bg-white border-2 rounded-md shadow-2xl md:mr-0 -right-12 border-grey">
                 <li>
                   <h6 className="block px-2 py-1 text-lg font-bold lg:px-4 lg:py-2 text-mainColor">
                     {t("Language")}
