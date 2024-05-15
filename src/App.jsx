@@ -44,12 +44,12 @@ const App = () => {
               element={<FThreeApartmentsDetails />}
             />
 
+            <Route path="/FDeuxAppartements" element={<FTwoApartments />} />
             <Route
               path="/FDeuxAppartements/:FDeuxAppartementsId"
               element={<FTwoApartmentsDetails />}
             />
 
-            <Route path="/FDeuxAppartements" element={<FTwoApartments />} />
             <Route
               path="/StudiosAppartements"
               element={<StudiosApartments />}
