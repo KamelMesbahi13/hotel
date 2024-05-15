@@ -2,9 +2,17 @@ import RoomOne from "../../../assets/RoomFive.webp";
 import RoomTwo from "../../../assets/RoomFour.webp";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const handleLinkClick = (route) => {
+    navigate(route);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div>
@@ -63,7 +71,9 @@ const AboutUs = () => {
                 <p>{t("about_us_home_paragraph")}</p>
               </div>
               <div className="mt-8">
-                <button className="button">{t("button_two")}</button>
+                <Link onClick={handleLinkClick} to="/À-Propos-de-Nous">
+                  <button className="button">{t("button_two")}</button>
+                </Link>
               </div>
             </motion.div>
           </div>
