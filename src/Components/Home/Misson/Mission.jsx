@@ -132,7 +132,7 @@ const Mission = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div>
+        <div id="mission">
           <div className="mt-8 md:mt-64 md:textCenter">
             <div>
               <div className="md:w-3/4 md:mx-auto textCenter">

@@ -30,7 +30,7 @@ const Introduction = () => {
                 <button className="button">
                   <Link
                     activeClass="active"
-                    to="introduction"
+                    to="mission"
                     spy={true}
                     smooth={true}
                     offset={-70}
