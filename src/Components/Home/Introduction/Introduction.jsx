@@ -27,18 +27,16 @@ const Introduction = () => {
             </div>
             <div>
               <div className="mt-8">
-                <button className="button">
-                  <Link
-                    activeClass="active"
-                    to="mission"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    {t("button_one")}
-                  </Link>
-                </button>
+                <Link
+                  activeClass="active"
+                  to="mission"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  <button className="button">{t("button_one")}</button>
+                </Link>
               </div>
             </div>
           </div>
