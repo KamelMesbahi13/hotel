@@ -169,11 +169,7 @@ const FThreeHighApartmentsDetails = () => {
           </div>
         </div>
         <div className="mb-12">
-          {videoUrl ? (
-            <VideoPlayer videoUrl={videoUrl} />
-          ) : (
-            <p>No video found for the given ID.</p>
-          )}
+          <VideoPlayer videoUrl={videoUrl} />
         </div>
       </div>
     </div>

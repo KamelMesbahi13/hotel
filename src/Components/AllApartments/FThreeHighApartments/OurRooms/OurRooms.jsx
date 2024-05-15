@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
 import Boxes from "./../Data";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const OurRooms = () => {
+  const navigate = useNavigate();
   const { i18n } = useTranslation();
 
   const modifiedData = Boxes.map((data) => {
@@ -37,6 +39,11 @@ const OurRooms = () => {
   });
 
   const { t } = useTranslation();
+
+  const handleLinkClick = (route) => {
+    navigate(route);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div>
@@ -98,6 +105,7 @@ const OurRooms = () => {
                           </div>
                           <div className="mt-4">
                             <Link
+                              onClick={handleLinkClick}
                               to={`/FTroisHighStandingAppartements/${item.id}`}
                             >
                               <button className="buttonContactUs">
