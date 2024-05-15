@@ -1,46 +1,27 @@
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import ImagesData from "../ImagesData";
+import PropTypes from "prop-types";
 
-import RoomOne from "../../../../assets/fThreeHighStandingOne.jpg";
-import RoomTwo from "../../../../assets/fThreeHighStandingTwo.jpg";
-import RoomThree from "../../../../assets/fThreeHighStandingThree.jpg";
-import RoomFour from "../../../../assets/fThreeHighStandingFour.jpg";
-import RoomFive from "../../../../assets/fThreeHighStandingFive.jpg";
-import RoomSix from "../../../../assets/fThreeHighStandingSix.jpg";
+const MyGallery = ({ id }) => {
+  const imageSet = ImagesData.find((set) => set.id === id);
 
-const images = [
-  {
-    original: RoomOne,
-    thumbnail: RoomOne,
-  },
-  {
-    original: RoomTwo,
-    thumbnail: RoomTwo,
-  },
-  {
-    original: RoomThree,
-    thumbnail: RoomThree,
-  },
-  {
-    original: RoomFour,
-    thumbnail: RoomFour,
-  },
-  {
-    original: RoomFive,
-    thumbnail: RoomFive,
-  },
-  {
-    original: RoomSix,
-    thumbnail: RoomSix,
-  },
-];
+  const images = imageSet
+    ? imageSet.images.map((img) => ({
+        original: img,
+        thumbnail: img,
+      }))
+    : [];
 
-const MyGallery = () => {
   return (
     <div className="rounded-images">
       <ImageGallery showPlayButton={false} items={images} />
     </div>
   );
+};
+
+MyGallery.propTypes = {
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 export default MyGallery;

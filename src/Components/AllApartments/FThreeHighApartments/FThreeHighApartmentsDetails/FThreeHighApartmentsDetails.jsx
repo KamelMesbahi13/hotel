@@ -1,4 +1,4 @@
-import FThreeHighApartmentsDetailsHeader from "../FThreeHighApartmentsDetailsHeader/FThreeHighApartmentsDetailsHeader";
+import FThreeHighApartmentsDetailsHeader from "./FThreeHighApartmentsDetailsHeader";
 import FThreeHighApartmentDetailsSwiper from "./FThreeHighApartmentDetailsSwiper";
 import Video from "../../../../assets/FThreeHighStandingVideo.mp4";
 import { useTranslation } from "react-i18next";
@@ -66,7 +66,7 @@ const FThreeHighApartmentsDetails = () => {
           <div className="flex flex-col md:flex-row">
             <div className="w-full">
               <div>
-                <FThreeHighApartmentDetailsSwiper />
+                <FThreeHighApartmentDetailsSwiper id={Data.id} />
               </div>
               <div className="w-full">
                 <div className="mt-8">
@@ -168,7 +168,7 @@ const FThreeHighApartmentsDetails = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="mb-12">
           <VideoPlayer videoUrl={videoUrl} />
         </div>
       </div>

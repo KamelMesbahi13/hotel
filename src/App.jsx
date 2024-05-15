@@ -4,7 +4,7 @@ const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
 const Home = lazy(() => import("./Components/Home/Home"));
 const AboutUsPage = lazy(() => import("./Components/AboutUsPage/Home"));
 const ContactUs = lazy(() => import("./Components/ContactUs/Home"));
-// const Footer = lazy(() => import("./Ui/Footer/Footer"));
+const Footer = lazy(() => import("./Ui/Footer/Footer"));
 import Loader from "./Ui/Loader/Loader";
 import Up from "./Ui/Up/Up";
 import FThreeHighApartments from "./Components/AllApartments/FThreeHighApartments/Home";
@@ -49,7 +49,7 @@ const App = () => {
             <Route path="/Contactez-Nous" element={<ContactUs />} />
           </Routes>
           <Up />
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </Suspense>
     </>
