@@ -68,7 +68,7 @@ const FThreeHighApartmentsDetails = () => {
               <div>
                 <FThreeHighApartmentDetailsSwiper />
               </div>
-              <div className="w-2/2">
+              <div className="w-full">
                 <div className="mt-8">
                   <div className="mb-4">
                     <h1>{Data.descriptionHeader}</h1>
@@ -168,7 +168,9 @@ const FThreeHighApartmentsDetails = () => {
             </div>
           </div>
         </div>
-        <VideoPlayer videoUrl={videoUrl} />
+        <div>
+          <VideoPlayer videoUrl={videoUrl} />
+        </div>
       </div>
     </div>
   );
