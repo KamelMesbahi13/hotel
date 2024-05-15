@@ -101,7 +101,7 @@ const OurRooms = () => {
                           <div className="mt-4">
                             <Link
                               onClick={handleLinkClick}
-                              to={`/StudiosApartmentsId/${item.id}`}
+                              to={`/StudiosAppartements/${item.id}`}
                             >
                               <button className="buttonContactUs">
                                 {item.button}
