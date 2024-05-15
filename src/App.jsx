@@ -13,6 +13,7 @@ import FThreeHighApartmentsDetails from "./Components/AllApartments/FThreeHighAp
 import FThreeApartments from "./Components/AllApartments/FThreeApartments/Home";
 import FTwoApartments from "./Components/AllApartments/FTwoApartments/Home";
 import StudiosApartments from "./Components/AllApartments/StudioApartments/Home";
+import FThreeApartmentsDetails from "./Components/AllApartments/FThreeApartments/FThreeApartmentsDetails/FThreeApartmentsDetails";
 
 const App = () => {
   return (
@@ -36,6 +37,11 @@ const App = () => {
             <Route
               path="/FTroisHighStandingAppartements/:FTroisHighStandingId"
               element={<FThreeHighApartmentsDetails />}
+            />
+
+            <Route
+              path="/FTroisAppartements/:FTroisAppartementsId"
+              element={<FThreeApartmentsDetails />}
             />
 
             <Route path="/FTroisAppartements" element={<FThreeApartments />} />
