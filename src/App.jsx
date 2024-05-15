@@ -13,6 +13,7 @@ import FThreeApartments from "./Components/AllApartments/FThreeApartments/Home";
 import FTwoApartments from "./Components/AllApartments/FTwoApartments/Home";
 import StudiosApartments from "./Components/AllApartments/StudioApartments/Home";
 import FThreeApartmentsDetails from "./Components/AllApartments/FThreeApartments/FThreeApartmentsDetails/FThreeApartmentsDetails";
+import FTwoApartmentsDetails from "./Components/AllApartments/FTwoApartments/FTwoApartmentsDetails/FTwoApartmentsDetails";
 
 const App = () => {
   return (
@@ -32,18 +33,22 @@ const App = () => {
               path="/FTroisHighStandingAppartements"
               element={<FThreeHighApartments />}
             />
-
             <Route
               path="/FTroisHighStandingAppartements/:FTroisHighStandingId"
               element={<FThreeHighApartmentsDetails />}
             />
 
+            <Route path="/FTroisAppartements" element={<FThreeApartments />} />
             <Route
               path="/FTroisAppartements/:FTroisAppartementsId"
               element={<FThreeApartmentsDetails />}
             />
 
-            <Route path="/FTroisAppartements" element={<FThreeApartments />} />
+            <Route
+              path="/FDeuxAppartements/:FDeuxAppartementsId"
+              element={<FTwoApartmentsDetails />}
+            />
+
             <Route path="/FDeuxAppartements" element={<FTwoApartments />} />
             <Route
               path="/StudiosAppartements"
