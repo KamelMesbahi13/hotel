@@ -14,6 +14,7 @@ import FTwoApartments from "./Components/AllApartments/FTwoApartments/Home";
 import StudiosApartments from "./Components/AllApartments/StudioApartments/Home";
 import FThreeApartmentsDetails from "./Components/AllApartments/FThreeApartments/FThreeApartmentsDetails/FThreeApartmentsDetails";
 import FTwoApartmentsDetails from "./Components/AllApartments/FTwoApartments/FTwoApartmentsDetails/FTwoApartmentsDetails";
+import StudioApartmentsDetails from "./Components/AllApartments/StudioApartments/StudioApartmentsDetails/StudioApartmentsDetails";
 
 const App = () => {
   return (
@@ -53,6 +54,11 @@ const App = () => {
             <Route
               path="/StudiosAppartements"
               element={<StudiosApartments />}
+            />
+
+            <Route
+              path="/StudiosAppartements/:StudiosAppartementsId"
+              element={<StudioApartmentsDetails />}
             />
 
             <Route path="/À-Propos-de-Nous" element={<AboutUsPage />} />
