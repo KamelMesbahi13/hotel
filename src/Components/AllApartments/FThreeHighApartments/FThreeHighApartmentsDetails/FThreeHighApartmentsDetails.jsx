@@ -1,10 +1,10 @@
 import FThreeHighApartmentsDetailsHeader from "./FThreeHighApartmentsDetailsHeader";
 import FThreeHighApartmentDetailsSwiper from "./FThreeHighApartmentDetailsSwiper";
-import Video from "../../../../assets/FThreeHighStandingVideo.mp4";
 import { useTranslation } from "react-i18next";
 import Boxes from "../Data";
 import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import Videos from "../VideosData";
 import VideoPlayer from "./FThreeHighApartmentsDetailsVideo";
 
 const FThreeHighApartmentsDetails = () => {
@@ -54,8 +54,8 @@ const FThreeHighApartmentsDetails = () => {
 
   const { t } = useTranslation();
 
-  const videoUrl = Video;
-
+  const videoData = Videos.find((video) => video.id == FTroisHighStandingId);
+  const videoUrl = videoData ? videoData.video : null;
   return (
     <div>
       <div>
@@ -169,7 +169,11 @@ const FThreeHighApartmentsDetails = () => {
           </div>
         </div>
         <div className="mb-12">
-          <VideoPlayer videoUrl={videoUrl} />
+          {videoUrl ? (
+            <VideoPlayer videoUrl={videoUrl} />
+          ) : (
+            <p>No video found for the given ID.</p>
+          )}
         </div>
       </div>
     </div>
