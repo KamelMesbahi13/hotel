@@ -1,5 +1,13 @@
+import StudioApartmentsDetailsHeader from "./StudioApartmentsDetailsHeader";
+
 const StudioApartmentsDetails = () => {
-  return <div>StudioApartmentsDetails</div>;
+  return (
+    <div>
+      <div>
+        <StudioApartmentsDetailsHeader />
+      </div>
+    </div>
+  );
 };
 
 export default StudioApartmentsDetails;

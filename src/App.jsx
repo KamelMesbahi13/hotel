@@ -57,7 +57,7 @@ const App = () => {
             />
 
             <Route
-              path="/StudiosAppartements/:StudiosAppartementsId"
+              path="/StudiosAppartements/:StudiosApartmentsId"
               element={<StudioApartmentsDetails />}
             />
 
