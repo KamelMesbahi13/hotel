@@ -1,5 +1,13 @@
+import FTwoApartmentsDetailsHeader from "./FTwoApartmentsDetailsHeader";
+
 const FTwoApartmentsDetails = () => {
-  return <div>FTwoApartmentsDetails</div>;
+  return (
+    <div>
+      <div>
+        <FTwoApartmentsDetailsHeader />
+      </div>
+    </div>
+  );
 };
 
 export default FTwoApartmentsDetails;
