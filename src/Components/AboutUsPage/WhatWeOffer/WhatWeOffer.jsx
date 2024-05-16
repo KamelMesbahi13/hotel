@@ -24,7 +24,7 @@ const WhatWeOffer = () => {
                 <h2>{t("what_we_offer_subheader_about_us")}</h2>
                 <h1>{t("what_we_offer_header_about_us")}</h1>
               </div>
-              <div className="mt-12 md:w-2/4 md:mt-20">
+              <div className="mt-8 md:w-2/4 md:mt-20">
                 <p>{t("what_we_offer_paragraph_one_about_us")}</p>
                 <p className="mt-8">
                   {t("what_we_offer_paragraph_two_about_us")}
