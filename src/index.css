@@ -210,7 +210,7 @@ body.arabic {
 }
 
 .f3HighStandingBack {
-  background-image: url(../src/assets/FThreeHighStandingBack.jpg);
+  background-image: url(../src/assets/FThreeHighStandingBack.webp);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -218,7 +218,7 @@ body.arabic {
 }
 
 .DetailsBackground {
-  background-image: url(../src/assets/DetailsBackground.jpg);
+  background-image: url(../src/assets/DetailsBackground.webp);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;

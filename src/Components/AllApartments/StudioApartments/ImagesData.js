@@ -1,9 +1,9 @@
-import RoomOne from "../../../assets/fThreeHighStandingOne.jpg";
-import RoomTwo from "../../../assets/fThreeHighStandingTwo.jpg";
-import RoomThree from "../../../assets/fThreeHighStandingThree.jpg";
-import RoomFour from "../../../assets/fThreeHighStandingFour.jpg";
-import RoomFive from "../../../assets/fThreeHighStandingFive.jpg";
-import RoomSix from "../../../assets/fThreeHighStandingSix.jpg";
+import RoomOne from "../../../assets/fThreeHighStandingOne.webp";
+import RoomTwo from "../../../assets/fThreeHighStandingTwo.webp";
+import RoomThree from "../../../assets/fThreeHighStandingThree.webp";
+import RoomFour from "../../../assets/fThreeHighStandingFour.webp";
+import RoomFive from "../../../assets/fThreeHighStandingFive.webp";
+import RoomSix from "../../../assets/fThreeHighStandingSix.webp";
 
 const ImagesData = [
   {
