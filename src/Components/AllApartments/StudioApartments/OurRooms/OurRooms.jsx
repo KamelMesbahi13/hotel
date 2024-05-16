@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Boxes from "./../Data";
+import Boxes from "../Data";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
