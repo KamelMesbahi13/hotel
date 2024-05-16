@@ -1,10 +1,15 @@
-import Boxes from "../Data";
-import FThreeApartmentDetailsSwiper from "./FThreeApartmentsDetailsSwiper";
-import Videos from "../VideosData";
+import { lazy } from "react";
+const FThreeApartmentsDetailsHeader = lazy(() =>
+  import("./FThreeApartmentDetailsHeader")
+);
 
+const FThreeApartmentDetailsSwiper = lazy(() =>
+  import("./FThreeApartmentsDetailsSwiper")
+);
+import Boxes from "../Data";
+import Videos from "../VideosData";
 import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import FThreeApartmentsDetailsHeader from "./FThreeApartmentDetailsHeader";
 import VideoPlayer from "./FThreeApartmentsDetailsVideo";
 import { useTranslation } from "react-i18next";
 

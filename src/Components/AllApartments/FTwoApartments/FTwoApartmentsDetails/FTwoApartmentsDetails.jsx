@@ -1,5 +1,10 @@
-import FTwoApartmentsDetailsHeader from "./FTwoApartmentsDetailsHeader";
-import FTwoApartmentsDetailsSwiper from "./FTwoApartmentsDetailsSwiper";
+import { lazy } from "react";
+const FTwoApartmentsDetailsHeader = lazy(() =>
+  import("./FTwoApartmentsDetailsHeader")
+);
+const FTwoApartmentsDetailsSwiper = lazy(() =>
+  import("./FTwoApartmentsDetailsSwiper")
+);
 import Boxes from "../Data";
 import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";

@@ -1,5 +1,10 @@
-import FThreeHighApartmentsDetailsHeader from "./FThreeHighApartmentsDetailsHeader";
-import FThreeHighApartmentDetailsSwiper from "./FThreeHighApartmentDetailsSwiper";
+import { lazy } from "react";
+const FThreeHighApartmentsDetailsHeader = lazy(() =>
+  import("./FThreeHighApartmentsDetailsHeader")
+);
+const FThreeHighApartmentDetailsSwiper = lazy(() =>
+  import("./FThreeHighApartmentDetailsSwiper")
+);
 import { useTranslation } from "react-i18next";
 import Boxes from "../Data";
 import { useParams } from "react-router-dom";

@@ -1,8 +1,11 @@
-import StudioApartmentsDetailsHeader from "./StudioApartmentsDetailsHeader";
-import StudioApartmentsDetailsSwiper from "./StudioApartmentsDetailsSwiper";
-
+import { lazy } from "react";
+const StudioApartmentsDetailsHeader = lazy(() =>
+  import("./StudioApartmentsDetailsHeader")
+);
+const StudioApartmentsDetailsSwiper = lazy(() =>
+  import("./StudioApartmentsDetailsSwiper")
+);
 import { useTranslation } from "react-i18next";
-
 import Boxes from "../Data";
 import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
