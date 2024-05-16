@@ -7,14 +7,46 @@ const ContactUs = lazy(() => import("./Components/ContactUs/Home"));
 // const Footer = lazy(() => import("./Ui/Footer/Footer"));
 import Loader from "./Ui/Loader/Loader";
 import Up from "./Ui/Up/Up";
-import FThreeHighApartments from "./Components/AllApartments/FThreeHighApartments/Home";
-import FThreeHighApartmentsDetails from "./Components/AllApartments/FThreeHighApartments/FThreeHighApartmentsDetails/FThreeHighApartmentsDetails";
-import FThreeApartments from "./Components/AllApartments/FThreeApartments/Home";
-import FTwoApartments from "./Components/AllApartments/FTwoApartments/Home";
-import StudiosApartments from "./Components/AllApartments/StudioApartments/Home";
-import FThreeApartmentsDetails from "./Components/AllApartments/FThreeApartments/FThreeApartmentsDetails/FThreeApartmentsDetails";
-import FTwoApartmentsDetails from "./Components/AllApartments/FTwoApartments/FTwoApartmentsDetails/FTwoApartmentsDetails";
-import StudioApartmentsDetails from "./Components/AllApartments/StudioApartments/StudioApartmentsDetails/StudioApartmentsDetails";
+
+const FThreeHighApartments = lazy(() =>
+  import("./Components/AllApartments/FThreeHighApartments/Home")
+);
+
+const FThreeHighApartmentsDetails = lazy(() =>
+  import(
+    "./Components/AllApartments/FThreeHighApartments/FThreeHighApartmentsDetails/FThreeHighApartmentsDetails"
+  )
+);
+
+const FThreeApartments = lazy(() =>
+  import("./Components/AllApartments/FThreeApartments/Home")
+);
+
+const FTwoApartments = lazy(() =>
+  import("./Components/AllApartments/FTwoApartments/Home")
+);
+
+const StudiosApartments = lazy(() =>
+  import("./Components/AllApartments/StudioApartments/Home")
+);
+
+const FThreeApartmentsDetails = lazy(() =>
+  import(
+    "./Components/AllApartments/FThreeApartments/FThreeApartmentsDetails/FThreeApartmentsDetails"
+  )
+);
+
+const FTwoApartmentsDetails = lazy(() =>
+  import(
+    "./Components/AllApartments/FTwoApartments/FTwoApartmentsDetails/FTwoApartmentsDetails"
+  )
+);
+
+const StudioApartmentsDetails = lazy(() =>
+  import(
+    "./Components/AllApartments/StudioApartments/StudioApartmentsDetails/StudioApartmentsDetails"
+  )
+);
 
 const App = () => {
   return (
