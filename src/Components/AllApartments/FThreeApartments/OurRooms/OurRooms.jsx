@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import Boxes from "./../Data";
 import { useNavigate } from "react-router-dom";
-
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const OurRooms = () => {
   const navigate = useNavigate();
@@ -50,8 +50,16 @@ const OurRooms = () => {
     <div>
       <div className="md:mt-56 mt-28">
         <div>
-          <div>
-            {" "}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.9 }}
+            variants={{
+              hidden: { opacity: 0, y: -25 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             <div className="mt-8 md:mt-12 md:textCenter">
               <div>
                 <div className="md:w-3/4 md:mx-auto textCenter">
@@ -69,9 +77,18 @@ const OurRooms = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.9 }}
+          variants={{
+            hidden: { opacity: 0, y: -25 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
           <div className="grid grid-cols-1 mt-8 md:grid-cols-3 md:mt-20">
             {modifiedData.map((item) => {
               return (
@@ -118,7 +135,7 @@ const OurRooms = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
