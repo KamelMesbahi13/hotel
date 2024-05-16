@@ -83,21 +83,21 @@ const OurRooms = () => {
             </div>
           </motion.div>
         </div>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.9 }}
-          variants={{
-            hidden: { opacity: 0, y: -25 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
+        <div>
           <div className="grid grid-cols-1 mt-8 md:grid-cols-3 md:mt-20">
             {modifiedData.map((item) => {
               return (
                 <div key={item.id}>
-                  <div>
+                  <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.9 }}
+                    variants={{
+                      hidden: { opacity: 0, y: -25 },
+                      visible: { opacity: 1, y: 0 },
+                    }}
+                  >
                     <div className="p-8">
                       <div className="overflow-hidden bg-white rounded-lg">
                         <img
@@ -134,12 +134,12 @@ const OurRooms = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               );
             })}
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
