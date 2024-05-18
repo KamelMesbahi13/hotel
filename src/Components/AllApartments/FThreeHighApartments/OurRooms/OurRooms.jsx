@@ -99,7 +99,7 @@ const OurRooms = () => {
                     }}
                   >
                     <div className="p-8">
-                      <div className="overflow-hidden rounded-lg bg-grey">
+                      <div className="overflow-hidden rounded-lg shadow-lg dark:shadow-none bg-grey">
                         <img
                           className="object-cover object-end"
                           src={item.img}

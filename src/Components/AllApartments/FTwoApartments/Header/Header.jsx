@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
       <div className="textCenter">
-        <div className="f3HighStandingBack">
+        <div className="text-white f3HighStandingBack">
           <motion.div
             initial="hidden"
             whileInView="visible"
