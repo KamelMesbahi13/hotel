@@ -14,7 +14,8 @@ import VideoPlayer from "./FThreeHighApartmentsDetailsVideo";
 import Title from "../../../../GeneralFunctions/Title";
 
 const FThreeHighApartmentsDetails = () => {
-  Title(`H.A.Z  | ${t("fThree_high_title")}`);
+  const { t } = useTranslation();
+  Title(`H.A.Z  | ${t("fThree_high_details_title")}`);
 
   const {
     register,
@@ -59,8 +60,6 @@ const FThreeHighApartmentsDetails = () => {
   const { FTroisHighStandingId } = useParams();
 
   const Data = modifiedData.find((item) => item.id == FTroisHighStandingId);
-
-  const { t } = useTranslation();
 
   const videoData = Videos.find((video) => video.id == FTroisHighStandingId);
   const videoUrl = videoData ? videoData.video : null;
