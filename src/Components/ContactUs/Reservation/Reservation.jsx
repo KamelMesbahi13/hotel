@@ -28,7 +28,7 @@ const Reservation = () => {
                     allowFullScreen={true}
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Google Maps"
-                    className="md:w-[600px] md:h-[450px] w-[300px] h-[250px] border-[10px] border-white"
+                    className="md:w-[600px] md:h-[450px] w-[300px] h-[250px] border-[10px] border-white dark:border-white"
                   ></iframe>
                 </motion.div>
               </div>
@@ -41,9 +41,9 @@ const Reservation = () => {
                   hidden: { opacity: 0, y: 25 },
                   visible: { opacity: 1, y: 0 },
                 }}
-                className="px-4 py-8 mt-8 border md:mt-0 md:px-8 md:py-16 textCenter"
+                className="px-4 py-8 mt-8 border-2 border-white dark:border-white md:mt-0 md:px-8 md:py-16 textCenter"
               >
-                <div className="mb-8 md:mb-16">
+                <div className="mb-8 text-white md:mb-16">
                   <div className="mb-4">
                     <h2 className="text-xs md:text-sm text-secondColor">
                       {t("reservation_first_subheader")}
@@ -63,17 +63,17 @@ const Reservation = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="mb-4">
+                  <div className="mb-4 text-white">
                     <h2 className="text-xs md:text-sm text-secondColor">
                       {t("reservation_second_subheader")}
                     </h2>
                     <h2>{t("reservation_second_header")}</h2>
                   </div>
-                  <div>
+                  <div className="text-white">
                     <p>{t("reservation_location")}</p>
                   </div>
                   <div>
-                    <div className="flex justify-center w-1/2 mt-4">
+                    <div className="flex justify-center w-1/2 mt-4 text-white">
                       <i>
                         <FaInstagram />
                       </i>

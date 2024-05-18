@@ -18,7 +18,7 @@ const Header = () => {
         className="contactUsPageBack"
       >
         <div className="textCenter pt-[12rem]">
-          <div>
+          <div className="text-white">
             <h1>{t("contact_us_page_header")}</h1>
             <h6>{t("contact_us_page_subheader")}</h6>
           </div>

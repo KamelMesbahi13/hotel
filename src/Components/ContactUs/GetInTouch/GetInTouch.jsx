@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 
