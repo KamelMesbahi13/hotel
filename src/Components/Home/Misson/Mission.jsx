@@ -151,7 +151,7 @@ const Mission = () => {
             </div>
           </div>
           <div className="relative mt-8 md:mt-20">
-            <div>
+            <div className="hidden dark:block">
               <LazyLoadImage
                 className="absolute top-[15rem] hidden md:block left-0 w-[40%]"
                 src={Deco}
