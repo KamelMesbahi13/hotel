@@ -238,9 +238,12 @@ body.arabic {
 
 @layer components {
   body {
-    @apply bg-backgroundColor text-textColor font-main h-[1000rem];
+    @apply bg-white text-backgroundColor font-main h-[1000rem];
   }
 
+  body.dark {
+    @apply dark:bg-backgroundColor dark:text-textColor;
+  }
   p,
   a {
     @apply text-sm md:text-base;
