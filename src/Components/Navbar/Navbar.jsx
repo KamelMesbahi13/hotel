@@ -5,6 +5,8 @@ import Logo from "../../assets/Logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaXmark, FaPhone } from "react-icons/fa6";
 import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
+import DarkMode from "../../Ui/DarkMode/DarkMode";
+
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
@@ -78,6 +80,10 @@ const Navbar = () => {
                   </div>
                   <span className="text-2xl cursor-pointer ltr:ml-12 rtl:mr-12">
                     <TranslateIcon />
+                  </span>
+
+                  <span className="text-2xl cursor-pointer ltr:ml-12 rtl:mr-12">
+                    <DarkMode />
                   </span>
                 </div>
               </div>
