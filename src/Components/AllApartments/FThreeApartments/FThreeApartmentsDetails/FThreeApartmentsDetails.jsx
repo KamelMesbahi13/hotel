@@ -16,7 +16,7 @@ import Title from "../../../../GeneralFunctions/Title";
 
 const FThreeApartmentsDetails = () => {
   const { t } = useTranslation();
-  Title(`H.A.Z  | ${t("fThree_title")}`);
+  Title(`H.A.Z  | ${t("fThree_details_title")}`);
 
   const {
     register,

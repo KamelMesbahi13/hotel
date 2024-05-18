@@ -11,8 +11,12 @@ import { useForm } from "react-hook-form";
 import Videos from "../VideosData";
 import { useTranslation } from "react-i18next";
 import VideoPlayer from "./FTwoApartmentsDetailsVideo";
+import Title from "../../../../GeneralFunctions/Title";
 
 const FTwoApartmentsDetails = () => {
+  const { t } = useTranslation();
+  Title(`H.A.Z  | ${t("fTwo_details_title")}`);
+
   const {
     register,
     trigger,
@@ -56,9 +60,6 @@ const FTwoApartmentsDetails = () => {
   const { FDeuxAppartementsId } = useParams();
 
   const Data = modifiedData.find((item) => item.id == FDeuxAppartementsId);
-
-  const { t } = useTranslation();
-
   const videoData = Videos.find((video) => video.id == FDeuxAppartementsId);
   const videoUrl = videoData ? videoData.video : null;
 
