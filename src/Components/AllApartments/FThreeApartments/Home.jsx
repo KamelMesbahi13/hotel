@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
 import FindUs from "../../Home/FindUs/FindUs";
 import Header from "./Header/Header";
 import OurRooms from "./OurRooms/OurRooms";
+import Title from "../../../GeneralFunctions/Title";
 
 const Home = () => {
+  const { t } = useTranslation();
+  Title(`H.A.Z  | ${t("fThree_title")}`);
   return (
     <div>
       <Header />
