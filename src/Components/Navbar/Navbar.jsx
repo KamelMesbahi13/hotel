@@ -73,14 +73,17 @@ const Navbar = () => {
                     </i>
                     <p>0555 55 55 55</p>
                   </a>
+                  <div>
+                    <span className="text-2xl cursor-pointer">
+                      <TranslateIcon />
+                    </span>
+                  </div>
 
-                  <span className="text-2xl cursor-pointer">
-                    <TranslateIcon />
-                  </span>
-
-                  <span className="text-2xl cursor-pointer">
-                    <DarkMode />
-                  </span>
+                  <div>
+                    <span className="text-2xl cursor-pointer">
+                      <DarkMode />
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

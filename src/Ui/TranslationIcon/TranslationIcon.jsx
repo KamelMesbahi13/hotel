@@ -60,7 +60,7 @@ function TranslateIcon() {
 
   return (
     <div>
-      <div className="language-select">
+      <div className="mx-4 language-select">
         <div className="flex items-center justify-end language-select-root text-mainColor">
           <div className="relative">
             <button
