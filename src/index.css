@@ -48,11 +48,11 @@ body.arabic {
   direction: rtl;
 }
 
-.button {
+.dark .button {
   appearance: none;
   background-color: transparent;
-  border: 2px solid var(--main);
-  color: var(--main);
+  border: 2px solid var(--textColor);
+  color: var(--textColor);
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
@@ -70,11 +70,11 @@ body.arabic {
   will-change: transform;
 }
 
-.button.dark {
+.button {
   appearance: none;
   background-color: transparent;
-  border: 2px solid var(--textColor);
-  color: var(--textColor);
+  border: 2px solid var(--main);
+  color: var(--main);
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
