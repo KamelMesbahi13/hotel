@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <>
       <div id="nav">
-        <div className="w-full py-4 bg-white">
+        <div className="w-full bg-white shadow-xl md:py-4">
           <div className="container px-4 mx-auto">
             <div className="z-50 justify-between hidden w-full lg:flex">
               <div className="flex items-center w-full">
@@ -108,8 +108,8 @@ const Navbar = () => {
             <div
               className={
                 nav
-                  ? "absolute w-full rtl:left-[150%] h-[25rem] opacity-0 ltr:left-[-150%] duration-500 z-50"
-                  : "absolute w-full left-0 bg-grey h-[25rem] opacity-100 shadow-2xl z-50 duration-500"
+                  ? "absolute w-full rtl:left-[150%] h-[30rem] opacity-0 ltr:left-[-150%] duration-500 z-50"
+                  : "absolute w-full left-0 bg-grey h-[30rem] opacity-100 shadow-2xl z-50 duration-500"
               }
             >
               <div className="container flex flex-col py-12 gap-y-8">
@@ -144,6 +144,9 @@ const Navbar = () => {
                   <div>
                     <TranslateIcon />
                   </div>
+                  <span className="text-2xl cursor-pointer">
+                    <DarkMode />
+                  </span>
                 </div>
               </div>
 

@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div className="bg-white dark:text-backgroundColor text-backgroundColor">
+    <div className="dark:text-backgroundColor text-backgroundColor">
       <button
         onClick={darkModeHandler}
         className="p-2 bg-gray-200 rounded-full dark:bg-gray-800"
