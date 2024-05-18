@@ -260,7 +260,7 @@ body.arabic {
 
 @layer components {
   body {
-    @apply dark:bg-backgroundColor dark:text-white bg-white text-backgroundColor font-main h-[1000rem];
+    @apply bg-white dark:bg-backgroundColor dark:text-white text-backgroundColor font-main;
   }
 
   p,
