@@ -51,6 +51,28 @@ body.arabic {
 .button {
   appearance: none;
   background-color: transparent;
+  border: 2px solid var(--main);
+  color: var(--main);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  outline: none;
+  padding: 13px 20px 13px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button.dark {
+  appearance: none;
+  background-color: transparent;
   border: 2px solid var(--textColor);
   color: var(--textColor);
   cursor: pointer;
@@ -238,12 +260,9 @@ body.arabic {
 
 @layer components {
   body {
-    @apply bg-white text-backgroundColor font-main h-[1000rem];
+    @apply dark:bg-backgroundColor dark:text-white bg-white text-backgroundColor font-main h-[1000rem];
   }
 
-  body.dark {
-    @apply dark:bg-backgroundColor dark:text-textColor;
-  }
   p,
   a {
     @apply text-sm md:text-base;

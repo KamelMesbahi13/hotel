@@ -151,7 +151,7 @@ const Apartments = () => {
                     <div>
                       <div className="textRight">
                         <Link to={item.link} onClick={handleLinkClick}>
-                          <button className="relative cursor-pointer px-4 py-2 font-bold duration-300 hover:bg-secondColor hover:-translate-y-2 hover:text-white bg-white border-[10px] rounded-[3rem] bottom-4 border-backgroundColor text-mainColor">
+                          <button className="relative cursor-pointer px-4 py-2 font-bold duration-300 hover:bg-secondColor hover:-translate-y-2 hover:text-white bg-white dark:border-[10px] border-2 shadow-xl rounded-[3rem] bottom-4 border-backgroundColor text-mainColor">
                             {item.button}
                           </button>
                         </Link>
