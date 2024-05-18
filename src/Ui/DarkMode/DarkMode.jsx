@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
 function App() {
-  // Retrieve the initial theme from localStorage or default to light mode
   const [dark, setDark] = useState(
     localStorage.getItem("color-theme") === "dark" ||
       (!localStorage.getItem("color-theme") &&

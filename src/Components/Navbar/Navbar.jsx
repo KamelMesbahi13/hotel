@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <>
       <div id="nav">
-        <div className="w-full bg-white">
+        <div className="w-full py-4 bg-white">
           <div className="container px-4 mx-auto">
             <div className="z-50 justify-between hidden w-full lg:flex">
               <div className="flex items-center w-full">
