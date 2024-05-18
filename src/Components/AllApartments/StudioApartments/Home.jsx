@@ -6,7 +6,7 @@ import Title from "../../../GeneralFunctions/Title";
 
 const Home = () => {
   const { t } = useTranslation();
-  Title(`H.A.Z  | ${t("fTwo_title")}`);
+  Title(`H.A.Z  | ${t("studio_title")}`);
   return (
     <div>
       <Header />

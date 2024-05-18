@@ -11,8 +11,12 @@ import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Videos from "../VideosData";
 import VideoPlayer from "./StudioApartmentsDetailsVideo";
+import Title from "../../../../GeneralFunctions/Title";
 
 const StudioApartmentsDetails = () => {
+  const { t } = useTranslation();
+  Title(`H.A.Z  | ${t("studio_details_title")}`);
+
   const {
     register,
     trigger,
@@ -56,8 +60,6 @@ const StudioApartmentsDetails = () => {
   const { StudiosApartmentsId } = useParams();
 
   const Data = modifiedData.find((item) => item.id == StudiosApartmentsId);
-
-  const { t } = useTranslation();
 
   const videoData = Videos.find((video) => video.id == StudiosApartmentsId);
   const videoUrl = videoData ? videoData.video : null;
