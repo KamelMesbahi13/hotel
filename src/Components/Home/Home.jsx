@@ -12,7 +12,6 @@ const FindUs = lazy(() => import("./FindUs/FindUs"));
 
 const Home = () => {
   const { t } = useTranslation();
-
   Title(`H.A.Z  | ${t("home")}`);
 
   return (
