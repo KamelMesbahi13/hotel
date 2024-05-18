@@ -11,8 +11,11 @@ import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Videos from "../VideosData";
 import VideoPlayer from "./FThreeHighApartmentsDetailsVideo";
+import Title from "../../../../GeneralFunctions/Title";
 
 const FThreeHighApartmentsDetails = () => {
+  Title(`H.A.Z  | ${t("fThree_high_title")}`);
+
   const {
     register,
     trigger,
