@@ -45,16 +45,13 @@ const Navbar = () => {
     <>
       <div id="nav">
         <div className="w-full bg-white">
-          <div className="container">
+          <div className="container px-4 mx-auto">
             <div className="z-50 justify-between hidden w-full lg:flex">
               <div className="flex items-center w-full">
-                <div>
-                  <a href="/">
-                    <img className="w-1/4" src={Logo} alt="Logo" />
-                  </a>
+                <div className="flex-shrink-0">
+                  <img className="w-auto h-24" src={Logo} alt="Logo" />
                 </div>
-
-                <div className="flex w-1/2 gap-8">
+                <div className="flex justify-center flex-grow gap-8">
                   <RouterLink className="link linkColor" to="/">
                     {modifiedDataNav.map((el) => el.ItemOne)}
                   </RouterLink>
@@ -66,23 +63,22 @@ const Navbar = () => {
                   </RouterLink>
                 </div>
 
-                <div className="flex items-center justify-end w-1/4">
-                  <div className="flex items-center rtl:flex-row-reverse">
-                    <a
-                      href="tel:+21355555555"
-                      className="flex items-center text-xs cursor-pointer xl:text-base linkColor initialDirection"
-                    >
-                      <i className="ltr:mr-4 rtl:mr-4 text-thirdColor">
-                        {<FaPhone />}
-                      </i>
-                      <p>0555 55 55 55</p>
-                    </a>
-                  </div>
-                  <span className="text-2xl cursor-pointer ltr:ml-12 rtl:mr-12">
+                <div className="flex items-center justify-end flex-shrink-0 space-x-4">
+                  <a
+                    href="tel:+21355555555"
+                    className="flex items-center text-xs cursor-pointer xl:text-base linkColor"
+                  >
+                    <i className="mr-2 text-thirdColor">
+                      <FaPhone />
+                    </i>
+                    <p>0555 55 55 55</p>
+                  </a>
+
+                  <span className="text-2xl cursor-pointer">
                     <TranslateIcon />
                   </span>
 
-                  <span className="text-2xl cursor-pointer ltr:ml-12 rtl:mr-12">
+                  <span className="text-2xl cursor-pointer">
                     <DarkMode />
                   </span>
                 </div>
