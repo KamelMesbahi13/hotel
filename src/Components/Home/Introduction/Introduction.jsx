@@ -33,7 +33,7 @@ const Introduction = () => {
                   spy={true}
                   smooth={true}
                   offset={0}
-                  duration={500}
+                  duration={900}
                 >
                   <button className="button">{t("button_one")}</button>
                 </Link>
