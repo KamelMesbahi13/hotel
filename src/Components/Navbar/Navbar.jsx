@@ -51,7 +51,7 @@ const Navbar = () => {
                 <div className="flex-shrink-0">
                   <img className="w-auto h-24" src={Logo} alt="Logo" />
                 </div>
-                <div className="flex justify-center flex-grow gap-8">
+                <div className="flex justify-center flex-grow gap-8 ml-28">
                   <RouterLink className="link linkColor" to="/">
                     {modifiedDataNav.map((el) => el.ItemOne)}
                   </RouterLink>
