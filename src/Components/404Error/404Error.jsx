@@ -27,9 +27,7 @@ const Error = () => {
                     </div>
                     <div className="mt-4">
                       <Link to="/">
-                        <button className="buttonCust">
-                          {t("error_button")}
-                        </button>
+                        <button className="button">{t("error_button")}</button>
                       </Link>
                     </div>
                   </div>
