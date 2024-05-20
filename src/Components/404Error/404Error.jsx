@@ -4,7 +4,7 @@ import Title from "../../GeneralFunctions/Title";
 import { useTranslation } from "react-i18next";
 
 const Error = () => {
-  Title("Serviclim | 404");
+  Title("H.A.Z | 404");
   const { t } = useTranslation();
 
   return (

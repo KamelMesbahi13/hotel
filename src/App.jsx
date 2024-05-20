@@ -7,6 +7,7 @@ const ContactUs = lazy(() => import("./Components/ContactUs/Home"));
 const Footer = lazy(() => import("./Ui/Footer/Footer"));
 import Loader from "./Ui/Loader/Loader";
 import Up from "./Ui/Up/Up";
+import Error from "./Components/404Error/404Error";
 
 const FThreeHighApartments = lazy(() =>
   import("./Components/AllApartments/FThreeHighApartments/Home")
@@ -70,31 +71,27 @@ const App = () => {
               path="/FTroisHighStandingAppartements/:FTroisHighStandingId"
               element={<FThreeHighApartmentsDetails />}
             />
-
             <Route path="/FTroisAppartements" element={<FThreeApartments />} />
             <Route
               path="/FTroisAppartements/:FTroisAppartementsId"
               element={<FThreeApartmentsDetails />}
             />
-
             <Route path="/FDeuxAppartements" element={<FTwoApartments />} />
             <Route
               path="/FDeuxAppartements/:FDeuxAppartementsId"
               element={<FTwoApartmentsDetails />}
             />
-
             <Route
               path="/StudiosAppartements"
               element={<StudiosApartments />}
             />
-
             <Route
               path="/StudiosAppartements/:StudiosApartmentsId"
               element={<StudioApartmentsDetails />}
             />
-
             <Route path="/À-Propos-de-Nous" element={<AboutUsPage />} />
             <Route path="/Contactez-Nous" element={<ContactUs />} />
+            <Route path="*" element={<Error />} />
           </Routes>
           <Up />
           <Footer />

@@ -112,7 +112,9 @@
   "studios_space_our_rooms_header": "Découvrez nos appartements-hôtels",
   "studios_our_rooms_subheader": "Nos appartements studios",
   "studios_our_rooms_header": "Découvrez nos appartements-hôtels",
-
   "contact_form_apartment_details_header": "Envoyez-nous un message",
-  "contact_form_apartment_details_subheader": "Réserver maintenant"
+  "contact_form_apartment_details_subheader": "Réserver maintenant",
+  "error_header": "Oups! Cette page est introuvable.",
+  "error_paragraph": "Il ne semble pas qu'il y ait quoi que ce soit. Cliquez sur le bouton ci-dessous pour revenir à notre page d'accueil.",
+  "error_button": "Page d'accueil"
 }

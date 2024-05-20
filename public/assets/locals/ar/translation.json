@@ -113,7 +113,9 @@
   "studios_space_our_rooms_header": "استكشف شققنا الفندقية",
   "studios_our_rooms_subheader": "شققنا الفندقية studios",
   "studios_our_rooms_header": "استكشف شققنا الفندقية",
-
   "contact_form_apartment_details_header": "أرسل لنا رسالة",
-  "contact_form_apartment_details_subheader": "احجز الآن"
+  "contact_form_apartment_details_subheader": "احجز الآن",
+  "error_header": "عذراً! لا يمكن العثور على هذه الصفحة",
+  "error_paragraph": "لا يبدو أن هنا أي شيء هنا، انقر على الزر أدناه للعودة إلى صفحتنا الرئيسية",
+  "error_button": "الصفحة الرئيسية"
 }
