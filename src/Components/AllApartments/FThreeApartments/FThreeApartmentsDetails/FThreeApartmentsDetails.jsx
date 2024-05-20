@@ -90,7 +90,7 @@ const FThreeApartmentsDetails = () => {
             </div>
             <div>
               <div>
-                <div className="xl:w-[60%] hidden lg:block p-8 md:ltr:ml-20 xl:ltr:ml-48 md:rtl:mr-20 xl:rtl:mr-48 bg-white text-mainColor">
+                <div className="xl:w-[60%] hidden lg:block p-8 md:ltr:ml-20 xl:ltr:ml-48 md:rtl:mr-20 xl:rtl:mr-48 shadow-2xl bg-white text-mainColor">
                   <div>
                     <div>
                       <h6 className="text-xl">
