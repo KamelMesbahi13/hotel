@@ -5,6 +5,8 @@ import Kitchen from "../../../assets/Kitchen.png";
 import Reception from "../../../assets/Reception.png";
 import Wifi from "../../../assets/Wifi.png";
 import Deco from "../../../assets/Deco.webp";
+import DecoTwo from "../../../assets/DecoOne.webp";
+
 import Security from "../../../assets/SecurityCamera.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
@@ -158,6 +160,14 @@ const Mission = () => {
                 alt="Decoration"
               />
             </div>
+            <div className="block p-0 dark:hidden">
+              <LazyLoadImage
+                className="absolute hidden xl:block top-52 -left-24 w-[100%]"
+                src={DecoTwo}
+                alt="Decoration"
+              />
+            </div>
+
             <div className="flex flex-col md:flex-row">
               <div className="mb-8 md:mb-0">
                 <h2>{t("what_we_offer")}</h2>
