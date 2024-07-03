@@ -65,7 +65,7 @@ const Navbar = () => {
 
                 <div className="flex items-center justify-end flex-shrink-0 space-x-4">
                   <a
-                    href="tel:+21355555555"
+                    href="tel:+213555555555"
                     className="flex items-center text-xs cursor-pointer xl:text-base linkColor"
                   >
                     <i className="mr-2 text-thirdColor">
