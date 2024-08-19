@@ -6,7 +6,6 @@ import Reception from "../../../assets/Reception.png";
 import Wifi from "../../../assets/Wifi.png";
 import Deco from "../../../assets/Deco.webp";
 import DecoTwo from "../../../assets/DecoOne.webp";
-
 import Security from "../../../assets/SecurityCamera.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
