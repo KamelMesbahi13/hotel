@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import RoomOne from "../../../assets/HomeApartmentOne.jpg";
 import RoomTwo from "../../../assets/HomeApartmentOne.jpg";
-import RoomThree from "../../../assets/RoomEight.webp";
-import RoomFour from "../../../assets/RoomNine.webp";
+import RoomThree from "../../../assets/HomeApartmentTwo.jpg";
+import RoomFour from "../../../assets/HomeApartmentThree.jpg";
 import { Link, useNavigate } from "react-router-dom";
 
 const Boxes = [
@@ -128,7 +128,7 @@ const Apartments = () => {
           </div>
 
           <div className="flex justify-center">
-            <div className="grid w-full md:w-[90%] grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-24">
+            <div className="grid w-full md:w-[85%] grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-24">
               {modifiedData.map((item) => {
                 return (
                   <div key={item.id}>
