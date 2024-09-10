@@ -58,7 +58,9 @@ const Footer = () => {
                 <i className="mr-3 text-2xl text-mainColor">
                   <BiLogoGmail />
                 </i>{" "}
-                <p className="italic font-bold">admin@gmail.com</p>
+                <p className="italic font-bold">
+                  contact.hotelapartements35@gmail.com
+                </p>
               </div>
             </div>
             <div className="pb-8 border-b-4 border-secondColor md:w-1/2 md:text-center md:pb-0 md:border-b-0">
@@ -83,14 +85,14 @@ const Footer = () => {
               <p className="my-4 md:my-8">
                 {t("footer_social_media_paragraph")}
               </p>
-              <div className="flex justify-between w-1/2">
+              <div className="flex justify-between w-1/2 mt-8">
                 <div>
                   <a
                     href="https://www.instagram.com/zidane.appartement?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     target="_blank"
                     className="cursor-pointer"
                   >
-                    <i className="text-3xl text-mainColor">
+                    <i className="text-2xl md:text-3xl text-mainColor">
                       <FaInstagram />
                     </i>
                   </a>
@@ -101,7 +103,7 @@ const Footer = () => {
                     target="_blank"
                     className="cursor-pointer"
                   >
-                    <i className="text-3xl text-mainColor">
+                    <i className="text-2xl md:text-3xl text-mainColor">
                       <FaFacebook />
                     </i>
                   </a>
@@ -110,7 +112,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:mt-24 mt-14 textCenter">
-            <img className="w-40" src={Logo} alt="" />
+            <img className="w-40" src={Logo} alt="Logo" />
           </div>
           <div>
             <div className="w-full h-2 mt-8 bg-mainColor"></div>
