@@ -41,7 +41,7 @@ const Introduction = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 md:mt-0">
+        <div className="mt-8 md:mt-0 md:w-[65rem] md:h-[70vh]">
           <img src={Hotel} alt="Hotel" />
         </div>
       </div>
