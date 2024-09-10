@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import RoomOne from "../../../assets/RoomSix.webp";
-import RoomTwo from "../../../assets/RoomSeven.webp";
+import RoomOne from "../../../assets/HomeApartmentOne.jpg";
+import RoomTwo from "../../../assets/HomeApartmentOne.jpg";
 import RoomThree from "../../../assets/RoomEight.webp";
 import RoomFour from "../../../assets/RoomNine.webp";
 import { Link, useNavigate } from "react-router-dom";
@@ -127,48 +127,50 @@ const Apartments = () => {
             </motion.div>
           </div>
 
-          <div className="grid w-full grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-24">
-            {modifiedData.map((item) => {
-              return (
-                <div key={item.id}>
-                  <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.9 }}
-                    variants={{
-                      hidden: { opacity: 0, y: 25 },
-                      visible: { opacity: 1, y: 0 },
-                    }}
-                  >
-                    <div className="overflow-hidden">
-                      <img
-                        src={item.img}
-                        className="h-[15rem] duration-500 hover:scale-105 sm:h-[20rem] md:h-[25rem] w-full rounded-xl"
-                        alt={item.title}
-                      />
-                    </div>
-                    <div>
-                      <div className="textRight">
-                        <Link to={item.link} onClick={handleLinkClick}>
-                          <button className="relative cursor-pointer px-4 py-2 font-bold duration-300 hover:bg-secondColor hover:-translate-y-2 hover:text-white bg-white dark:border-[10px] border-2 shadow-xl dark:shadow-none rounded-[3rem] bottom-4 border-backgroundColor text-mainColor">
-                            {item.button}
-                          </button>
-                        </Link>
+          <div className="flex justify-center">
+            <div className="grid w-full md:w-[90%] grid-cols-1 mt-8 sm:gap-x-8 gap-y-8 md:gap-y-28 sm:grid-cols-2 md:mt-24">
+              {modifiedData.map((item) => {
+                return (
+                  <div key={item.id}>
+                    <motion.div
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true, amount: 0.5 }}
+                      transition={{ duration: 0.9 }}
+                      variants={{
+                        hidden: { opacity: 0, y: 25 },
+                        visible: { opacity: 1, y: 0 },
+                      }}
+                    >
+                      <div className="overflow-hidden">
+                        <img
+                          src={item.img}
+                          className="h-[15rem] duration-500 hover:scale-105 sm:h-[20rem] md:h-[25rem] w-full rounded-xl"
+                          alt={item.title}
+                        />
                       </div>
                       <div>
-                        <h1 className="mb-2 text-sm italic font-light">
-                          {item.stats}
-                        </h1>
+                        <div className="textRight">
+                          <Link to={item.link} onClick={handleLinkClick}>
+                            <button className="relative cursor-pointer px-4 py-2 font-bold duration-300 hover:bg-secondColor hover:-translate-y-2 hover:text-white bg-white dark:border-[10px] border-2 shadow-xl dark:shadow-none rounded-[3rem] bottom-4 border-backgroundColor text-mainColor">
+                              {item.button}
+                            </button>
+                          </Link>
+                        </div>
+                        <div>
+                          <h1 className="mb-2 text-sm italic font-light">
+                            {item.stats}
+                          </h1>
+                        </div>
+                        <div>
+                          <h6>{item.title}</h6>
+                        </div>
                       </div>
-                      <div>
-                        <h6>{item.title}</h6>
-                      </div>
-                    </div>
-                  </motion.div>
-                </div>
-              );
-            })}
+                    </motion.div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
