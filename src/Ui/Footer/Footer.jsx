@@ -3,7 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 import Data from "../../Data/Data.json";
 import Logo from "../../assets/Logo.png";
 import { BiLogoGmail } from "react-icons/bi";
-import { FaInstagram, FaTiktok, FaFacebook, FaPhoneAlt } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -52,7 +52,7 @@ const Footer = () => {
                 <i className="mr-3 text-xl text-mainColor">
                   <FaPhoneAlt />
                 </i>
-                <p className="italic font-bold">+213 55 55 55 55</p>
+                <p className="italic font-bold">+213 560 09 00 40</p>
               </div>
               <div className="flex items-center initialDirection">
                 <i className="mr-3 text-2xl text-mainColor">
@@ -84,15 +84,26 @@ const Footer = () => {
                 {t("footer_social_media_paragraph")}
               </p>
               <div className="flex justify-between w-1/2 text-2xl">
-                <i className="text-mainColor">
-                  <FaInstagram />
-                </i>
-                <i className="text-mainColor">
-                  <FaFacebook />
-                </i>
-                <i className="text-mainColor">
-                  <FaTiktok />
-                </i>
+                <a
+                  href="https://www.instagram.com/zidane.appartement?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  className="cursor-pointer"
+                >
+                  <i className="text-mainColor">
+                    <FaInstagram />
+                  </i>
+                </a>
+                <div>
+                  <a
+                    href="https://web.facebook.com/profile.php?id=61561016956548"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <i className="text-mainColor">
+                      <FaFacebook />
+                    </i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
