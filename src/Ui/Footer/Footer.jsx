@@ -83,23 +83,25 @@ const Footer = () => {
               <p className="my-4 md:my-8">
                 {t("footer_social_media_paragraph")}
               </p>
-              <div className="flex justify-between w-1/2 text-2xl">
-                <a
-                  href="https://www.instagram.com/zidane.appartement?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                  target="_blank"
-                  className="cursor-pointer"
-                >
-                  <i className="text-mainColor">
-                    <FaInstagram />
-                  </i>
-                </a>
+              <div className="flex justify-between w-1/2">
+                <div>
+                  <a
+                    href="https://www.instagram.com/zidane.appartement?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <i className="text-3xl text-mainColor">
+                      <FaInstagram />
+                    </i>
+                  </a>
+                </div>
                 <div>
                   <a
                     href="https://web.facebook.com/profile.php?id=61561016956548"
                     target="_blank"
                     className="cursor-pointer"
                   >
-                    <i className="text-mainColor">
+                    <i className="text-3xl text-mainColor">
                       <FaFacebook />
                     </i>
                   </a>
