@@ -1,5 +1,5 @@
-import RoomOne from "../../../assets/RoomFive.webp";
-import RoomTwo from "../../../assets/RoomFour.webp";
+import RoomOne from "../../../assets/HomeImgOne.jpg";
+import RoomTwo from "../../../assets/HomeImgTwo.jpg";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -54,7 +54,7 @@ const AboutUs = () => {
               />
             </motion.div>
           </div>
-          <div className="md:w-[60%] mt-8 md:mt-0">
+          <div className="mt-8 md:w-full md:mt-0">
             <motion.div
               initial="hidden"
               whileInView="visible"
