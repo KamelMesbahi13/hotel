@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import RoomOne from "../../../assets/HomeApartmentOne.jpg";
-import RoomTwo from "../../../assets/HomeApartmentOne.jpg";
-import RoomThree from "../../../assets/HomeApartmentTwo.jpg";
-import RoomFour from "../../../assets/HomeApartmentThree.jpg";
+import RoomOne from "../../../assets/HomeApartmentOne.webp";
+import RoomTwo from "../../../assets/HomeApartmentOne.webp";
+import RoomThree from "../../../assets/HomeApartmentTwo.webp";
+import RoomFour from "../../../assets/HomeApartmentThree.webp";
 import { Link, useNavigate } from "react-router-dom";
 
 const Boxes = [
