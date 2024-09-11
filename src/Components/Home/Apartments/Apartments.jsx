@@ -10,7 +10,7 @@ const Boxes = [
   {
     id: 1,
     img: RoomOne,
-    stats: "5000da / 100m²",
+    stats: "11000da / 72m²",
     link: "FTroisHighStandingAppartements",
     button: "Plus de détails",
     button_en: "More details",
@@ -23,7 +23,7 @@ const Boxes = [
   {
     id: 2,
     img: RoomTwo,
-    stats: "5000da / 100m²",
+    stats: "11000da / 67m²",
     link: "FTroisAppartements",
     button: "Plus de détails",
     button_en: "More details",
@@ -36,7 +36,7 @@ const Boxes = [
   {
     id: 3,
     img: RoomThree,
-    stats: "5000da / 100m²",
+    stats: "9000da / 65m²",
     link: "FDeuxAppartements",
     button: "Plus de détails",
     button_en: "More details",
@@ -49,7 +49,7 @@ const Boxes = [
   {
     id: 4,
     img: RoomFour,
-    stats: "5000da / 100m²",
+    stats: "7000da / 40m²",
     link: "StudiosAppartements",
     button: "Plus de détails",
     button_en: "More details",
