@@ -7,10 +7,8 @@ const FThreeApartmentDetailsSwiper = lazy(() =>
   import("./FThreeApartmentsDetailsSwiper")
 );
 import Boxes from "../Data";
-import Videos from "../VideosData";
 import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import VideoPlayer from "./FThreeApartmentsDetailsVideo";
 import { useTranslation } from "react-i18next";
 import Title from "../../../../GeneralFunctions/Title";
 
@@ -61,9 +59,6 @@ const FThreeApartmentsDetails = () => {
   const { FTroisAppartementsId } = useParams();
 
   const Data = modifiedData.find((item) => item.id == FTroisAppartementsId);
-
-  const videoData = Videos.find((video) => video.id == FTroisAppartementsId);
-  const videoUrl = videoData ? videoData.video : null;
 
   return (
     <div>
@@ -176,9 +171,6 @@ const FThreeApartmentsDetails = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="mb-12">
-          <VideoPlayer videoUrl={videoUrl} />
         </div>
       </div>
     </div>
