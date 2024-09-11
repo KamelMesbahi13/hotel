@@ -84,7 +84,7 @@ const OurRooms = () => {
           </motion.div>
         </div>
         <div>
-          <div className="grid grid-cols-1 mt-8 md:grid-cols-3 md:mt-20">
+          <div className="grid grid-cols-1 my-8 md:grid-cols-3 md:mt-20">
             {modifiedData.map((item) => {
               return (
                 <div key={item.id}>

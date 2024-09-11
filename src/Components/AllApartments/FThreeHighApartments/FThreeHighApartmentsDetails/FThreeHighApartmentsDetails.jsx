@@ -9,8 +9,6 @@ import { useTranslation } from "react-i18next";
 import Boxes from "../Data";
 import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import Videos from "../VideosData";
-import VideoPlayer from "./FThreeHighApartmentsDetailsVideo";
 import Title from "../../../../GeneralFunctions/Title";
 
 const FThreeHighApartmentsDetails = () => {
@@ -61,8 +59,6 @@ const FThreeHighApartmentsDetails = () => {
 
   const Data = modifiedData.find((item) => item.id == FTroisHighStandingId);
 
-  const videoData = Videos.find((video) => video.id == FTroisHighStandingId);
-  const videoUrl = videoData ? videoData.video : null;
   return (
     <div>
       <div>
@@ -174,9 +170,6 @@ const FThreeHighApartmentsDetails = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="mb-12">
-          <VideoPlayer videoUrl={videoUrl} />
         </div>
       </div>
     </div>
