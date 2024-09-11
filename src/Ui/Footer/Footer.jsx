@@ -3,7 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 import Data from "../../Data/Data.json";
 import Logo from "../../assets/Logo.png";
 import { BiLogoGmail } from "react-icons/bi";
-import { FaInstagram, FaFacebook, FaPhoneAlt } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaPhoneAlt, FaTiktok } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -105,6 +105,17 @@ const Footer = () => {
                   >
                     <i className="text-2xl md:text-3xl text-mainColor">
                       <FaFacebook />
+                    </i>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.tiktok.com/@hotel.appartement?fbclid=IwY2xjawFNolJleHRuA2FlbQIxMAABHdn1SQ80ju-jQ3hqgBW5M9EjqbjL0nPYSLmgFT42lnVztyaBqhbZWjzlrA_aem_NgqoLYoJhiSUdc46Lgmnpw"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <i className="text-2xl md:text-3xl text-mainColor">
+                      <FaTiktok />
                     </i>
                   </a>
                 </div>
