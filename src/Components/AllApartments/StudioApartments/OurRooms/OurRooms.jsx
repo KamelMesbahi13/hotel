@@ -97,7 +97,7 @@ const OurRooms = () => {
                     <div className="p-8">
                       <div className="overflow-hidden rounded-lg shadow-lg dark:shadow-none bg-grey">
                         <img
-                          className="object-cover object-end"
+                          className="object-cover w-full h-[35vh] md:h-[55vh] object-end"
                           src={item.img}
                           alt="Home in Countryside"
                         />
