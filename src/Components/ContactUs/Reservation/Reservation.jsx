@@ -52,12 +52,13 @@ const Reservation = () => {
                   </div>
                   <div>
                     <p className="mb-2">
-                      {t("reservation_email")} : hotel@gmail.com
+                      {t("reservation_email")} :
+                      contact.hotelapartements35@gmail.com
                     </p>
                     <div className="flex justify-center">
                       <p>{t("reservation_call")} :</p>
                       <p className="md:ltr:ml-1 md:rtl:mr-1 initialDirection">
-                        0555 55 55 55
+                        +213 560 09 00 40{" "}
                       </p>
                     </div>
                   </div>
@@ -74,15 +75,39 @@ const Reservation = () => {
                   </div>
                   <div>
                     <div className="flex justify-center w-1/2 mt-4 text-white">
-                      <i>
-                        <FaInstagram />
-                      </i>
-                      <i className="mx-4">
-                        <FaFacebook />
-                      </i>
-                      <i>
-                        <FaTiktok />
-                      </i>
+                      <div>
+                        <a
+                          href="https://www.instagram.com/zidane.appartement?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                          target="_blank"
+                          className="cursor-pointer"
+                        >
+                          <i className="text-2xl text-white">
+                            <FaInstagram />
+                          </i>
+                        </a>
+                      </div>
+                      <div className="mx-4">
+                        <a
+                          href="https://web.facebook.com/profile.php?id=61561016956548"
+                          target="_blank"
+                          className="cursor-pointer"
+                        >
+                          <i className="text-2xl text-white">
+                            <FaFacebook />
+                          </i>
+                        </a>
+                      </div>
+                      <div>
+                        <a
+                          href="https://www.tiktok.com/@hotel.appartement?fbclid=IwY2xjawFNolJleHRuA2FlbQIxMAABHdn1SQ80ju-jQ3hqgBW5M9EjqbjL0nPYSLmgFT42lnVztyaBqhbZWjzlrA_aem_NgqoLYoJhiSUdc46Lgmnpw"
+                          target="_blank"
+                          className="cursor-pointer"
+                        >
+                          <i className="text-2xl text-white">
+                            <FaTiktok />
+                          </i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
