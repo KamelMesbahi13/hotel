@@ -1,4 +1,4 @@
-import RoomOne from "../../../assets/fThreeHighStandingOne.webp";
+import RoomOne from "../../../assets/F3ImgTwoOff.webp";
 
 const Data = [
   {
