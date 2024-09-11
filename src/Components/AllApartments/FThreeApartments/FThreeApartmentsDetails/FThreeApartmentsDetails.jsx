@@ -66,7 +66,7 @@ const FThreeApartmentsDetails = () => {
         <FThreeApartmentsDetailsHeader />
       </div>
       <div className="container">
-        <div className="mt-20">
+        <div className="my-20">
           <div className="flex flex-col md:flex-row">
             <div className="w-full">
               <div>
