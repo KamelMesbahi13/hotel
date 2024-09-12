@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import RoomOne from "../../../assets/HomeApartmentOne.webp";
-import RoomTwo from "../../../assets/HomeApartmentOne.webp";
 import RoomThree from "../../../assets/HomeApartmentTwo.webp";
 import RoomFour from "../../../assets/HomeApartmentThree.webp";
 import { Link, useNavigate } from "react-router-dom";
@@ -22,7 +21,7 @@ const Boxes = [
 
   {
     id: 2,
-    img: RoomTwo,
+    img: RoomThree,
     stats: "11000da / 67m²",
     link: "FTroisAppartements",
     button: "Plus de détails",
@@ -31,19 +30,6 @@ const Boxes = [
     title: "F3: Appartements de luxe modernes.",
     title_en: "F3: Modern Luxury Apartments.",
     title_ar: "شقق F3 :  الحديثة الفاخرة. ",
-  },
-
-  {
-    id: 3,
-    img: RoomThree,
-    stats: "9000da / 65m²",
-    link: "FDeuxAppartements",
-    button: "Plus de détails",
-    button_en: "More details",
-    button_ar: "المزيد من التفاصيل",
-    title: "F2: Appartements de confort moderne.",
-    title_en: "F2: Modern Comfort Apartments",
-    title_ar: "F2: شقق عصرية مريحة.",
   },
 
   {
