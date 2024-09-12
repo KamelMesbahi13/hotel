@@ -65,13 +65,13 @@ const Navbar = () => {
 
                 <div className="flex items-center justify-end flex-shrink-0 space-x-4">
                   <a
-                    href="tel:+213555555555"
+                    href="tel:+213 560 090 040"
                     className="flex items-center text-xs cursor-pointer xl:text-base linkColor"
                   >
                     <i className="mr-2 text-thirdColor">
                       <FaPhone />
                     </i>
-                    <p>0555 55 055 55</p>
+                    <p>0560 09 00 40</p>
                   </a>
                   <div>
                     <span className="text-2xl cursor-pointer">
@@ -161,7 +161,7 @@ const Navbar = () => {
                         {<FaPhone />}
                       </i>
                       <p className="text-xs xl:text-base linkColor initialDirection">
-                        0555 55 55 55
+                        0560 09 00 40{" "}
                       </p>
                     </div>
                   </div>
