@@ -63,15 +63,15 @@ const Navbar = () => {
                   </RouterLink>
                 </div>
 
-                <div className="flex items-center justify-end flex-shrink-0 space-x-4">
+                <div className="flex items-center justify-end flex-shrink-0 space-x-4 rtl:flex-row-reverse">
                   <a
                     href="tel:+213 560 090 040"
                     className="flex items-center text-xs cursor-pointer xl:text-base linkColor"
                   >
-                    <i className="mr-2 text-thirdColor">
+                    <i className="ltr:mr-2 rtl:ml-2 text-thirdColor">
                       <FaPhone />
                     </i>
-                    <p>0560 09 00 40</p>
+                    <p className="rtl:!rightDirection">0560 09 00 40</p>
                   </a>
                   <div>
                     <span className="text-2xl cursor-pointer">
