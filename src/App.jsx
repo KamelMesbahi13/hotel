@@ -23,10 +23,6 @@ const FThreeApartments = lazy(() =>
   import("./Components/AllApartments/FThreeApartments/Home")
 );
 
-const FTwoApartments = lazy(() =>
-  import("./Components/AllApartments/FTwoApartments/Home")
-);
-
 const StudiosApartments = lazy(() =>
   import("./Components/AllApartments/StudioApartments/Home")
 );
@@ -34,12 +30,6 @@ const StudiosApartments = lazy(() =>
 const FThreeApartmentsDetails = lazy(() =>
   import(
     "./Components/AllApartments/FThreeApartments/FThreeApartmentsDetails/FThreeApartmentsDetails"
-  )
-);
-
-const FTwoApartmentsDetails = lazy(() =>
-  import(
-    "./Components/AllApartments/FTwoApartments/FTwoApartmentsDetails/FTwoApartmentsDetails"
   )
 );
 
@@ -76,11 +66,7 @@ const App = () => {
               path="/FTroisAppartements/:FTroisAppartementsId"
               element={<FThreeApartmentsDetails />}
             />
-            <Route path="/FDeuxAppartements" element={<FTwoApartments />} />
-            <Route
-              path="/FDeuxAppartements/:FDeuxAppartementsId"
-              element={<FTwoApartmentsDetails />}
-            />
+
             <Route
               path="/StudiosAppartements"
               element={<StudiosApartments />}
