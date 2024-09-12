@@ -186,7 +186,7 @@ body.arabic {
 }
 
 .aboutUsBack {
-  background-image: url(../src/assets/ReceptionImg.jpg);
+  background-image: url(../src/assets/ReceptionImg.webp);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
