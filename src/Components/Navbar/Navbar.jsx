@@ -71,7 +71,7 @@ const Navbar = () => {
                     <i className="ltr:mr-2 rtl:ml-2 text-thirdColor">
                       <FaPhone />
                     </i>
-                    <p className="rtl:!rightDirection">0560 09 00 40</p>
+                    <p className="initialDirection">0560 09 00 40</p>
                   </a>
                   <div>
                     <span className="text-2xl cursor-pointer">
