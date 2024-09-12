@@ -224,7 +224,7 @@ body.arabic {
 }
 
 .contactUsPageBack {
-  background-image: url(../src/assets/ContactUsBackground.webp);
+  background-image: url(../src/assets/HomeImgOne.webp);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
