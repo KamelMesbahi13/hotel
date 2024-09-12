@@ -1,4 +1,4 @@
-import Deco from "../../../assets/AboutUsImgOne.webp";
+import Deco from "../../../assets/StudioOff.webp";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
@@ -38,7 +38,7 @@ const BestApartments = () => {
                   }}
                 >
                   <div>
-                    <img src={Deco} alt="Deco" />
+                    <img src={Deco} className="md:w-[23rem]" alt="Deco" />
                   </div>
                   <div className="hidden lg:block">
                     <div className="-z-10 bg-secondColor relative bottom-[29rem] h-[27rem] w-[27rem]"></div>
