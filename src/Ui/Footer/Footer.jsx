@@ -110,7 +110,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <a
-                    href="https://www.tiktok.com/@hotel.appartement?fbclid=IwY2xjawFNolJleHRuA2FlbQIxMAABHdn1SQ80ju-jQ3hqgBW5M9EjqbjL0nPYSLmgFT42lnVztyaBqhbZWjzlrA_aem_NgqoLYoJhiSUdc46Lgmnpw"
+                    href="https://www.tiktok.com/@zidane.appartement?is_from_webapp=1&sender_device=pc"
                     target="_blank"
                     className="cursor-pointer"
                   >
